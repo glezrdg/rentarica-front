@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface IServiceCardProps {
-  children?: React.ReactNode
+  icon?: React.ReactNode
   title: string
   description: string
   className?: string
@@ -11,11 +11,12 @@ const ServiceCard: React.FC<IServiceCardProps> = ({
   title,
   description,
   className,
+  icon,
 }) => {
   return (
     <div className={`w-full ${className && className}`}>
-      <div className='b-orange rounded-full w-[60px] h-[60px] mb-4 m-auto'>
-        icono
+      <div className='b-orange rounded-full w-[60px] h-[60px] mb-4 m-auto grid place-items-center'>
+        {icon}
       </div>
 
       <h3 className='text-lg font-bold mb-3 text-center'>{title}</h3>

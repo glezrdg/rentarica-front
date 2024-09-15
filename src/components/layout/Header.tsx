@@ -17,7 +17,7 @@ const Header = () => {
 
         <i
           onClick={() => setMobileNav(!mobileNav)}
-          className='pi pi-align-right text-2xl text-slate-500 hover:text-orange-600'
+          className='block md:!hidden pi pi-align-right text-2xl text-slate-500 hover:text-orange-600'
         />
 
         {/* NAVIGATION LINKS */}
@@ -29,7 +29,7 @@ const Header = () => {
             Servicios
           </Link>
           <Link href={'/#projects'} className='cursor-pointer'>
-            Proyecto bg-orange-600 -right-fulls
+            Proyecto
           </Link>
           <Link href={'/#clients'} className='cursor-pointer'>
             Clientes
@@ -41,7 +41,7 @@ const Header = () => {
       </nav>
 
       <div
-        className={`fixed w-[100vw] h-[100vh] bg-orange-600 transition-all ${
+        className={`fixed md:hidden w-[100vw] h-[100vh] bg-orange-600 transition-all ${
           mobileNav ? 'right-0' : '!right-full'
         } `}
       >
