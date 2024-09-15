@@ -7,21 +7,66 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+html {
+  scroll-behavior: smooth;
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+
+/* COLORS */
+
+.t-orange {
+  color: #FE5000;
+}
+.b-orange {
+  background-color: #FE5000;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.t-blue-dark {
+  color: #041E42;
+}
+.b-blue-dark {
+  background-color: #041E42;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.t-blue-light {
+  color: #1747C9;
+}
+.b-blue-light {
+  background-color: #1747C9;
+}
+
+/* BUTTON */
+
+.btn-orange {
+  @apply
+  b-orange
+  text-white
+  p-2
+  px-3
+  rounded-3xl
+  cursor-pointer
+}
+
+.btn-outline {
+  @apply
+  border-2
+  border-white
+  rounded-3xl
+  w-[200px]
+  py-3
+}
+
+/* INPUT */
+
+input, textarea {
+  @apply
+  bg-slate-100
+  p-[10px]
+  rounded-md
 }
