@@ -35,7 +35,7 @@ export default function Galeria() {
       <img
         src={item.itemImageSrc}
         alt={item.alt}
-        className='w-[100%] h-[650px] rounded-3xl text-center'
+        className='w-[100%] h-[300px] md:h-[450px] lg:h-[650px] rounded-3xl text-center'
       />
     )
   }

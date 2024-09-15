@@ -18,7 +18,7 @@ const index = () => {
         }}
       >
         <div className='flex flex-col gap-10 justify-center items-center h-full bg-black bg-opacity-50'>
-          <h1 className='text-5xl w-[70%] text-white font-bold text-center leading-[70px]'>
+          <h1 className='text-4xl md:text-5xl w-[70%] text-white font-bold text-center leading-[50px] lg:leading-[70px]'>
             Proyecto de Laguna Artificial #7, Azua
           </h1>
 
@@ -28,7 +28,7 @@ const index = () => {
         </div>
       </div>
 
-      <div className='grid grid-cols-[40%_1fr] gap-12 my-14 place-items-center container mx-auto xl:px-10'>
+      <div className='grid lg:grid-cols-[40%_1fr] gap-12 my-14 place-items-center container mx-auto px-4 xl:px-10'>
         <p className='text-xl leading-10 py-6'>
           En el Proyecto de Laguna Artificial #7 en Azua, GRUPO INAP fue
           responsable del diseño e instalación de infraestructura hidráulica

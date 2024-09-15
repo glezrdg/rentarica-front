@@ -16,7 +16,7 @@ const ContactUs: React.FC<IContactUsProps> = ({ bg }) => {
         </p>
       </div>
 
-      <form className='grid grid-cols-2 rounded-2xl shadow-xl w-[60vw] m-auto p-8 gap-4 bg-white'>
+      <form className='grid md:grid-cols-2 rounded-2xl shadow-xl w-[90vw] md:w-[75vw] lg:w-[60vw] xl:w-[900px] m-auto p-8 gap-4 bg-white'>
         {/* CONTACT INFO */}
         <div>
           <div className='flex flex-col mb-3'>

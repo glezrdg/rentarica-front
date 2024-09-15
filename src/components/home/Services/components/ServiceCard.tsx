@@ -4,11 +4,16 @@ interface IServiceCardProps {
   children?: React.ReactNode
   title: string
   description: string
+  className?: string
 }
 
-const ServiceCard: React.FC<IServiceCardProps> = ({ title, description }) => {
+const ServiceCard: React.FC<IServiceCardProps> = ({
+  title,
+  description,
+  className,
+}) => {
   return (
-    <div className='w-full'>
+    <div className={`w-full ${className && className}`}>
       <div className='b-orange rounded-full w-[60px] h-[60px] mb-4 m-auto'>
         icono
       </div>

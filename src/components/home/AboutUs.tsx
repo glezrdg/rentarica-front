@@ -4,14 +4,14 @@ const AboutUs = () => {
   return (
     <section
       id='perfil'
-      className='flex items-center gap-36 h-[100vh] container m-auto xl:px-10 mt-10'
+      className='flex flex-col md:flex-row items-center gap-16 md:gap-36 h-[100vh] container m-auto px-4 xl:px-10 mt-10 mb-6 xl:mb-0'
     >
       <img
         className='w-[40%]'
         src='/assets/logos/logo_without_text_light.png'
       />
 
-      <div>
+      <div className='text-center md:text-left'>
         <h3 className='text-xl mb-4'>Nuestro perfil</h3>
         <h1 className='text-4xl mb-10 t-blue-dark font-bold'>
           Sobre <span className='t-blue-light'>Nosotros</span>

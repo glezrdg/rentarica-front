@@ -13,7 +13,7 @@ const Hero = () => {
       }}
     >
       <div className='flex flex-col gap-10 justify-center items-center h-full bg-black bg-opacity-50'>
-        <h1 className='text-6xl w-[70%] text-white font-bold text-center leading-[70px]'>
+        <h1 className='text-5xl md:text-6xl w-[70%] text-white font-bold text-center leading-[70px]'>
           Proyectos
         </h1>
 
