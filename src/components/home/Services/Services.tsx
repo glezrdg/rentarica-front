@@ -1,5 +1,6 @@
 import React from 'react'
 import ServiceCard from './components/ServiceCard'
+import { categories } from '@/utils/data'
 
 interface IServicesProps {
   children?: React.ReactNode
@@ -21,7 +22,8 @@ const Services: React.FC<IServicesProps> = (props) => {
 
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-14 xl:gap-6 w-full place-items-center'>
           <ServiceCard
-            title='Servicios Mecánicos'
+            title={categories[0].name}
+            index={0}
             description='Ofrecemos soluciones mecánicas completas que incluyen montaje, fabricación y mantenimiento de equipos y estructuras industriales. Nuestros servicios están diseñados para mejorar la eficiencia y la funcionalidad de sus instalaciones'
             icon={
               <svg
@@ -43,7 +45,8 @@ const Services: React.FC<IServicesProps> = (props) => {
             }
           />
           <ServiceCard
-            title='Servicios Civiles'
+            title={categories[1].name}
+            index={1}
             icon={
               <svg
                 width='40'
@@ -74,7 +77,8 @@ const Services: React.FC<IServicesProps> = (props) => {
           />
           <ServiceCard
             className='md:col-span-2 lg:col-span-1'
-            title='Servicios de Mantenimiento & Reparaciones'
+            title={categories[2].name}
+            index={2}
             description='Brindamos servicios de mantenimiento integral que incluyen tratamiento contra la corrosión, limpieza industrial y señalización de procesos. Nuestro objetivo es garantizar el óptimo funcionamiento y prolongar la vida útil de sus equipos'
             icon={
               <svg

@@ -13,13 +13,12 @@ const Hero = () => {
       }}
     >
       <div className='flex flex-col gap-10 justify-center items-center h-full bg-black bg-opacity-50'>
-        <h1 className='text-5xl md:text-6xl w-[70%] text-white font-bold text-center leading-[70px]'>
+        <h1 className='text-4xl md:text-5xl lg:text-6xl w-[70%] text-white font-bold text-center leading-[70px]'>
           Proyectos
         </h1>
 
         <p className='leading-8 text-xl w-[50%] text-center'>
           Pellentesque convallis accumsan suscipit aliquet eu diam quis nulla
-          turpis. In mus massa lectus laoreet sed semper bibendum id.
         </p>
       </div>
     </div>

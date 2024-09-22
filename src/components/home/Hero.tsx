@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
   return (
     <div
-      className='w-full h-[calc(100vh-85px)] xl:h-[calc(100vh-100px)]'
+      className='w-full h-[100vh]'
       style={{
         backgroundRepeat: 'no-repeat',
         backgroundImage:

@@ -48,6 +48,9 @@ export default function Galeria() {
         showThumbnails={false}
         showIndicators
         showItemNavigatorsOnHover
+        autoPlay
+        showItemNavigators
+        circular
         indicator={(index) => (
           <div
             style={{ cursor: 'pointer' }}

@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <section
       id='perfil'
-      className='flex flex-col md:flex-row items-center gap-16 md:gap-36 h-[100vh] container m-auto px-4 xl:px-10 mt-10 mb-6 xl:mb-0'
+      className='flex flex-col md:flex-row items-center gap-16 md:gap-36 lg:h-[100vh] container m-auto px-4 xl:px-10 mt-10 mb-6 xl:mb-0'
     >
       <img
         className='w-[40%]'

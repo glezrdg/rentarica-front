@@ -1,12 +1,29 @@
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Header = () => {
   const [mobileNav, setMobileNav] = useState(false)
+  const [scrollNav, setScrollNav] = useState(false)
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav)
+  }, [])
+
+  const changeNav = () => {
+    if (window.scrollY >= 70) {
+      setScrollNav(true)
+    } else {
+      setScrollNav(false)
+    }
+  }
 
   return (
-    <header className='fixed bg-white w-[100vw] z-50 h-[85px] md:h-[100px]'>
-      <nav className='flex items-center justify-between h-full w-full container m-auto px-4 xl:px-10'>
+    <header
+      className={`fixed  w-[100vw] z-50 h-[85px] transition-all duration-300 md:h-[100px] ${
+        scrollNav ? 'bg-white text-black' : 'text-white'
+      }`}
+    >
+      <nav className='flex items-center justify-between h-full  container m-auto px-4 xl:px-10'>
         {/* LOGO */}
         <Link href={'/'}>
           <img
@@ -17,7 +34,9 @@ const Header = () => {
 
         <i
           onClick={() => setMobileNav(!mobileNav)}
-          className='block md:!hidden pi pi-align-right text-2xl text-slate-500 hover:text-orange-600'
+          className={`block md:!hidden pi pi-align-right text-2xl ${
+            scrollNav ? 'text-slate-500' : 'text-white'
+          } hover:text-orange-600`}
         />
 
         {/* NAVIGATION LINKS */}
@@ -29,13 +48,13 @@ const Header = () => {
             Servicios
           </Link>
           <Link href={'/#projects'} className='cursor-pointer'>
-            Proyecto
+            Proyectos
           </Link>
           <Link href={'/#clients'} className='cursor-pointer'>
             Clientes
           </Link>
           <Link href={'/#contact'} className='btn-orange !px-3 !py-3'>
-            Contactanos
+            Contáctanos
           </Link>
         </ul>
       </nav>
