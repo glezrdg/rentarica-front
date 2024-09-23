@@ -43,7 +43,12 @@ export const projects = [
     category: 'Servicio Mecánico',
     categories: [1],
     first_description: 'GRUPO INAP, hemos llevado a cabo la transformación completa de la fábrica Caribbean Glass, especializada en la producción de envases de vidrio. Este proyecto integral incluyó la implementación de tecnologías avanzadas y sistemas eficientes que han revolucionado la infraestructura existente:',
-    sec_description: 'GRUPO INAP, hemos llevado a cabo la transformación completa de la fábrica Caribbean Glass, especializada en la producción de envases de vidrio. Este proyecto integral incluyó la implementación de tecnologías avanzadas y sistemas eficientes que han revolucionado la infraestructura existente:',
+    items: [
+      'Sistemas de Aire Comprimido y de Ventilación: Diseñados para maximizar la eficiencia operativa y garantizar condiciones óptimas en el proceso de fabricación.',
+      'Sistemas de Agua Helada y Tratada: Esenciales para mantener los estándares de calidad y seguridad del vidrio producido, asegurando procesos consistentes y eficientes.',
+      'Sistemas de Transporte Automatizado (Conveyors): Estos sistemas facilitan una logística fluida y eficiente dentro de la planta, mejorando significativamente los tiempos de producción y la manipulación de materiales.',
+      'La reingeniería no solo ha incrementado la capacidad de producción sino que también ha fortalecido nuestro compromiso con la sostenibilidad y la innovación, estableciendo nuevos estándares de excelencia en la industria del vidrio.',
+    ],
     images: [],
   },
   {
