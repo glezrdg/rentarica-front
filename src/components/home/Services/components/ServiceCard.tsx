@@ -30,7 +30,7 @@ const ServiceCard: React.FC<IServiceCardProps> = ({
 
       <div className='w-full text-center'>
         <button className='btn-outline ' onClick={() => setVisible(true)}>
-          Conoce mas
+          Conoce Más
         </button>
       </div>
 
@@ -50,10 +50,12 @@ const ServiceCard: React.FC<IServiceCardProps> = ({
               >
                 x
               </div>
-              <img
-                className='w-full h-[400px] object-cover md:w-1/2 md:h-full'
-                src={categories[index].image}
-              />
+              <div className='w-full md:w-1/2  h-[400px] md:h-full'>
+                <img
+                  className='w-full h-full object-cover '
+                  src={categories[index].image}
+                />
+              </div>
               <div className='py-8 px-3'>
                 <div className='b-orange m-auto md:mx-0 rounded-full w-[60px] h-[60px] mb-4 grid place-items-center'>
                   {icon}

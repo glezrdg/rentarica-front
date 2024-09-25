@@ -19,10 +19,10 @@ const Hero = () => {
 
         <div className='text-white flex gap-10'>
           <button className='btn-orange md:w-[200px] !py-3'>
-            Nuestros servicios
+            Nuestros Servicios
           </button>
           <button className='border-2 border-white rounded-3xl md:w-[200px] !py-3'>
-            Proyectos recientes
+            Proyectos Recientes
           </button>
         </div>
       </div>

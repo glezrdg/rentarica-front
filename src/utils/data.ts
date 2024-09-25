@@ -109,7 +109,7 @@ export const projects = [
     title: 'Proyecto Nave Haina',
     category: 'Servicio Mecánico y Civil',
     categories: [1, 2],
-    first_description: 'GRUPO INAP ha completado con éxito el proyecto Nave Haina, una instalación industrial de 125 metros de largo por 40 metros de ancho, ubicada en una posición estratégica para optimizar operaciones de manufactura y almacenamiento. Este proyecto destaca por haber sido diseñado, calculado y construido íntegramente por nuestro equipo, asegurando no solo la funcionalidad sino también la sostenibilidad y seguridad desde su concepción hasta su finalización',
+    first_description: 'GRUPO INAP ha completado con éxito el proyecto Nave Haina, una instalación industrial de 125 metros de largo por 40 metros de ancho, ubicada en una posición estratégica para optimizar operaciones de manufactura y almacenamiento. Este proyecto destaca por haber sido diseñado, calculado y construido íntegramente por nuestro equipo, asegurando no solo la funcionalidad sino también la sostenibilidad y seguridad desde su concepción hasta su finalización.',
     sec_description: 'La estructura fue diseñada desde cero, incluyendo todos los cálculos estructurales y simulaciones de resistencia necesarios para garantizar su integridad bajo diversas condiciones operativas. La implementación de tecnologías de construcción avanzadas y prácticas de ingeniería modernas permitió una ejecución eficaz y rápida del proyecto, con un enfoque constante en minimizar el impacto ambiental y maximizar la seguridad.',
     images: [
       'https://iili.io/dseoisn.jpg',
@@ -187,11 +187,11 @@ export const projects = [
   },
   {
     id: 9,
-    title: 'Sistema de Aire comprimido - Induban',
+    title: 'Sistema de Aire Comprimido - Induban',
     category: 'Servicio Mecánico y Civil',
     categories: [1, 2],
-    first_description: `GRUPO INAP se encargo del diseño e instalación del sistema de aire comprimido para la nueva fábrica de café de Induban. Este proyecto meticuloso involucró cálculos avanzados de mecánica de fluidos para garantizar la adecuada presión de aire a todas las máquinas, crucial para optimizar su rendimiento y eficiencia.`,
-    sec_description: 'Se emplearon modelos CAD de última generación y simulaciones detalladas para prever y ajustar cada aspecto del sistema.La instalación consistió en tuberías de 3 pulgadas diseñadas específicamente para suministrar aire comprimido a la maquinaria expandida en la planta de producción de café, asegurando un funcionamiento impecable y continuo.',
+    first_description: `GRUPO INAP se encargó del diseño e instalación del sistema de aire comprimido para la nueva fábrica de café de Induban. Este proyecto meticuloso involucró cálculos avanzados de mecánica de fluidos para garantizar la adecuada presión de aire a todas las máquinas, crucial para optimizar su rendimiento y eficiencia.`,
+    sec_description: 'Se emplearon modelos CAD de última generación y simulaciones detalladas para prever y ajustar cada aspecto del sistema. La instalación consistió en tuberías de 3 pulgadas diseñadas específicamente para suministrar aire comprimido a la maquinaria expandida en la planta de producción de café, asegurando un funcionamiento impecable y continuo.',
     images: [
       'https://iili.io/dsezwFa.jpg',
       'https://iili.io/dsezNcJ.jpg',

@@ -41,7 +41,7 @@ const ContactUs: React.FC<IContactUsProps> = ({ bg }) => {
   return (
     <section id='contact' className={`py-20 ${bg && bg}`}>
       <div className='text-center mb-10'>
-        <h1 className='font-bold text-4xl mb-4'>Contactanos</h1>
+        <h1 className='font-bold text-4xl mb-4'>Contáctanos</h1>
         <p className='text-slate-400 text-lg'>
           Pellentesque convallis accumsan suscipit aliquet eu diam quis nulla
           turpis.
@@ -67,7 +67,7 @@ const ContactUs: React.FC<IContactUsProps> = ({ bg }) => {
             />
           </div>
           <div className='flex flex-col'>
-            <label className='mb-2'>Numero de telefono</label>
+            <label className='mb-2'>Número de Teléfono</label>
             <input
               name='number'
               value={formData.number}
@@ -78,7 +78,7 @@ const ContactUs: React.FC<IContactUsProps> = ({ bg }) => {
 
         {/* CONTACT MESSAGE */}
         <div className='flex flex-col'>
-          <label className='mb-2'>Enviar un mensaje</label>
+          <label className='mb-2'>Enviar un Mensaje</label>
           <textarea
             className='h-full'
             name='message'
@@ -93,7 +93,7 @@ const ContactUs: React.FC<IContactUsProps> = ({ bg }) => {
           loading={status}
           className='bg-blue-700 text-white w-fit p-2 rounded-xl px-4 ml-auto'
         >
-          Enviar mensaje
+          Enviar Mensaje
         </Button>
       </form>
     </section>

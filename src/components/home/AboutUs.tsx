@@ -12,7 +12,7 @@ const AboutUs = () => {
       />
 
       <div className='text-center md:text-left'>
-        <h3 className='text-xl mb-4'>Nuestro perfil</h3>
+        <h3 className='text-xl mb-4'>Nuestro Perfil</h3>
         <h1 className='text-4xl mb-10 t-blue-dark font-bold'>
           Sobre <span className='t-blue-light'>Nosotros</span>
         </h1>
@@ -20,8 +20,8 @@ const AboutUs = () => {
         <p className='text-lg'>
           Somos una empresa comprometida con el desarrollo y la implementación
           de{' '}
-          <strong>proyectos electromecánicos y civiles de alta calidad.</strong>
-          Contamos con un equipo de profesionales altamente calificados en las
+          <strong>proyectos electromecánicos y civiles de alta calidad</strong>
+          . Contamos con un equipo de profesionales altamente calificados en las
           áreas de mecánica, eléctrica y civil, lo que nos permite ofrecer
           soluciones integrales adaptadas a las necesidades específicas de
           nuestros clientes.

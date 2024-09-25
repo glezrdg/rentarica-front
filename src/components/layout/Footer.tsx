@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
@@ -11,19 +12,27 @@ const Footer = () => {
 
         <div className='flex flex-col text-center md:text-left md:flex-row gap-8 md:gap-10 lg:gap-24 text-slate-300'>
           <div>
-            <h4 className='font-bold text-white'>Navegacion</h4>
+            <h4 className='font-bold text-white'>Navegación</h4>
             <ul>
-              <li>Perfil</li>
-              <li>Servicios</li>
-              <li>Proyectos</li>
-              <li>Contactanos</li>
+              <Link href={'/#perfil'} className='block'>
+                Perfil
+              </Link>
+              <Link href={'/#services'} className='block'>
+                Servicios
+              </Link>
+              <Link href={'/#projects'} className='block'>
+                Proyectos
+              </Link>
+              <Link href={'/#contact'} className='block'>
+                Contáctanos
+              </Link>
             </ul>
           </div>
           <div>
             <h4 className='font-bold text-white'>Contacto</h4>
             <ul>
-              <li>829-895-8965</li>
-              <li>Correo@email.com</li>
+              <li>+1 (809) 902-8318</li>
+              <li>ventas@inaprd.com</li>
               <li>grupoinap.com</li>
             </ul>
           </div>

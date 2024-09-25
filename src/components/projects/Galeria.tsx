@@ -39,6 +39,8 @@ export default function Galeria(props: any) {
         showItemNavigatorsOnHover
         autoPlay
         showItemNavigators
+        onItemChange={(e) => setSelectedImage(e.index)}
+        activeIndex={selectedImage}
         circular
         indicator={(index) => (
           <div

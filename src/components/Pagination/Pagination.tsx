@@ -25,7 +25,7 @@ const Pagination: React.FC<IPaginationProps> = (props) => {
           className='min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 text-sm rounded-lg !text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10'
           aria-label='Previous'
         >
-          <svg
+          {/* <svg
             className='shrink-0 size-3.5'
             xmlns='http://www.w3.org/2000/svg'
             width='24'
@@ -38,8 +38,8 @@ const Pagination: React.FC<IPaginationProps> = (props) => {
             strokeLinejoin='round'
           >
             <path d='m15 18-6-6 6-6'></path>
-          </svg>
-          <span>Anterior</span>
+          </svg> */}
+          {/* <span>Anterior</span> */}
         </button>
         <div className='flex items-center gap-x-1'>
           <button
@@ -55,8 +55,8 @@ const Pagination: React.FC<IPaginationProps> = (props) => {
           className='min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 text-sm rounded-lg !text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10'
           aria-label='Next'
         >
-          <span>Siguiente</span>
-          <svg
+          {/* <span>Siguiente</span> */}
+          {/* <svg
             className='shrink-0 size-3.5'
             xmlns='http://www.w3.org/2000/svg'
             width='24'
@@ -69,7 +69,7 @@ const Pagination: React.FC<IPaginationProps> = (props) => {
             strokeLinejoin='round'
           >
             <path d='m9 18 6-6-6-6'></path>
-          </svg>
+          </svg> */}
         </button>
       </nav>
     </div>

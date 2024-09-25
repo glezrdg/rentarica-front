@@ -28,7 +28,7 @@ const Header = () => {
         <Link href={'/'}>
           <img
             className='w-[100px] md:w-[120px]'
-            src='/assets/logos/logo_light.png'
+            src={`/assets/logos/logo_${scrollNav ? 'light' : 'dark'}.png`}
           />
         </Link>
 

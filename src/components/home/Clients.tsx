@@ -8,7 +8,7 @@ const Clients = () => {
     >
       <div>
         <h1 className='text-center text-white font-bold text-3xl mb-16 xl:mb-12'>
-          Compañias que confian en nosotros
+          Compañías que confían en nosotros
         </h1>
 
         <div className='flex flex-col md:flex-row justify-center items-center gap-24 md:gap-16 xl:gap-32'>

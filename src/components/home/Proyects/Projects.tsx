@@ -29,7 +29,7 @@ const Projects: React.FC<IProjectsProps> = (props) => {
           href={'/projects'}
           className='btn-outline block w-fit m-auto !border-blue-950 text-blue-950'
         >
-          Conoce mas
+          Conoce Más
         </Link>
       </div>
     </section>
