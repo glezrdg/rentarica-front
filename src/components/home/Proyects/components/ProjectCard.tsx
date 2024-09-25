@@ -13,10 +13,7 @@ const ProjectCard: React.FC<IProjectCardProps> = ({ project }) => {
       </div>
       {/* IMAGE */}
       <div className='mb-4'>
-        <img
-          className='h-[200px] w-full'
-          src='https://as1.ftcdn.net/v2/jpg/02/91/45/12/1000_F_291451260_DTtmKxG4ph9X8FP22HawITByfdPDG5ZK.jpg'
-        />
+        <img className='h-[200px] w-full' src={project.images[0]} />
       </div>
 
       {/* CONTENT */}

@@ -19,8 +19,7 @@ const index = () => {
         className='w-full h-[60vh] text-white'
         style={{
           backgroundRepeat: 'no-repeat',
-          backgroundImage:
-            'url(https://paladinsecurity.com/wp-content/uploads/2020/06/shivendu-shukla-3yoTPuYR9ZY-unsplash.png)',
+          backgroundImage: `url(${project?.images[0]})`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         }}
@@ -48,7 +47,7 @@ const index = () => {
             ))}
           </ul>
         </div>
-        <Galeria />
+        <Galeria images={project?.images} />
         {/* <img
           className='w-[100%] rounded-3xl text-center'
           src='https://as1.ftcdn.net/v2/jpg/02/91/45/12/1000_F_291451260_DTtmKxG4ph9X8FP22HawITByfdPDG5ZK.jpg'

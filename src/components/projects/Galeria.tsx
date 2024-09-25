@@ -1,25 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { Galleria } from 'primereact/galleria'
 
-export default function Galeria() {
+export default function Galeria(props: any) {
   const [selectedImage, setSelectedImage] = useState(0)
   const [images, setImages] = useState([
-    {
-      itemImageSrc:
-        'https://as1.ftcdn.net/v2/jpg/02/91/45/12/1000_F_291451260_DTtmKxG4ph9X8FP22HawITByfdPDG5ZK.jpg',
-      thumbnailImageSrc:
-        'https://primefaces.org/cdn/primereact/images/galleria/galleria1s.jpg',
-      alt: 'Description for Image 1',
-      title: 'Title 1',
-    },
-    {
-      itemImageSrc:
-        'https://paladinsecurity.com/wp-content/uploads/2020/06/shivendu-shukla-3yoTPuYR9ZY-unsplash.png',
-      thumbnailImageSrc:
-        'https://primefaces.org/cdn/primereact/images/galleria/galleria1s.jpg',
-      alt: 'Description for Image 1',
-      title: 'Title 1',
-    },
     {
       itemImageSrc:
         'https://as1.ftcdn.net/v2/jpg/02/91/45/12/1000_F_291451260_DTtmKxG4ph9X8FP22HawITByfdPDG5ZK.jpg',
@@ -43,7 +27,12 @@ export default function Galeria() {
   return (
     <div className='card'>
       <Galleria
-        value={images}
+        value={props?.images?.map((p: any) => ({
+          itemImageSrc: p,
+          thumbnailImageSrc: p,
+          alt: 'Description for Image 1',
+          title: 'Title 1',
+        }))}
         className='w-[100%] rounded-3xl text-center'
         showThumbnails={false}
         showIndicators
