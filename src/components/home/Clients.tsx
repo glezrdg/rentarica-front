@@ -24,6 +24,10 @@ const Clients = () => {
             className='w-[160px] md:w-[200px]'
             src='/assets/home_images/clients/tinflex.png'
           />
+          <img
+            className='w-[160px] md:w-[200px]'
+            src='https://iili.io/dse375X.png '
+          />
         </div>
       </div>
     </section>

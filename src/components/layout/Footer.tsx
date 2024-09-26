@@ -39,9 +39,21 @@ const Footer = () => {
           <div>
             <h4 className='font-bold text-white'>Redes Sociales</h4>
             <ul>
-              <li>Linkdin</li>
-              <li>Instagram</li>
-              <li>Facebook</li>
+              <Link href={'/'} target='_blank' className='block'>
+                Linkedin
+              </Link>
+              <Link
+                href={
+                  'https://www.instagram.com/grupoinap?igsh=MWlrbGtudDFvcG4xcg%3D%3D&utm_source=qr'
+                }
+                target='_blank'
+                className='block'
+              >
+                Instagram
+              </Link>
+              <Link href={'/'} target='_blank' className='block'>
+                Facebook
+              </Link>
             </ul>
           </div>
         </div>

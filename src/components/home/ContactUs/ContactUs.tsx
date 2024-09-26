@@ -43,8 +43,8 @@ const ContactUs: React.FC<IContactUsProps> = ({ bg }) => {
       <div className='text-center mb-10'>
         <h1 className='font-bold text-4xl mb-4'>Contáctanos</h1>
         <p className='text-slate-400 text-lg'>
-          Pellentesque convallis accumsan suscipit aliquet eu diam quis nulla
-          turpis.
+          ¿Tienes dudas? Para consultas o más información sobre nuestros
+          servicios, ¡envíanos un mensaje!
         </p>
       </div>
 

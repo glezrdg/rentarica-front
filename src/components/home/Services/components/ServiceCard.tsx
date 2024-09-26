@@ -50,13 +50,13 @@ const ServiceCard: React.FC<IServiceCardProps> = ({
               >
                 x
               </div>
-              <div className='w-full md:w-1/2  h-[400px] md:h-full'>
+              <div className='w-full md:w-1/2  h-[400px] md:h-full flex-1'>
                 <img
-                  className='w-full h-full object-cover '
+                  className='w-full h-full object-cover'
                   src={categories[index].image}
                 />
               </div>
-              <div className='py-8 px-3'>
+              <div className='py-8 px-3 flex-1'>
                 <div className='b-orange m-auto md:mx-0 rounded-full w-[60px] h-[60px] mb-4 grid place-items-center'>
                   {icon}
                 </div>

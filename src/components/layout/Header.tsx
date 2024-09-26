@@ -1,5 +1,6 @@
+import ScrollWithOffsetLink from '@/hooks/ScrollWithOffsetLink'
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const Header = () => {
   const [mobileNav, setMobileNav] = useState(false)
@@ -25,12 +26,12 @@ const Header = () => {
     >
       <nav className='flex items-center justify-between h-full  container m-auto px-4 xl:px-10'>
         {/* LOGO */}
-        <Link href={'/'}>
+        <ScrollWithOffsetLink offset={80} href={'/#home'}>
           <img
             className='w-[100px] md:w-[120px]'
             src={`/assets/logos/logo_${scrollNav ? 'light' : 'dark'}.png`}
           />
-        </Link>
+        </ScrollWithOffsetLink>
 
         <i
           onClick={() => setMobileNav(!mobileNav)}
@@ -39,23 +40,43 @@ const Header = () => {
           } hover:text-orange-600`}
         />
 
-        {/* NAVIGATION LINKS */}
+        {/* NAVIGATION ScrollWithOffsetLinkS */}
         <ul className='items-center gap-5 lg:gap-8 hidden md:flex'>
-          <Link href={'/#perfil'} className='cursor-pointer'>
+          <ScrollWithOffsetLink
+            offset={80}
+            href={'/#perfil'}
+            className='cursor-pointer'
+          >
             Perfil
-          </Link>
-          <Link href={'/#services'} className='cursor-pointer'>
+          </ScrollWithOffsetLink>
+          <ScrollWithOffsetLink
+            offset={80}
+            href={'/#services'}
+            className='cursor-pointer'
+          >
             Servicios
-          </Link>
-          <Link href={'/#projects'} className='cursor-pointer'>
+          </ScrollWithOffsetLink>
+          <ScrollWithOffsetLink
+            offset={80}
+            href={'/#projects'}
+            className='cursor-pointer'
+          >
             Proyectos
-          </Link>
-          <Link href={'/#clients'} className='cursor-pointer'>
+          </ScrollWithOffsetLink>
+          <ScrollWithOffsetLink
+            offset={80}
+            href={'/#clients'}
+            className='cursor-pointer'
+          >
             Clientes
-          </Link>
-          <Link href={'/#contact'} className='btn-orange !px-3 !py-3'>
+          </ScrollWithOffsetLink>
+          <ScrollWithOffsetLink
+            href={'/#contact'}
+            offset={80}
+            className='btn-orange !px-3 !py-3'
+          >
             Contáctanos
-          </Link>
+          </ScrollWithOffsetLink>
         </ul>
       </nav>
 
@@ -65,41 +86,46 @@ const Header = () => {
         } `}
       >
         <ul className='grid h-[60%] place-items-center text-white gap-0 lg:gap-8'>
-          <Link
+          <ScrollWithOffsetLink
             onClick={() => setMobileNav(false)}
             href={'/#perfil'}
             className='cursor-pointer'
+            offset={80}
           >
             Perfil
-          </Link>
-          <Link
+          </ScrollWithOffsetLink>
+          <ScrollWithOffsetLink
             onClick={() => setMobileNav(false)}
             href={'/#services'}
             className='cursor-pointer'
+            offset={80}
           >
             Servicios
-          </Link>
-          <Link
+          </ScrollWithOffsetLink>
+          <ScrollWithOffsetLink
             onClick={() => setMobileNav(false)}
             href={'/#projects'}
             className='cursor-pointer'
+            offset={80}
           >
             Proyecto
-          </Link>
-          <Link
+          </ScrollWithOffsetLink>
+          <ScrollWithOffsetLink
             onClick={() => setMobileNav(false)}
             href={'/#clients'}
             className='cursor-pointer'
+            offset={80}
           >
             Clientes
-          </Link>
-          <Link
+          </ScrollWithOffsetLink>
+          <ScrollWithOffsetLink
             onClick={() => setMobileNav(false)}
+            offset={80}
             href={'/#contact'}
             className='btn-orange !bg-white !text-orange-600 !px-3 !py-3'
           >
-            Contactanos
-          </Link>
+            Contáctanos
+          </ScrollWithOffsetLink>
         </ul>
       </div>
     </header>
