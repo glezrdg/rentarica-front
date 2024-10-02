@@ -1,21 +1,44 @@
+import React, { useState } from 'react'
 import ScrollWithOffsetLink from '@/hooks/ScrollWithOffsetLink'
-import React from 'react'
+import { Galleria } from 'primereact/galleria'
 
 const Hero = () => {
+  const [selectedImage, setSelectedImage] = useState(0)
+
+  const images = [
+    'https://iili.io/dthmYPV.jpg',
+    'https://iili.io/dthmSNs.jpg',
+    'https://iili.io/dthmrxf.jpg',
+  ]
+
+  const itemTemplate = (item: any) => {
+    return (
+      <img
+        src={item.itemImageSrc}
+        alt={item.alt}
+        className='w-[100vw] h-[100vh] text-center object-cover'
+      />
+    )
+  }
   return (
-    <div
-      className='w-full h-[100vh]'
-      id='home'
-      style={{
-        backgroundRepeat: 'no-repeat',
-        backgroundImage:
-          'url(https://paladinsecurity.com/wp-content/uploads/2020/06/shivendu-shukla-3yoTPuYR9ZY-unsplash.png)',
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-      }}
-    >
-      <div className='flex flex-col gap-10 justify-center items-center h-full bg-black bg-opacity-50'>
-        <h1 className='text-4xl md:text-6xl w-[70%] text-white font-bold text-center leading-10 md:leading-[70px]'>
+    <div className='relative'>
+      <Galleria
+        value={images?.map((p: any) => ({
+          itemImageSrc: p,
+          thumbnailImageSrc: p,
+          alt: 'Description for Image 1',
+          title: 'Title 1',
+        }))}
+        className='w-[100%] h-[100vh] text-center'
+        showThumbnails={false}
+        autoPlay
+        onItemChange={(e) => setSelectedImage(e.index)}
+        activeIndex={selectedImage}
+        circular
+        item={itemTemplate}
+      />
+      <div className='absolute inset-0 flex flex-col gap-10 justify-center items-center bg-black bg-opacity-50'>
+        <h1 className='text-4xl md:text-6xl md:w-[70%] text-white font-bold text-center leading-10 md:leading-[70px]'>
           Soluciones Electromecánicas y Civiles
         </h1>
 

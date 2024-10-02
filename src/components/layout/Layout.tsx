@@ -16,6 +16,7 @@ const Layout = ({ children }: LayoutProps) => {
       <Link
         href={'https://wa.me/18099028318'}
         className='z-50 bottom-10 fixed right-5 '
+        target='_blank'
       >
         <img
           className='w-[60px] lg:w-[80px] cursor-pointer'

@@ -17,9 +17,9 @@ const Hero = () => {
           Proyectos
         </h1>
 
-        {/* <p className='leading-8 text-xl w-[50%] text-center'>
+        <p className='leading-8 text-xl w-[50%] text-center'>
           Pellentesque convallis accumsan suscipit aliquet eu diam quis nulla
-        </p> */}
+        </p>
       </div>
     </div>
   )

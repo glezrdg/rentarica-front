@@ -51,9 +51,6 @@ const Footer = () => {
               >
                 Instagram
               </Link>
-              <Link href={'/'} target='_blank' className='block'>
-                Facebook
-              </Link>
             </ul>
           </div>
         </div>

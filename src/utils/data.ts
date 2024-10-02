@@ -120,6 +120,7 @@ export const projects = [
       'https://iili.io/dseoZgf.jpg',
 
     ],
+    on_build: true
   },
   {
     id: 5,
@@ -194,24 +195,8 @@ export const projects = [
     sec_description: 'Se emplearon modelos CAD de última generación y simulaciones detalladas para prever y ajustar cada aspecto del sistema. La instalación consistió en tuberías de 3 pulgadas diseñadas específicamente para suministrar aire comprimido a la maquinaria expandida en la planta de producción de café, asegurando un funcionamiento impecable y continuo.',
     images: [
       'https://iili.io/dsezwFa.jpg',
-      'https://iili.io/dsezNcJ.jpg',
-      'https://iili.io/dsezk9R.jpg',
-      'https://iili.io/dsezO8v.jpg',
-      'https://iili.io/dsezvup.jpg',
-      'https://iili.io/dsez8wN.jpg',
-      'https://iili.io/dsezStI.jpg',
-      'https://iili.io/dsezgnt.jpg',
-      'https://iili.io/dsez4Pn.jpg',
-      'https://iili.io/dsezicG.jpg',
-      'https://iili.io/dsezPFs.jpg',
-      'https://iili.io/dsezsSf.jpg',
-      'https://iili.io/dsezQ94.jpg',
-      'https://iili.io/dsezZAl.jpg',
-      'https://iili.io/dseztN2.jpg',
-      'https://iili.io/dsezDtS.jpg',
-      'https://iili.io/dsezmo7.jpg',
-      'https://iili.io/dsezpV9.jpg',
 
     ],
+    on_build: true
   },
 ]
