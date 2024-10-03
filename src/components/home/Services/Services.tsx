@@ -24,7 +24,7 @@ const Services: React.FC<IServicesProps> = (props) => {
           <ServiceCard
             title={categories[0].name}
             index={0}
-            description='Ofrecemos soluciones mecánicas completas que incluyen montaje, fabricación y mantenimiento de equipos y estructuras industriales. Nuestros servicios están diseñados para mejorar la eficiencia y la funcionalidad de sus instalaciones'
+            description='Ofrecemos soluciones mecánicas completas que incluyen montaje, fabricación y mantenimiento de equipos y estructuras industriales. Nuestros servicios están diseñados para mejorar la eficiencia y la funcionalidad de sus instalaciones.'
             icon={
               <svg
                 width='40'
@@ -73,13 +73,13 @@ const Services: React.FC<IServicesProps> = (props) => {
                 </defs>
               </svg>
             }
-            description='Proporcionamos servicios de diseño, construcción y rehabilitación de infraestructuras civiles. Nos especializamos en la construcción de edificios industriales y comerciales, así como en el desarrollo de proyectos de infraestructura de alta calidad y durabilidad'
+            description='Proporcionamos servicios de diseño, construcción y rehabilitación de infraestructuras civiles. Nos especializamos en la construcción de edificios industriales y comerciales, así como en el desarrollo de proyectos de infraestructura de alta calidad y durabilidad.'
           />
           <ServiceCard
             className='md:col-span-2 lg:col-span-1'
             title={categories[2].name}
             index={2}
-            description='Brindamos servicios de mantenimiento integral que incluyen tratamiento contra la corrosión, limpieza industrial y señalización de procesos. Nuestro objetivo es garantizar el óptimo funcionamiento y prolongar la vida útil de sus equipos'
+            description='Brindamos servicios de mantenimiento integral que incluyen tratamiento contra la corrosión, limpieza industrial y señalización de procesos. Nuestro objetivo es garantizar el óptimo funcionamiento y prolongar la vida útil de sus equipos.'
             icon={
               <svg
                 width='40'

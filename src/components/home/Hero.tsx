@@ -46,14 +46,14 @@ const Hero = () => {
           <ScrollWithOffsetLink
             href='/#services'
             offset={80}
-            className='btn-orange text-center md:w-[200px] !py-3'
+            className='btn-orange p-3 text-center md:w-[200px] !py-3'
           >
             Nuestros Servicios
           </ScrollWithOffsetLink>
           <ScrollWithOffsetLink
             href='/#projects'
             offset={80}
-            className='border-2 text-center border-white rounded-3xl md:w-[200px] !py-3'
+            className='border-2 p-3 text-center border-white rounded-3xl md:w-[200px] !py-3'
           >
             Proyectos Recientes
           </ScrollWithOffsetLink>
