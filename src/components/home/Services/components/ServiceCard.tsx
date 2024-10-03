@@ -26,7 +26,7 @@ const ServiceCard: React.FC<IServiceCardProps> = ({
       </div>
 
       <h3 className='text-lg font-bold mb-3 text-center'>{title}</h3>
-      <p className='mb-4 text-center lg:text-justify'>{description}</p>
+      <p className='mb-4 text-justify'>{description}</p>
 
       <div className='w-full text-center'>
         <button className='btn-outline ' onClick={() => setVisible(true)}>
