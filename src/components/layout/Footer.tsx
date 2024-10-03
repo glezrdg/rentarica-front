@@ -39,7 +39,11 @@ const Footer = () => {
           <div>
             <h4 className='font-bold text-white'>Redes Sociales</h4>
             <ul>
-              <Link href={'/'} target='_blank' className='block'>
+              <Link
+                href={'https://www.linkedin.com/company/grupo-inap/about/'}
+                target='_blank'
+                className='block'
+              >
                 Linkedin
               </Link>
               <Link

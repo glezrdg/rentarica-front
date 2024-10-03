@@ -34,7 +34,7 @@ const index = () => {
           </div>
           {project?.on_build && (
             <div className='bg-slate-100 p-1 px-3 rounded-2xl text-lg b-orange text-white'>
-              En Construcción
+              En Curso
             </div>
           )}
         </div>
