@@ -6,8 +6,7 @@ const Hero = () => {
       className='w-full h-[60vh] text-white'
       style={{
         backgroundRepeat: 'no-repeat',
-        backgroundImage:
-          'url(https://paladinsecurity.com/wp-content/uploads/2020/06/shivendu-shukla-3yoTPuYR9ZY-unsplash.png)',
+        backgroundImage: 'url(https://iili.io/dthmSNs.jpg)',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
       }}
@@ -16,10 +15,6 @@ const Hero = () => {
         <h1 className='text-4xl md:text-5xl lg:text-6xl w-[70%] text-white font-bold text-center leading-[70px]'>
           Proyectos
         </h1>
-
-        <p className='leading-8 text-xl w-[50%] text-center'>
-          Pellentesque convallis accumsan suscipit aliquet eu diam quis nulla
-        </p>
       </div>
     </div>
   )

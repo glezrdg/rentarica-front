@@ -9,7 +9,7 @@ interface IProjectsProps {
 
 const Projects: React.FC<IProjectsProps> = (props) => {
   return (
-    <section id='projects' className='container m-auto px-4 xl:px-10'>
+    <section id='projects' className='container m-auto px-4 xl:px-0'>
       {/* PROJECTS HEADER */}
       <div className='h-[25vh] border-b-2 border-slate-300 flex flex-col items-center justify-center mb-10 m-auto'>
         <p className='text-slate-500 text-base mb-6'>Nuestro Portafolio</p>

@@ -9,7 +9,7 @@ interface IServicesProps {
 const Services: React.FC<IServicesProps> = (props) => {
   return (
     <section id='services' className=' b-blue-dark text-white !py-20'>
-      <div className='container m-auto px-4 xl:px-10'>
+      <div className='container m-auto px-4 xl:px-0'>
         <div className='text-center mb-16'>
           <h1 className='text-4xl md:text-5xl mb-4'>
             ¿Qué <span className='t-orange'>ofrecemos</span>?
@@ -20,7 +20,7 @@ const Services: React.FC<IServicesProps> = (props) => {
           </p>
         </div>
 
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-14 xl:gap-6 w-full place-items-center'>
+        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-14 xl:gap-24 w-full m-auto place-items-center'>
           <ServiceCard
             title={categories[0].name}
             index={0}

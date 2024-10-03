@@ -20,11 +20,11 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed  w-[100vw] z-50 h-[85px] transition-all duration-300 md:h-[100px] ${
+      className={`fixed w-[100vw] z-50 h-[85px] transition-all duration-300 md:h-[100px] ${
         scrollNav ? 'bg-white text-black' : 'text-white'
       }`}
     >
-      <nav className='flex items-center justify-between h-full  container m-auto px-4 xl:px-10'>
+      <nav className='flex items-center justify-between h-full  container m-auto px-4 lg:px-0'>
         {/* LOGO */}
         <ScrollWithOffsetLink offset={80} href={'/#home'}>
           <img

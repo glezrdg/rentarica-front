@@ -22,7 +22,7 @@ const ProjectCard: React.FC<IProjectCardProps> = ({ project }) => {
       {/* CONTENT */}
       <div className='px-8 pb-2'>
         <h1 className='font-bold text-base mb-2'>{project.title}</h1>
-        <p className='mb-6 text-xs text-slate-500 line-clamp-3'>
+        <p className='mb-6 text-xs text-slate-500 line-clamp-3 text-justify'>
           {project.first_description}
         </p>
       </div>

@@ -42,11 +42,13 @@ const index = () => {
 
       <div className='grid lg:grid-cols-[40%_1fr] gap-12 my-14 place-items-center container mx-auto px-4 xl:px-10'>
         <div>
-          <p className='text-xl leading-10 py-6'>
+          <p className='text-xl leading-10 py-6 text-justify'>
             {project?.first_description}
           </p>
-          <p className='text-xl leading-10'>{project?.sec_description}</p>
-          <ul className='text-xl list-disc leading-10 p-4'>
+          <p className='text-xl leading-10 text-justify'>
+            {project?.sec_description}
+          </p>
+          <ul className='text-xl list-disc text-justify leading-10 p-4'>
             {project?.items?.map((i) => (
               <li className='list-item'>{i}</li>
             ))}

@@ -4,20 +4,20 @@ const AboutUs = () => {
   return (
     <section
       id='perfil'
-      className='flex flex-col md:flex-row items-center gap-16 md:gap-36 lg:h-[100vh] container m-auto px-4 xl:px-10 mt-10 mb-6 xl:mb-0'
+      className='flex flex-col md:flex-row items-center gap-16  lg:h-[90vh] container  m-auto px-4 xl:px-0 mt-10 mb-6 xl:mb-0'
     >
       <img
-        className='w-[40%]'
+        className='w-[25%]'
         src='/assets/logos/logo_without_text_light.png'
       />
 
       <div className='text-center md:text-left'>
         <h3 className='text-xl mb-4'>Nuestro Perfil</h3>
-        <h1 className='text-4xl mb-10 t-blue-dark font-bold'>
+        <h1 className='text-4xl mb-8 t-blue-dark font-bold'>
           Sobre <span className='t-blue-light'>Nosotros</span>
         </h1>
 
-        <p className='text-lg'>
+        <p className='text-lg text-justify'>
           Somos una empresa comprometida con el desarrollo y la implementación
           de{' '}
           <strong>proyectos electromecánicos y civiles de alta calidad</strong>

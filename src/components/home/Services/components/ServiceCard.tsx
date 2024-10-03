@@ -26,7 +26,7 @@ const ServiceCard: React.FC<IServiceCardProps> = ({
       </div>
 
       <h3 className='text-lg font-bold mb-3 text-center'>{title}</h3>
-      <p className='mb-4 text-center'>{description}</p>
+      <p className='mb-4 text-center lg:text-justify'>{description}</p>
 
       <div className='w-full text-center'>
         <button className='btn-outline ' onClick={() => setVisible(true)}>
@@ -64,7 +64,7 @@ const ServiceCard: React.FC<IServiceCardProps> = ({
                 <h3 className='text-lg font-bold mb-3 text-center md:text-left'>
                   {title}
                 </h3>
-                <p className='mb-4 text-center md:text-left'>
+                <p className='mb-4 text-center md:text-left '>
                   {categories[index].description}
                 </p>
                 <ul className='text-[14px] p-4'>

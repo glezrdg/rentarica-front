@@ -40,7 +40,7 @@ const index = () => {
     <>
       <Hero />
 
-      <div className='h-[20vh] lg:h-[30vh] flex flex-col md:flex-row items-center md:gap-6 justify-evenly md:justify-between container m-auto px-2 xl:px-10'>
+      <div className='h-[20vh] lg:h-[30vh] flex flex-col md:flex-row items-center md:gap-6 justify-evenly md:justify-between container m-auto px-2 xl:px-0'>
         <div className='flex gap-6'>
           <div className='flex items-center shadow-xl rounded-full h-[50px] md:h-[60px] lg:h-[70px] w-[80vw] md:w-[60vw] lg:w-[50vw] border border-slate-200 overflow-hidden'>
             <i className='pi pi-search ml-4 text-xl text-slate-600' />
@@ -75,8 +75,8 @@ const index = () => {
       </div>
 
       {/* PROJECTS CARDS */}
-      <div className='container px-4 xl:px-10 m-auto mb-10'>
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10'>
+      <div className='container px-4 xl:px-0 m-auto mb-10'>
+        <div className='grid w-full md:grid-cols-2 lg:grid-cols-3 gap-10'>
           {searchProjects.length ? (
             <>
               {searchProjects.map((p) => (

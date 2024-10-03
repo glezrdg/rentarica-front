@@ -15,11 +15,11 @@ const Layout = ({ children }: LayoutProps) => {
       <Footer />
       <Link
         href={'https://wa.me/18099028318'}
-        className='z-50 bottom-10 fixed right-5 '
+        className='z-50 bottom-10 fixed right-5'
         target='_blank'
       >
         <img
-          className='w-[60px] lg:w-[80px] cursor-pointer'
+          className='w-[60px] cursor-pointer'
           src='https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png'
         />
       </Link>
