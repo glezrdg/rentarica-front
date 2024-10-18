@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang='en'>
       <Head>
-        <title>Grupo INAP</title>
+        <title>Rentarica</title>
         <link
           rel='icon'
           href='/assets/logos/logo_without_text_light.png'

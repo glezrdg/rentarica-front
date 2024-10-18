@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -12,11 +14,16 @@ html {
 }
 
 
+
 @layer components{
   .container {
     @apply 
     xl:w-[95%]
   }
+}
+
+.p-galleria-thumbnail-container {
+  background: transparent;
 }
 
 
@@ -28,48 +35,20 @@ html {
 } */
 
 /* COLORS */
-
-.t-orange {
-  color: #FE5000;
-}
-.b-orange {
-  background-color: #FE5000;
-}
-
-.t-blue-dark {
-  color: #041E42;
-}
-.b-blue-dark {
-  background-color: #041E42;
+.background-image {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
 }
 
-.t-blue-light {
-  color: #1747C9;
-}
-.b-blue-light {
-  background-color: #1747C9;
-}
 
-/* BUTTON */
-
-.btn-orange {
+.super-shadow {
   @apply
-  b-orange
-  text-white
-  p-3
-  px-3
-  rounded-3xl
-  cursor-pointer
+  shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]
 }
 
-.btn-outline {
-  @apply
-  border-2
-  border-white
-  rounded-3xl
-  w-[200px]
-  py-3
-}
+
 
 /* INPUT */
 

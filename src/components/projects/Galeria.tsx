@@ -19,7 +19,16 @@ export default function Galeria(props: any) {
       <img
         src={item.itemImageSrc}
         alt={item.alt}
-        className='w-[100%] h-[300px] md:h-[450px] lg:h-[650px] rounded-3xl text-center'
+        className='w-[100%] h-[300px] md:h-[450px] lg:h-[650px] rounded-3xl text-center object-contain'
+      />
+    )
+  }
+  const thumbItemTemplate = (item: any) => {
+    return (
+      <img
+        src={item.itemImageSrc}
+        alt={item.alt}
+        className='h-[100px] text-center object-contain'
       />
     )
   }
@@ -34,24 +43,16 @@ export default function Galeria(props: any) {
           title: 'Title 1',
         }))}
         className='w-[100%] rounded-3xl text-center'
-        showThumbnails={false}
-        showIndicators
         showItemNavigatorsOnHover
         autoPlay
         showItemNavigators
         onItemChange={(e) => setSelectedImage(e.index)}
         activeIndex={selectedImage}
         circular
-        indicator={(index) => (
-          <div
-            style={{ cursor: 'pointer' }}
-            onClick={() => setSelectedImage(index)}
-            className={`h-3 w-3 rounded-full bg-slate-400 mt-2 ${
-              selectedImage === index && 'bg-slate-500'
-            }`}
-          ></div>
-        )}
         item={itemTemplate}
+        thumbnail={thumbItemTemplate}
+        showThumbnails
+        numVisible={6}
       />
     </div>
   )

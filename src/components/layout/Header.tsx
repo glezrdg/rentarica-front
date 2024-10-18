@@ -1,10 +1,13 @@
 import ScrollWithOffsetLink from '@/hooks/ScrollWithOffsetLink'
 import Link from 'next/link'
+import { Dropdown } from 'primereact/dropdown'
 import { useEffect, useState } from 'react'
 
 const Header = () => {
   const [mobileNav, setMobileNav] = useState(false)
   const [scrollNav, setScrollNav] = useState(false)
+
+  const [language, setLanguage] = useState('ES')
 
   useEffect(() => {
     window.addEventListener('scroll', changeNav)
@@ -20,16 +23,16 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed w-[100vw] z-50 h-[85px] transition-all duration-300 md:h-[100px] ${
-        scrollNav ? 'bg-white text-black' : 'text-white'
+      className={`fixed w-[100vw] bg-white z-50 h-[85px] transition-all duration-300 md:h-[120px] ${
+        scrollNav ? ' text-black shadow-md' : ''
       }`}
     >
       <nav className='flex items-center justify-between h-full  container m-auto px-4 lg:px-0'>
         {/* LOGO */}
         <ScrollWithOffsetLink offset={80} href={'/#home'}>
           <img
-            className='w-[100px] md:w-[120px]'
-            src={`/assets/logos/logo_${scrollNav ? 'light' : 'dark'}.png`}
+            className='w-[100px] md:w-[200px]'
+            src={`https://static.wixstatic.com/media/ae56f5_2c84bc9055b94c9b97193cea332fe85e~mv2.png/v1/fill/w_248,h_87,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Asset%201.png`}
           />
         </ScrollWithOffsetLink>
 
@@ -42,42 +45,34 @@ const Header = () => {
 
         {/* NAVIGATION ScrollWithOffsetLinkS */}
         <ul className='items-center gap-5 lg:gap-8 hidden md:flex'>
-          <ScrollWithOffsetLink
-            offset={80}
-            href={'/#perfil'}
-            className='cursor-pointer'
-          >
-            Perfil
-          </ScrollWithOffsetLink>
-          <ScrollWithOffsetLink
-            offset={80}
-            href={'/#services'}
-            className='cursor-pointer'
-          >
-            Servicios
-          </ScrollWithOffsetLink>
+          <Link href={'/projects'} className='cursor-pointer'>
+            Compra | Alquila
+          </Link>
+          <Link href={'/register'} className='cursor-pointer'>
+            Registra Tu Propiedad
+          </Link>
           <ScrollWithOffsetLink
             offset={80}
             href={'/#projects'}
             className='cursor-pointer'
           >
-            Proyectos
-          </ScrollWithOffsetLink>
-          <ScrollWithOffsetLink
-            offset={80}
-            href={'/#clients'}
-            className='cursor-pointer'
-          >
-            Clientes
-          </ScrollWithOffsetLink>
-          <ScrollWithOffsetLink
-            href={'/#contact'}
-            offset={80}
-            className='btn-orange !px-3 !py-3'
-          >
-            Contáctanos
+            Invierte Ahora
           </ScrollWithOffsetLink>
         </ul>
+        <div className='flex items-center gap-3'>
+          <Dropdown
+            className='h-9'
+            options={['ES', 'EN']}
+            value={language}
+            onChange={(e) => setLanguage(e.target.value)}
+          />
+          <Link href={'https://wa.me/18099028318'} className='' target='_blank'>
+            <img
+              className='w-[30px] cursor-pointer'
+              src='https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png'
+            />
+          </Link>
+        </div>
       </nav>
 
       <div

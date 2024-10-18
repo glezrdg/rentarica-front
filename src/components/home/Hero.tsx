@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ScrollWithOffsetLink from '@/hooks/ScrollWithOffsetLink'
 import { Galleria } from 'primereact/galleria'
+import { noto, noto_200, noto_thin } from '@/utils/fonts'
 
 const Hero = () => {
   const [selectedImage, setSelectedImage] = useState(0)
@@ -22,41 +23,28 @@ const Hero = () => {
   }
   return (
     <div className='relative'>
-      <Galleria
-        value={images?.map((p: any) => ({
-          itemImageSrc: p,
-          thumbnailImageSrc: p,
-          alt: 'Description for Image 1',
-          title: 'Title 1',
-        }))}
-        className='w-[100%] h-[100vh] text-center'
-        showThumbnails={false}
-        autoPlay
-        onItemChange={(e) => setSelectedImage(e.index)}
-        activeIndex={selectedImage}
-        circular
-        item={itemTemplate}
-      />
-      <div className='absolute inset-0 flex flex-col gap-10 justify-center items-center bg-black bg-opacity-50'>
-        <h1 className='text-4xl md:text-6xl md:w-[70%] text-white font-bold text-center leading-10 md:leading-[70px]'>
-          Soluciones Electromecánicas y Civiles
+      <video className='h-[117vh] w-[100vw]' autoPlay loop>
+        <source
+          src='https://video.wixstatic.com/video/11062b_43edac00571f4b05bb740639157efecd/1080p/mp4/file.mp4'
+          type='video/mp4'
+          className='w-full'
+        />
+      </video>
+      <div className='absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50'>
+        <h1
+          className={`text-4xl md:text-[140px] md:w-[70%] leading-[150px] font-thin uppercase text-white text-center ${noto_200.className}`}
+        >
+          Propiedades
+        </h1>
+        <h1
+          className={`text-4xl md:text-[120px] text-black bg-white font-[100] uppercase leading-[180px] pr-24 text-center  ${noto_thin.className}`}
+        >
+          Inolvidables
         </h1>
 
-        <div className='text-white flex gap-10'>
-          <ScrollWithOffsetLink
-            href='/#services'
-            offset={80}
-            className='btn-orange p-3 text-center md:w-[200px] !py-3'
-          >
-            Nuestros Servicios
-          </ScrollWithOffsetLink>
-          <ScrollWithOffsetLink
-            href='/#projects'
-            offset={80}
-            className='border-2 p-3 text-center border-white rounded-3xl md:w-[200px] !py-3'
-          >
-            Proyectos Recientes
-          </ScrollWithOffsetLink>
+        <div className='text-white flex items-center gap-5 mt-10 text-2xl bg-orange-400 p-5 rounded-md cursor-pointer'>
+          <h4>Ver propiedades</h4>
+          <i className='pi pi-arrow-right' />
         </div>
       </div>
     </div>

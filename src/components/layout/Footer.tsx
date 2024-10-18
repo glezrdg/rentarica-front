@@ -3,60 +3,90 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='b-blue-dark py-10'>
-      <div className='container xl:!w-[70%] m-auto flex items-center justify-between flex-col md:flex-row md:gap-16'>
-        <img
-          src='/assets/logos/logo_dark.png'
-          className='w-[140px] mb-10 md:mb-0'
-        />
-
-        <div className='flex flex-col text-center md:text-left md:flex-row gap-8 md:gap-10 text-slate-300'>
+    <footer className='bg-black py-10'>
+      <div className='container xl:!w-[70%] m-auto grid grid-cols-2'>
+        <div className='text-white grid gap-12'>
           <div>
-            <h4 className='font-bold text-white'>Navegación</h4>
-            <ul>
+            <h3 className='flex items-center gap-4 text-xl mb-12'>
+              <span className='w-4 h-4 rounded-full bg-orange-700 block'></span>
+              Menu
+            </h3>
+
+            <ul className='space-y-3 pl-2'>
               <Link href={'/#perfil'} className='block'>
-                Perfil
+                Home
               </Link>
               <Link href={'/#services'} className='block'>
-                Servicios
+                Invierte Con Nosotros
               </Link>
               <Link href={'/#projects'} className='block'>
-                Proyectos
+                Feria Rentarica
               </Link>
               <Link href={'/#contact'} className='block'>
-                Contáctanos
+                Registra tu propiedad
+              </Link>
+              <Link href={'/#contact'} className='block'>
+                Anunciate Con Nosotros
+              </Link>
+              <Link href={'/#contact'} className='block'>
+                Paneles Solares
+              </Link>
+              <Link href={'/#contact'} className='block'>
+                Propiedades
               </Link>
             </ul>
           </div>
           <div>
-            <h4 className='font-bold text-white'>Contacto</h4>
-            <ul>
-              <li>+1 (809) 902-8318</li>
-              <li>ventas@inaprd.com</li>
-              <li>grupoinap.com</li>
+            <h3 className='flex items-center gap-4 text-xl mb-12'>
+              <span className='w-4 h-4 rounded-full bg-yellow-400 block'></span>
+              Contáctanos
+            </h3>
+
+            <ul className='space-y-3 pl-2 text-lg'>
+              <li>Tel: 809-893-6553</li>
+              <li>Email: info@rentarica.com</li>
             </ul>
           </div>
-          <div>
-            <h4 className='font-bold text-white'>Redes Sociales</h4>
-            <ul>
-              <Link
-                href={'https://www.linkedin.com/company/grupo-inap/about/'}
-                target='_blank'
-                className='block'
-              >
-                Linkedin
-              </Link>
-              <Link
-                href={
-                  'https://www.instagram.com/grupoinap?igsh=MWlrbGtudDFvcG4xcg%3D%3D&utm_source=qr'
-                }
-                target='_blank'
-                className='block'
-              >
-                Instagram
-              </Link>
-            </ul>
-          </div>
+        </div>
+
+        <div className='text-white w-full justify-items-end'>
+          <h3 className='flex items-center gap-4 text-xl mb-12 w-3/4'>
+            <span className='w-4 h-4 rounded-full bg-white block'></span>
+            Déjanos un mensaje
+          </h3>
+
+          <form className='w-[70%] space-y-8'>
+            <div className='flex flex-col'>
+              <label>Nombre:</label>
+              <input className='!bg-transparent border-b-2 border-white rounded-none focus:outline-none ' />
+            </div>
+            <div className='flex flex-col'>
+              <label>Apellido:</label>
+              <input className='!bg-transparent border-b-2 border-white rounded-none focus:outline-none ' />
+            </div>
+            <div className='flex flex-col'>
+              <label>Correo:</label>
+              <input className='!bg-transparent border-b-2 border-white rounded-none focus:outline-none ' />
+            </div>
+            <div className='flex flex-col'>
+              <label>Número de Teléfono:</label>
+              <input className='!bg-transparent border-b-2 border-white rounded-none focus:outline-none ' />
+            </div>
+            <div className='flex flex-col'>
+              <label>Deseas info de alguna feria o evento:</label>
+              <input
+                className='!bg-transparent border-b-2 border-white rounded-none focus:outline-none '
+                placeholder='Escribenos al respecto'
+              />
+            </div>
+            <div className='flex flex-col'>
+              <label>Escríbe tu mensaje:</label>
+              <textarea className='!bg-transparent border-b-2 border-white rounded-none focus:outline-none ' />
+            </div>
+            <button className='bg-yellow-500 p-2 text-xl w-32 text-black'>
+              Enviar
+            </button>
+          </form>
         </div>
       </div>
     </footer>
