@@ -44,7 +44,7 @@ const index = () => {
       {/* PROJECTS CARDS */}
       <div className='container px-4 xl:px-0 m-auto mb-10'>
         <div className='grid grid-cols-[300px_1fr] gap-4'>
-          <div className='bg-slate-100 super-shadow rounded-lg p-4 space-y-12'>
+          <div className='bg-slate-100 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-lg p-4 space-y-12'>
             {/* BATHROOMS */}
             <div>
               <h4 className={`text-lg uppercase ${noto_300.className} mb-4`}>
@@ -115,7 +115,7 @@ const index = () => {
               <div className='flex-2 flex items-center shadow-xl rounded-3xl h-[50px] md:h-[60px] w-[80vw] md:w-[60vw] lg:w-[50vw] border border-slate-200 overflow-hidden mb-4'>
                 <i className='pi pi-search ml-4 text-xl text-slate-600' />
                 <input
-                  className='bg-white focus:outline-none w-full h-full'
+                  className='bg-white focus:outline-none !border-none hover:!bg-white focus:!bg-white w-full h-full'
                   placeholder='Buscar por codigo...'
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}

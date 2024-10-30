@@ -1,7 +1,11 @@
+'use client'
+
 import React from 'react'
+import Link from 'next/link'
 import { GiIsland } from 'react-icons/gi'
 import { FaHouseChimney, FaMoneyBillTrendUp } from 'react-icons/fa6'
 import { BiSearchAlt } from 'react-icons/bi'
+import { Gi3dStairs } from 'react-icons/gi'
 
 const register = () => {
   return (
@@ -34,38 +38,47 @@ const register = () => {
       </div>
 
       {/* Optionss */}
-      <div className='grid grid-cols-5 h-[200px] gap-4 mb-16'>
+      <div className='grid grid-cols-3 h-[400px] gap-4 mb-16'>
         <div className='grid place-items-center bg-white super-shadow rounded-t-3xl transition-all duration-300 hover:shadow-orange-200 hover:text-orange-500'>
           <div className='text-center'>
-            <FaHouseChimney className='text-6xl mb-3 m-auto' />
+            <FaHouseChimney className='text-5xl mb-3 m-auto' />
             <p className='text-xl'>Vender Mi Propiedad</p>
           </div>
         </div>
 
         <div className='grid place-items-center bg-white super-shadow rounded-t-3xl transition-all duration-300 hover:shadow-orange-200 hover:text-orange-500'>
           <div className='text-center'>
-            <GiIsland className='text-6xl mb-3 m-auto' />
+            <GiIsland className='text-5xl mb-3 m-auto' />
             <p className='text-xl'>Vender Mi Terreno</p>
           </div>
         </div>
         <div className='grid place-items-center bg-white super-shadow rounded-t-3xl transition-all duration-300 hover:shadow-orange-200 hover:text-orange-500'>
           <div className='text-center'>
-            <i className='pi pi-dollar text-6xl mb-3' />
+            <i className='pi pi-dollar text-5xl mb-3' />
             <p className='text-xl'>Alquilar Mi Propiedad</p>
           </div>
         </div>
         <div className='grid place-items-center bg-white super-shadow rounded-t-3xl transition-all duration-300 hover:shadow-orange-200 hover:text-orange-500'>
           <div className='text-center'>
-            <FaMoneyBillTrendUp className='text-6xl mb-3' />
+            <FaMoneyBillTrendUp className='text-5xl mb-3' />
             <p className='text-xl'>Invertir</p>
           </div>
         </div>
         <div className='grid place-items-center bg-white super-shadow rounded-t-3xl transition-all duration-300 hover:shadow-orange-200 hover:text-orange-500'>
           <div className='text-center'>
-            <BiSearchAlt className='text-6xl mb-3 m-auto' />
+            <BiSearchAlt className='text-5xl mb-3 m-auto' />
             <p className='text-xl'>Busco Un Hogar</p>
           </div>
         </div>
+        <Link
+          href='/services/anunciate'
+          className='grid place-items-center bg-white super-shadow rounded-t-3xl transition-all duration-300 hover:shadow-orange-200 hover:text-orange-500'
+        >
+          <div className='text-center'>
+            <Gi3dStairs className='text-5xl mb-3 m-auto' />
+            <p className='text-xl'>Anunciate con nosotros</p>
+          </div>
+        </Link>
       </div>
 
       <div className='w-3/4 text-lg space-y-4'>

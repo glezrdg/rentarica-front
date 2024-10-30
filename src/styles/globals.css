@@ -52,9 +52,16 @@ html {
 
 /* INPUT */
 
-input, textarea {
+input, textarea, select {
   @apply
-  bg-slate-100
-  p-[10px]
-  rounded-md
+  appearance-none
+  p-[18px]
+  border-2
+  border-yellow-400
+  text-sm
+  hover:bg-yellow-400
+  transition-all
+  placeholder:text-black
+  focus:outline-none
+  focus:bg-yellow-400
 }
