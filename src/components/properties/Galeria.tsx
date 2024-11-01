@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Galleria } from 'primereact/galleria'
+import { API_URL } from '@/utils/constants'
 
 export default function Galeria(props: any) {
   const [selectedImage, setSelectedImage] = useState(0)
@@ -17,7 +18,7 @@ export default function Galeria(props: any) {
   const itemTemplate = (item: any) => {
     return (
       <img
-        src={item.itemImageSrc}
+        src={API_URL + `uploads/${item.itemImageSrc}`}
         alt={item.alt}
         className='w-[100%] h-[300px] md:h-[450px] lg:h-[650px] rounded-3xl text-center object-contain'
       />
@@ -26,7 +27,7 @@ export default function Galeria(props: any) {
   const thumbItemTemplate = (item: any) => {
     return (
       <img
-        src={item.itemImageSrc}
+        src={API_URL + `uploads/${item.itemImageSrc}`}
         alt={item.alt}
         className='h-[100px] text-center object-contain'
       />

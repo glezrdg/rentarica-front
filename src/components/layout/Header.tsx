@@ -62,7 +62,7 @@ const Header = () => {
         {/* NAVIGATION ScrollWithOffsetLinkS */}
         <ul className="items-center gap-5 lg:gap-8 hidden md:flex">
           <Link
-            href={"/projects"}
+            href={'/propiedades'}
             className={`cursor-pointer transition-all ${
               activeLink === "projects"
                 ? "bg-yellow-500 text-white p-2 rounded-2xl"
