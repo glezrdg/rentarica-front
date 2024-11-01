@@ -19,9 +19,9 @@ const Projects: React.FC<IProjectsProps> = (props) => {
 
       {/* PROJECTS CARDS */}
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10'>
-        {projects.slice(1, 7).map((p) => (
+        {/* {projects.slice(1, 7).map((p) => (
           <ProjectCard project={p} />
-        ))}
+        ))} */}
       </div>
 
       <div className='w-full text-center my-12'>

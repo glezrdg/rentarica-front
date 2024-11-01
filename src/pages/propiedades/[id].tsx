@@ -2,57 +2,65 @@
 
 import ContactUs from '@/components/home/ContactUs'
 import Layout from '@/components/layout/Layout'
-import Galeria from '@/components/projects/Galeria'
+import Galeria from '@/components/properties/Galeria'
 import { projects } from '@/utils/data'
 import { noto_300 } from '@/utils/fonts'
 import { useParams } from 'next/navigation'
+import { Property } from '.'
+import { GetServerSideProps, InferGetServerSidePropsType } from 'next'
+import { API_URL } from '@/utils/constants'
 
-const index = () => {
+export const getServerSideProps = (async ({ query }) => {
+  // Fetch data from external API
+  const res = await fetch(API_URL + `api/properties/${query.id}`)
+  const property: Property = await res.json()
+  // Pass data to the page via props
+  return { props: { property } }
+}) satisfies GetServerSideProps<{ property: Property }>
+
+const index = ({
+  property,
+}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   const PARAMS = useParams()
-
-  console.log('pddad', PARAMS)
-
-  let project = projects.find((p) => p.id === +PARAMS?.id)
 
   return (
     <div className='pt-36 xl:w-[85%] container mx-auto px-4 xl:px-10'>
       <div>
         <div className='flex items-center justify-between'>
-          <h1 className='text-4xl font-semibold'>{project?.title}</h1>
+          <h1 className='text-4xl font-semibold'>{property?.title}</h1>
           <div className='text-right'>
-            <p className={`text-lg ${noto_300.className}`}>En Venta</p>
-            <p className='font-bold text-3xl uppercase'>Desde USD$1,187,100</p>
+            <p className={`text-lg ${noto_300.className}`}>
+              {property.category}
+            </p>
+            <p className='font-bold text-3xl uppercase'>
+              Desde USD${property.price}
+            </p>
           </div>
         </div>
         <div className='text-slate-600 mt-3 text-lg'>
           <i className='pi pi-map-marker mr-2' />
-          <span>Boca chica</span>
+          <span>{property.province}</span>
         </div>
       </div>
       <div className='grid gap-12 my-14'>
-        <Galeria images={project?.images} />
+        <Galeria images={property?.images} />
         <div>
           {/*  */}
           <h3 className='text-xl font-semibold'>Descripcion:</h3>
-          <p className='text-lg py-6 text-justify text-slate-600'>
-            {project?.first_description}
-          </p>
-          <p className='text-lg mb-6 text-justify text-slate-600'>
-            {project?.second_description}
-          </p>
-          <p className='text-lg text-justify text-slate-600'>
-            {project?.third_description}
-          </p>
+          <div
+            className='text-lg py-6 text-justify text-slate-600'
+            dangerouslySetInnerHTML={{ __html: property.description }}
+          />
 
           {/*  */}
-          <h3 className='text-xl font-semibold py-6'>
+          {/* <h3 className='text-xl font-semibold py-6'>
             Características de los Apartamentos:
           </h3>
           <ul className='text-lg list-disc text-justify p-4 text-slate-600'>
-            {project?.items?.map((i) => (
+            {property?.items?.map((i) => (
               <li className='list-item'>{i}</li>
             ))}
-          </ul>
+          </ul> */}
 
           {/*  */}
           <h3 className='text-xl font-semibold py-6'>
@@ -65,19 +73,19 @@ const index = () => {
             </div>
             <div>
               <p className='text-slate-600 mb-2'>Bedrooms</p>
-              <p>2</p>
+              <p>{property?.rooms}</p>
             </div>
             <div>
               <p className='text-slate-600 mb-2'>Bathrooms</p>
-              <p>1</p>
+              <p>{property?.bathrooms}</p>
             </div>
             <div>
               <p className='text-slate-600 mb-2'>Size</p>
-              <p>60.4</p>
+              <p>{property?.size}</p>
             </div>
             <div>
               <p className='text-slate-600 mb-2'>Floors</p>
-              <p>1</p>
+              <p>{property?.floors}</p>
             </div>
             <div>
               <p className='text-slate-600 mb-2'>Year Built</p>
