@@ -1,0 +1,55 @@
+{
+  "home": {
+    "header": {
+      "buy_rent": "Compra | Alquila",
+      "register_property": "Registra Tu Propiedad",
+      "invest_now": "Invierte Ahora",
+      "fair": "Feria"
+    },
+
+    "hero": {
+      "unforgettable": "PROPIEDADES ",
+      "properties": "INOLVIDABLES",
+      "view_properties": "Ver propiedades"
+    },
+    "services": {
+      "welcome_message": "Nos dedicamos a,",
+
+      "manage_property": "ADMINISTRAR",
+      "rent_property": "ALQUILAR",
+      "sell_property": "VENDER"
+    },
+
+    "about": {
+      "title": "QUIENES SOMOS?",
+      "description": "En Rentarica, estamos dedicados a ayudarte a explorar los mejores destinos vacacionales en la República Dominicana. Ya sea que estés buscando comprar una propiedad, alquilar una propiedad o invertir en bienes raíces, nuestro equipo de expertos está aquí para guiarte en cada paso del camino. Nos enorgullece proporcionar un servicio personalizado para asegurarnos de que todos nuestros clientes tengan una experiencia memorable y placentera. Puedes confiar en que tus propiedades están en buenas manos con Rentarica, lo que te permite relajarte y disfrutar de los beneficios de tu inversión en bienes raíces. Contáctanos hoy mismo para obtener más información sobre cómo podemos ayudarte a alcanzar tus objetivos en bienes raíces en la República Dominicana.",
+      "button_text": "Más Info"
+    }
+  },
+  "footer": {
+    "menu": {
+      "title": "Menu",
+      "home": "Home",
+      "invest_with_us": "Invierte Con Nosotros",
+      "rentarica_fair": "Feria Rentarica",
+      "register_property": "Registra tu propiedad",
+      "advertise_with_us": "Anunciate Con Nosotros",
+      "solar_panels": "Paneles Solares",
+      "properties": "Propiedades"
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "phone": "Tel: 809-893-6553",
+      "email": "Email: info@rentarica.com"
+    },
+    "message_form": {
+      "title": "Déjanos un mensaje",
+      "name": "Nombre",
+      "last_name": "Apellido",
+      "email": "Correo",
+      "phone_number": "Número de Teléfono",
+      "event_info": "¿Deseas info de alguna feria o evento?",
+      "message": "Escribe tu mensaje"
+    }
+  }
+}

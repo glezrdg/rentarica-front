@@ -1,0 +1,52 @@
+{
+  "home": {
+    "header": {
+      "buy_rent": "Buy | Rent",
+      "register_property": "Register Your Property",
+      "invest_now": "Invest Now",
+      "fair": "Fair"
+    },
+    "hero": {
+      "unforgettable": "unforgettable ",
+      "properties": "LISTINGS",
+      "view_properties": "View properties"
+    },
+    "services": {
+      "welcome_message": "We are dedicated to",
+      "manage_property": "Manage",
+      "rent_property": "Rent",
+      "sell_property": "Sell"
+    },
+    "about": {
+      "title": "About us...",
+      "description": "At Rentarica, we are dedicated to helping you explore the best vacation destinations in the Dominican Republic. Whether you are looking to buy a property, rent a property or invest in real estate, our team of experts is here to guide you every step of the way. We pride ourselves on providing personalized service to ensure that all of our clients have a memorable and enjoyable experience. You can trust that your properties are in good hands with Rentarica, allowing you to relax and enjoy the benefits of your real estate investment. Contact us today to learn more about how we can help you achieve your real estate goals in the Dominican Republic.",
+      "button_text": "Download Brochure"
+    }
+  },
+  "footer": {
+    "menu": {
+      "title": "Menu",
+      "home": "Home",
+      "invest_with_us": "Invest With Us",
+      "rentarica_fair": "Rentarica Fair",
+      "register_property": "Register Your Property",
+      "advertise_with_us": "Advertise With Us",
+      "solar_panels": "Solar Panels",
+      "properties": "Properties"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "phone": "Tel: 809-893-6553",
+      "email": "Email: info@rentarica.com"
+    },
+    "message_form": {
+      "title": "Leave us a message",
+      "name": "Name",
+      "last_name": "Last Name",
+      "email": "Email",
+      "phone_number": "Phone Number",
+      "event_info": "Would you like info about any fair or event?",
+      "message": "Write your message"
+    }
+  }
+}
