@@ -3,6 +3,8 @@ import { initReactI18next } from "react-i18next";
 // Import your translation files
 import enCommon from "../locale/en/common.json";
 import esCommon from "../locale/es/common.json";
+import zhCommon from "../locale/zh/common.json";
+import frCommon from "../locale/fr/common.json";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -16,6 +18,12 @@ i18n
       },
       es: {
         translation: esCommon,
+      },
+      fr: {
+        translation: frCommon,
+      },
+      zh: {
+        translation: zhCommon,
       },
     },
 

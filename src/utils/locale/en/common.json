@@ -48,5 +48,116 @@
       "event_info": "Would you like info about any fair or event?",
       "message": "Write your message"
     }
+  },
+  "properties": {
+    "filters": {
+      "bathrooms": "Bathrooms",
+      "price": "Price",
+      "floors": "Floors",
+      "size": "Size"
+    },
+
+    "search_placeholder": "Search by code...",
+    "no_results": "No results found",
+    "categories": {
+      "all": "All",
+      "sale": "Sale",
+      "rent": "Rent",
+      "land": "Land"
+    }
+  },
+  "property_details": {
+    "title": "Property Details",
+    "category": "Category",
+    "price": "Starting from USD",
+    "location": "Location",
+    "description": {
+      "title": "Description"
+    },
+    "apartment_features": {
+      "title": "Apartment Features",
+      "items": "Features List"
+    },
+    "apartment_details": {
+      "title": "Apartment Details",
+      "property_type": "Property Type",
+      "property_type_value": "Apartment",
+      "bedrooms": "Bedrooms",
+      "bathrooms": "Bathrooms",
+      "size": "Size",
+      "floors": "Floors",
+      "year_built": "Year Built"
+    }
+  },
+  "register_property": {
+    "title": "Sell or Rent Your Property: Start Here!",
+    "intro": "As part of our effort to optimize and streamline this process, we have developed a form to help you gather crucial information more efficiently.",
+    "instructions": "Within each classification are our services that we offer. When filling out the form, be sure to choose the right one depending on whether it's for sale or short-term rental.",
+    "cta": "Each button leads you to the right form to complete, depending on the type of property and what you want to do with it.",
+    "buttons": {
+      "sell_property": "Sell My Property",
+      "sell_land": "Sell My Land",
+      "rent_property": "Rent My Property",
+      "invest": "Invest",
+      "find_home": "Find a Home",
+      "advertise": "Advertise with Us"
+    },
+    "additional_info": {
+      "text": "If you have any questions, need assistance, or don’t have some information on hand, don’t hesitate to leave the form. We’ll get in touch with you and help you complete it along the way.",
+      "closing": "We are here to help you every step of the way.",
+      "thank_you": "Thank you for trusting us!"
+    }
+  },
+  "invest_page": {
+    "banner": {
+      "title": "Invest with ",
+      "title2": "Vision:",
+      "subtitle": "Your Freedom Begins Now"
+    },
+    "consultation_section": {
+      "title": "Let Us Advise You",
+      "options": {
+        "projects": "Projects in Planning",
+        "completed": "Completed Properties",
+        "land": "Land"
+      }
+    },
+    "upcoming_fairs": {
+      "title": "Upcoming Real Estate Fairs",
+      "description": "We invite you to join us for an enjoyable moment while we showcase the great investment opportunities in this country. Choose your destination and register:",
+      "event": {
+        "location": "New York | Lawrence",
+        "date": "Date: December 7th and 8th ",
+        "hour": "Hour: 10 AM to 8 PM",
+        "note": "Location to be announced. If you’re interested, please register and we’ll keep you informed once we have all the details."
+      },
+      "contact": {
+        "phone": "Phone: +1 809-893-6553",
+        "email": "info@rentarica.com",
+        "register_button": "Register here"
+      }
+    },
+    "contact_form": {
+      "title": "We’d Like to Know How We Can Help You",
+      "fields": {
+        "name": "Name",
+        "country_city": "Country | City",
+        "email": "Email",
+        "phone": "Phone Number",
+        "referral": "How did you hear about us?",
+        "promote_options": "Choose the day(s) you'd like to promote:",
+        "message": "Write your message"
+      },
+      "days": {
+        "mon": "Mon",
+        "tue": "Tue",
+        "wed": "Wed",
+        "thu": "Thu",
+        "fri": "Fri",
+        "sat": "Sat",
+        "sun": "Sun"
+      },
+      "button": "Submit"
+    }
   }
 }

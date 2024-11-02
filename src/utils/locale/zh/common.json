@@ -1,0 +1,162 @@
+{
+  "home": {
+    "header": {
+      "buy_rent": "购买 | 租赁",
+      "register_property": "登记您的物业",
+      "invest_now": "立即投资",
+      "fair": "展会"
+    },
+    "hero": {
+      "unforgettable": "难忘的",
+      "properties": "房源列表",
+      "view_properties": "查看房源"
+    },
+    "services": {
+      "welcome_message": "我们致力于",
+      "manage_property": "管理",
+      "rent_property": "出租",
+      "sell_property": "出售"
+    },
+    "about": {
+      "title": "关于我们...",
+      "description": "在 Rentarica，我们致力于帮助您探索多米尼加共和国最好的度假胜地。无论您想购买物业、租赁物业还是投资房地产，我们的专家团队都会在每一步为您提供指导。我们以提供个性化服务为荣，确保所有客户都有难忘而愉快的体验。您可以信任 Rentarica，我们会妥善管理您的物业，让您放松并享受您的房地产投资带来的收益。今天就联系我们，了解我们如何帮助您在多米尼加共和国实现您的房地产目标。",
+      "button_text": "下载手册"
+    }
+  },
+  "footer": {
+    "menu": {
+      "title": "菜单",
+      "home": "首页",
+      "invest_with_us": "与我们一起投资",
+      "rentarica_fair": "Rentarica 展会",
+      "register_property": "登记您的物业",
+      "advertise_with_us": "与我们合作宣传",
+      "solar_panels": "太阳能板",
+      "properties": "房源"
+    },
+    "contact": {
+      "title": "联系我们",
+      "phone": "电话：809-893-6553",
+      "email": "邮箱：info@rentarica.com"
+    },
+    "message_form": {
+      "title": "给我们留言",
+      "name": "名字",
+      "last_name": "姓氏",
+      "email": "邮箱",
+      "phone_number": "电话号码",
+      "event_info": "您想了解任何展会或活动的信息吗？",
+      "message": "写下您的留言"
+    }
+  },
+  "properties": {
+    "filters": {
+      "bathrooms": "浴室",
+      "price": "价格",
+      "floors": "楼层",
+      "size": "面积"
+    },
+    "search_placeholder": "按代码搜索...",
+    "no_results": "未找到结果",
+    "categories": {
+      "all": "全部",
+      "sale": "出售",
+      "rent": "出租",
+      "land": "土地"
+    }
+  },
+  "property_details": {
+    "title": "物业详情",
+    "category": "类别",
+    "price": "起价 USD",
+    "location": "位置",
+    "description": {
+      "title": "描述"
+    },
+    "apartment_features": {
+      "title": "公寓特色",
+      "items": "特色列表"
+    },
+    "apartment_details": {
+      "title": "公寓详情",
+      "property_type": "物业类型",
+      "property_type_value": "公寓",
+      "bedrooms": "卧室",
+      "bathrooms": "浴室",
+      "size": "面积",
+      "floors": "楼层",
+      "year_built": "建造年份"
+    }
+  },
+  "register_property": {
+    "title": "出售或出租您的物业：从这里开始！",
+    "intro": "作为我们优化和简化这一过程的努力的一部分，我们开发了一份表格，帮助您更有效地收集重要信息。",
+    "instructions": "在每个分类中都有我们提供的服务。在填写表格时，请务必根据物业是出售还是短期出租来选择正确的选项。",
+    "cta": "每个按钮都会引导您到正确的表格，以完成取决于物业类型和您想要的操作。",
+    "buttons": {
+      "sell_property": "出售我的物业",
+      "sell_land": "出售我的土地",
+      "rent_property": "出租我的物业",
+      "invest": "投资",
+      "find_home": "寻找家园",
+      "advertise": "与我们合作宣传"
+    },
+    "additional_info": {
+      "text": "如果您有任何问题，需要帮助，或者手头没有一些信息，请不要犹豫离开表格。我们会与您联系，并在过程中帮助您完成。",
+      "closing": "我们将在每一步为您提供帮助。",
+      "thank_you": "感谢您的信任！"
+    }
+  },
+  "invest_page": {
+    "banner": {
+      "title": "与我们一起投资",
+      "title2": "愿景：",
+      "subtitle": "您的自由现在开始"
+    },
+    "consultation_section": {
+      "title": "让我们为您提供建议",
+      "options": {
+        "projects": "规划中的项目",
+        "completed": "已完工的物业",
+        "land": "土地"
+      }
+    },
+    "upcoming_fairs": {
+      "title": "即将举行的房地产展会",
+      "description": "我们邀请您加入我们，共度愉快时光，同时我们将展示该国的绝佳投资机会。选择您的目的地并注册：",
+      "event": {
+        "location": "纽约 | 劳伦斯",
+        "date": "日期：12月7日和8日",
+        "hour": "时间：上午10点至晚上8点",
+        "note": "地点待定。如果您有兴趣，请注册，我们一旦有所有细节将及时通知您。"
+      },
+      "contact": {
+        "phone": "电话：+1 809-893-6553",
+        "email": "info@rentarica.com",
+        "register_button": "在此注册"
+      }
+    },
+    "contact_form": {
+      "title": "我们想知道如何能帮助您",
+      "fields": {
+        "name": "名字",
+        "country_city": "国家 | 城市",
+        "email": "邮箱",
+        "phone": "电话号码",
+        "referral": "您是如何听说我们的？",
+        "promote_options": "选择您想宣传的日子：",
+        "message": "写下您的留言"
+      },
+      "days": {
+        "mon": "周一",
+        "tue": "周二",
+        "wed": "周三",
+        "thu": "周四",
+        "fri": "周五",
+        "sat": "周六",
+        "sun": "周日"
+      },
+      "button": "提交"
+    }
+  }
+}

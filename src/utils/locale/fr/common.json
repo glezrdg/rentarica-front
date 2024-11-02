@@ -1,0 +1,162 @@
+{
+  "home": {
+    "header": {
+      "buy_rent": "Acheter | Louer",
+      "register_property": "Enregistrez votre propriété",
+      "invest_now": "Investissez maintenant",
+      "fair": "Salon"
+    },
+    "hero": {
+      "unforgettable": "inoubliable",
+      "properties": "LISTE DES PROPRIÉTÉS",
+      "view_properties": "Voir les propriétés"
+    },
+    "services": {
+      "welcome_message": "Nous sommes dédiés à",
+      "manage_property": "Gérer",
+      "rent_property": "Louer",
+      "sell_property": "Vendre"
+    },
+    "about": {
+      "title": "À propos de nous...",
+      "description": "Chez Rentarica, nous nous engageons à vous aider à explorer les meilleures destinations de vacances en République dominicaine. Que vous cherchiez à acheter une propriété, louer une propriété ou investir dans l'immobilier, notre équipe d'experts est là pour vous guider à chaque étape. Nous sommes fiers de fournir un service personnalisé pour nous assurer que tous nos clients vivent une expérience mémorable et agréable. Vous pouvez avoir confiance que vos propriétés sont entre de bonnes mains avec Rentarica, vous permettant de vous détendre et de profiter des avantages de votre investissement immobilier. Contactez-nous dès aujourd'hui pour en savoir plus sur la façon dont nous pouvons vous aider à atteindre vos objectifs immobiliers en République dominicaine.",
+      "button_text": "Télécharger la brochure"
+    }
+  },
+  "footer": {
+    "menu": {
+      "title": "Menu",
+      "home": "Accueil",
+      "invest_with_us": "Investissez avec nous",
+      "rentarica_fair": "Salon Rentarica",
+      "register_property": "Enregistrez votre propriété",
+      "advertise_with_us": "Faites de la publicité avec nous",
+      "solar_panels": "Panneaux solaires",
+      "properties": "Propriétés"
+    },
+    "contact": {
+      "title": "Contactez-nous",
+      "phone": "Tél : 809-893-6553",
+      "email": "Email : info@rentarica.com"
+    },
+    "message_form": {
+      "title": "Laissez-nous un message",
+      "name": "Prénom",
+      "last_name": "Nom de famille",
+      "email": "Email",
+      "phone_number": "Numéro de téléphone",
+      "event_info": "Souhaitez-vous des informations sur un salon ou un événement ?",
+      "message": "Écrivez votre message"
+    }
+  },
+  "properties": {
+    "filters": {
+      "bathrooms": "Salles de bain",
+      "price": "Prix",
+      "floors": "Étages",
+      "size": "Taille"
+    },
+    "search_placeholder": "Rechercher par code...",
+    "no_results": "Aucun résultat trouvé",
+    "categories": {
+      "all": "Tous",
+      "sale": "Vente",
+      "rent": "Location",
+      "land": "Terrain"
+    }
+  },
+  "property_details": {
+    "title": "Détails de la propriété",
+    "category": "Catégorie",
+    "price": "À partir de USD",
+    "location": "Emplacement",
+    "description": {
+      "title": "Description"
+    },
+    "apartment_features": {
+      "title": "Caractéristiques de l'appartement",
+      "items": "Liste des caractéristiques"
+    },
+    "apartment_details": {
+      "title": "Détails de l'appartement",
+      "property_type": "Type de propriété",
+      "property_type_value": "Appartement",
+      "bedrooms": "Chambres",
+      "bathrooms": "Salles de bain",
+      "size": "Taille",
+      "floors": "Étages",
+      "year_built": "Année de construction"
+    }
+  },
+  "register_property": {
+    "title": "Vendez ou louez votre propriété : Commencez ici !",
+    "intro": "Dans le cadre de nos efforts pour optimiser et simplifier ce processus, nous avons développé un formulaire pour vous aider à rassembler des informations cruciales plus efficacement.",
+    "instructions": "Dans chaque classification se trouvent nos services que nous offrons. Lors du remplissage du formulaire, assurez-vous de choisir le bon en fonction de s'il s'agit d'une vente ou d'une location à court terme.",
+    "cta": "Chaque bouton vous mène au bon formulaire à remplir, en fonction du type de propriété et de ce que vous voulez en faire.",
+    "buttons": {
+      "sell_property": "Vendre ma propriété",
+      "sell_land": "Vendre mon terrain",
+      "rent_property": "Louer ma propriété",
+      "invest": "Investir",
+      "find_home": "Trouver une maison",
+      "advertise": "Faites de la publicité avec nous"
+    },
+    "additional_info": {
+      "text": "Si vous avez des questions, avez besoin d'aide ou n'avez pas certaines informations à portée de main, n'hésitez pas à quitter le formulaire. Nous prendrons contact avec vous et vous aiderons à le compléter en cours de route.",
+      "closing": "Nous sommes là pour vous aider à chaque étape.",
+      "thank_you": "Merci de nous faire confiance !"
+    }
+  },
+  "invest_page": {
+    "banner": {
+      "title": "Investissez avec ",
+      "title2": "Vision :",
+      "subtitle": "Votre liberté commence maintenant"
+    },
+    "consultation_section": {
+      "title": "Laissez-nous vous conseiller",
+      "options": {
+        "projects": "Projets en planification",
+        "completed": "Propriétés terminées",
+        "land": "Terrain"
+      }
+    },
+    "upcoming_fairs": {
+      "title": "Prochains salons immobiliers",
+      "description": "Nous vous invitons à nous rejoindre pour un moment agréable pendant que nous vous présentons les grandes opportunités d'investissement dans ce pays. Choisissez votre destination et inscrivez-vous :",
+      "event": {
+        "location": "New York | Lawrence",
+        "date": "Date : 7 et 8 décembre",
+        "hour": "Heure : 10h à 20h",
+        "note": "Lieu à annoncer. Si vous êtes intéressé, veuillez vous inscrire et nous vous tiendrons informé une fois que nous aurons tous les détails."
+      },
+      "contact": {
+        "phone": "Téléphone : +1 809-893-6553",
+        "email": "info@rentarica.com",
+        "register_button": "Inscrivez-vous ici"
+      }
+    },
+    "contact_form": {
+      "title": "Nous aimerions savoir comment nous pouvons vous aider",
+      "fields": {
+        "name": "Prénom",
+        "country_city": "Pays | Ville",
+        "email": "Email",
+        "phone": "Numéro de téléphone",
+        "referral": "Comment avez-vous entendu parler de nous ?",
+        "promote_options": "Choisissez le(s) jour(s) où vous souhaitez faire de la promotion :",
+        "message": "Écrivez votre message"
+      },
+      "days": {
+        "mon": "Lun",
+        "tue": "Mar",
+        "wed": "Mer",
+        "thu": "Jeu",
+        "fri": "Ven",
+        "sat": "Sam",
+        "sun": "Dim"
+      },
+      "button": "Soumettre"
+    }
+  }
+}

@@ -62,7 +62,7 @@ const Header = () => {
         {/* NAVIGATION ScrollWithOffsetLinkS */}
         <ul className="items-center gap-5 lg:gap-8 hidden md:flex">
           <Link
-            href={'/propiedades'}
+            href={"/propiedades"}
             className={`cursor-pointer transition-all ${
               activeLink === "projects"
                 ? "bg-yellow-500 text-white p-2 rounded-2xl"
@@ -102,7 +102,7 @@ const Header = () => {
         <div className="flex items-center gap-3">
           <Dropdown
             className="h-9"
-            options={["ES", "EN"]}
+            options={["ES", "EN", "FR ", "ZH"]}
             value={language}
             onChange={handleLanguageChange}
           />

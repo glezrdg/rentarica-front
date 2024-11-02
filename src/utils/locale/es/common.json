@@ -51,5 +51,116 @@
       "event_info": "¿Deseas info de alguna feria o evento?",
       "message": "Escribe tu mensaje"
     }
+  },
+  "properties": {
+    "filters": {
+      "bathrooms": "Baños",
+      "price": "Precio",
+      "floors": "Pisos",
+      "size": "Tamaño"
+    },
+
+    "search_placeholder": "Buscar por código...",
+    "no_results": "No hay resultados",
+    "categories": {
+      "all": "Todas",
+      "sale": "Venta",
+      "rent": "Alquiler",
+      "land": "Terrenos"
+    }
+  },
+  "property_details": {
+    "title": "Detalle de la Propiedad",
+    "category": "Categoría",
+    "price": "Desde USD",
+    "location": "Ubicación",
+    "description": {
+      "title": "Descripción"
+    },
+    "apartment_features": {
+      "title": "Características de los Apartamentos",
+      "items": "Lista de características"
+    },
+    "apartment_details": {
+      "title": "Detalle de Apartamento",
+      "property_type": "Tipo de propiedad",
+      "property_type_value": "Apartamento",
+      "bedrooms": "Habitaciones",
+      "bathrooms": "Baños",
+      "size": "Tamaño",
+      "floors": "Pisos",
+      "year_built": "Año de construcción"
+    }
+  },
+  "register_property": {
+    "title": "Vende o Alquila tu propiedad: ¡Empieza Aquí!",
+    "intro": "Como parte de nuestro esfuerzo por optimizar y agilizar este proceso, hemos desarrollado un formulario que nos ayudará a recopilar información crucial de manera eficiente de lo que buscas.",
+    "instructions": "Dentro de cada clasificación están nuestros servicios que ofrecemos, al llenar, no olvides escoger cuál es el tipo en el caso si es venta o corto plazo.",
+    "cta": "Cada botón te lleva al enlace donde completarás el formulario según el tipo de propiedad y lo que deseas hacer con él.",
+    "buttons": {
+      "sell_property": "Vender Mi Propiedad",
+      "sell_land": "Vender Mi Terreno",
+      "rent_property": "Alquilar Mi Propiedad",
+      "invest": "Invertir",
+      "find_home": "Busco Un Hogar",
+      "advertise": "Anunciate con nosotros"
+    },
+    "additional_info": {
+      "text": "Si tienes alguna pregunta, necesitas ayuda o no tienes una información a mano no dejes de para completar el formulario, nos comunicaremos contigo y en el camino vamos completando todo.",
+      "closing": "Estamos aquí para ayudarte en cada paso.",
+      "thank_you": "¡Gracias por confiar en nosotros!"
+    }
+  },
+  "invest_page": {
+    "banner": {
+      "title": "Invierte con",
+      "title2": "Visión:",
+      "subtitle": "Tu Libertad Comienza Ahora"
+    },
+    "consultation_section": {
+      "title": "Déjanos Asesorarte",
+      "options": {
+        "projects": "Proyectos en Plano",
+        "completed": "Propiedades Terminadas",
+        "land": "Terrenos"
+      }
+    },
+    "upcoming_fairs": {
+      "title": "Próximas Ferias Inmobiliarias",
+      "description": "Te invitamos a compartir un momento agradable con nosotros mientras te enseñamos las grandes oportunidades que existen de invertir en este país. Escoge tu destino y regístrate:",
+      "event": {
+        "location": "New York | Lawrence",
+        "date": "Fecha: 7 y 8 de Diciembre ",
+        "date2": "10am a 8pm",
+        "note": "Pendiente de ubicación. Inscríbete si te interesa y estaremos enviando la información una vez tengamos todo confirmado."
+      },
+      "contact": {
+        "phone": "Tel: 809-893-6553",
+        "email": "info@rentarica.com",
+        "register_button": "Regístrate aquí"
+      }
+    },
+    "contact_form": {
+      "title": "Queremos saber cómo podemos ayudarte",
+      "fields": {
+        "name": "Nombre",
+        "country_city": "País | Ciudad",
+        "email": "Correo",
+        "phone": "Número de Teléfono",
+        "referral": "¿Cómo sabes de nosotros?",
+        "promote_options": "Escoge día(s) de quieres promover:",
+        "message": "Escribe tu mensaje"
+      },
+      "days": {
+        "mon": "Lun",
+        "tue": "Mar",
+        "wed": "Mié",
+        "thu": "Jue",
+        "fri": "Vie",
+        "sat": "Sáb",
+        "sun": "Dom"
+      },
+      "button": "Solicitar"
+    }
   }
 }
