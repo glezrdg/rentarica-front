@@ -3,6 +3,8 @@ import ScrollWithOffsetLink from "@/hooks/ScrollWithOffsetLink";
 import { Galleria } from "primereact/galleria";
 import { noto, noto_200, noto_thin } from "@/utils/fonts";
 import { useTranslation } from "react-i18next";
+import SocialMedia from "@/shared/components/SocialMedia";
+import { FaPlus } from "react-icons/fa";
 
 const Hero = () => {
   const [selectedImage, setSelectedImage] = useState(0);
@@ -14,39 +16,51 @@ const Hero = () => {
     "https://iili.io/dthmrxf.jpg",
   ];
 
-  const itemTemplate = (item: any) => {
+  const itemTemplate = (item) => {
     return (
       <img
         src={item.itemImageSrc}
         alt={item.alt}
-        className="w-[100vw] h-[100vh] text-center object-cover"
+        className="w-screen h-screen object-cover"
       />
     );
   };
+
   return (
-    <div className="relative">
-      <video className="h-[117vh] w-[100vw]" autoPlay loop>
+    <div className="relative min-h-[60dvh] lg:h-screen w-full overflow-hidden">
+      {/* Video de fondo */}
+      <video
+        className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover"
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
         <source
           src="https://video.wixstatic.com/video/11062b_43edac00571f4b05bb740639157efecd/1080p/mp4/file.mp4"
           type="video/mp4"
-          className="w-full"
         />
       </video>
+
+      {/* Contenido sobre el video */}
       <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50">
+        <div className="w-full flex items-center  justify-center my-10">
+          <SocialMedia />
+        </div>
         <h1
-          className={`text-4xl md:text-[140px] md:w-[70%] leading-[150px] font-thin uppercase text-white text-center ${noto_200.className}`}
+          className={`text-5xl md:text-[140px] md:w-[70%] lg:leading-[150px] font-thin uppercase text-white text-center ${noto_200.className}`}
         >
           {t("home.hero.unforgettable")}
         </h1>
         <h1
-          className={`text-4xl md:text-[120px] text-black bg-white font-[100] uppercase leading-[180px] pr-24 text-center  ${noto_thin.className}`}
+          className={`text-5xl md:text-[120px] text-black bg-white font-[100] uppercase lg:leading-[180px] lg:pr-24 text-center ${noto_thin.className}`}
         >
           {t("home.hero.properties")}
         </h1>
 
-        <div className="text-white flex items-center gap-5 mt-10 text-2xl bg-orange-400 p-5 rounded-md cursor-pointer">
+        <div className=" flex items-center gap-5 mt-10 text-md lg:text-2xl bg-accent-yellow-base px-4 py-2  lg:p-5  cursor-pointer">
           <h4>{t("home.hero.view_properties")}</h4>
-          <i className="pi pi-arrow-right" />
+          <FaPlus className="text-xs" />
         </div>
       </div>
     </div>

@@ -10,6 +10,8 @@ import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 import { Slider } from "primereact/slider";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Sidebar } from "primereact/sidebar";
+import { Button } from "primereact/button";
 
 export type Property = {
   _id: string;
@@ -47,6 +49,7 @@ const index = () => {
     bathMax: 6,
   });
 
+  const [visible, setVisible] = useState<boolean>(false);
   const [properties, setProperties] = useState<Property[]>([]);
 
   useEffect(() => {
@@ -79,11 +82,29 @@ const index = () => {
 
       {/* PROJECTS CARDS */}
       <div className="container px-4 xl:px-0 m-auto mb-10">
-        <div className="grid grid-cols-[300px_1fr] gap-4">
-          <FilterProperties filters={filters} updateFilters={updateFilter} />
+        <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-4">
+          <div className="flex lg:hidden">
+            <Sidebar visible={visible} onHide={() => setVisible(false)}>
+              <h2>Filtros</h2>
+              <FilterProperties
+                filters={filters}
+                updateFilters={updateFilter}
+              />
+            </Sidebar>
+            <div className="flex items-center">
+              <span>Ordenar y filtrar</span>
+              <Button
+                icon="pi pi-arrow-right"
+                onClick={() => setVisible(true)}
+              />
+            </div>
+          </div>
+          <div className="hidden lg:flex">
+            <FilterProperties filters={filters} updateFilters={updateFilter} />
+          </div>
           <div>
-            <div className="flex gap-2">
-              <div className="flex-2 flex items-center shadow-xl rounded-3xl h-[50px] md:h-[60px] w-[80vw] md:w-[60vw] lg:w-[50vw] border border-slate-200 overflow-hidden mb-4">
+            <div className="flex flex-col lg:flex-row  gap-2">
+              <div className="flex-2 flex items-center shadow-xl rounded-3xl h-[50px] md:h-[60px] w-full   lg:w-[30vw] border border-slate-200 overflow-hidden mb-10">
                 <i className="pi pi-search ml-4 text-xl text-slate-600" />
                 <input
                   className="bg-white focus:outline-none !border-none hover:!bg-white focus:!bg-white w-full h-full"
@@ -92,17 +113,17 @@ const index = () => {
                   onChange={(e) => updateFilter("title", e.target.value)}
                 />
               </div>
-              <div className="flex-1 h-[60px] border border-red-500 rounded-3xl grid grid-cols-4 place-items-center uppercase text-xs overflow-hidden cursor-pointer super-shadow">
+              <div className="flex-1 overflow-hidden lg:h-[60px] lg:w-[20vw] border border-red-500 rounded-3xl grid grid-cols-4 place-items-center uppercase text-xs  cursor-pointer super-shadow my-5 lg:mb-10 lg:mt-0">
                 <div
                   onClick={() => updateFilter("category", "")}
-                  className={` w-full h-full grid place-items-center ${
+                  className={` p-4  w-full h-full grid place-items-center ${
                     filters.category === "" && "text-white bg-red-500"
                   }`}
                 >
                   <p>{t("properties.categories.all")}</p>
                 </div>
                 <div
-                  className={` w-full h-full grid place-items-center ${
+                  className={` p-4  w-full h-full grid place-items-center ${
                     filters.category === "En venta" && "text-white bg-red-500"
                   }`}
                   onClick={() => updateFilter("category", "En venta")}
@@ -110,7 +131,7 @@ const index = () => {
                   <p>{t("properties.categories.sale")}</p>
                 </div>
                 <div
-                  className={` w-full h-full grid place-items-center ${
+                  className={` p-4  w-full h-full grid place-items-center ${
                     filters.category === "En Alquiler" &&
                     "text-white bg-red-500"
                   }`}
@@ -119,7 +140,7 @@ const index = () => {
                   <p>{t("properties.categories.rent")}</p>
                 </div>
                 <div
-                  className={` w-full h-full grid place-items-center ${
+                  className={` p-4  w-full h-full grid place-items-center ${
                     filters.category === "Terreno" && "text-white bg-red-500"
                   }`}
                   onClick={() => updateFilter("category", "Terreno")}

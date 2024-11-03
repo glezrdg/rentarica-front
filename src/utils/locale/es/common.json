@@ -49,7 +49,8 @@
       "email": "Correo",
       "phone_number": "Número de Teléfono",
       "event_info": "¿Deseas info de alguna feria o evento?",
-      "message": "Escribe tu mensaje"
+      "message": "Escribe tu mensaje",
+      "submit": "Enviar"
     }
   },
   "properties": {
@@ -113,33 +114,34 @@
   },
   "invest_page": {
     "banner": {
-      "title": "Invierte con",
+      "title": "Invierte con ",
       "title2": "Visión:",
-      "subtitle": "Tu Libertad Comienza Ahora"
+      "subtitle": "Tu libertad comienza ahora"
     },
     "consultation_section": {
-      "title": "Déjanos Asesorarte",
+      "title": "Permítenos asesorarte",
       "options": {
-        "projects": "Proyectos en Plano",
-        "completed": "Propiedades Terminadas",
+        "projects": "Proyectos en planificación",
+        "completed": "Propiedades terminadas",
         "land": "Terrenos"
       }
     },
     "upcoming_fairs": {
       "title": "Próximas Ferias Inmobiliarias",
-      "description": "Te invitamos a compartir un momento agradable con nosotros mientras te enseñamos las grandes oportunidades que existen de invertir en este país. Escoge tu destino y regístrate:",
+      "description": "Te invitamos a unirte a nosotros para un momento agradable mientras presentamos las grandes oportunidades de inversión en este país. Elige tu destino y regístrate:",
       "event": {
-        "location": "New York | Lawrence",
-        "date": "Fecha: 7 y 8 de Diciembre ",
-        "date2": "10am a 8pm",
-        "note": "Pendiente de ubicación. Inscríbete si te interesa y estaremos enviando la información una vez tengamos todo confirmado."
+        "location": "Nueva York | Lawrence",
+        "date": "Fecha: 7 y 8 de diciembre",
+        "hour": "Horario: de 10 AM a 8 PM",
+        "note": "Ubicación por anunciar. Si estás interesado, por favor regístrate y te mantendremos informado una vez que tengamos todos los detalles."
       },
       "contact": {
-        "phone": "Tel: 809-893-6553",
+        "phone": "Teléfono: +1 809-893-6553",
         "email": "info@rentarica.com",
         "register_button": "Regístrate aquí"
       }
     },
+
     "contact_form": {
       "title": "Queremos saber cómo podemos ayudarte",
       "fields": {

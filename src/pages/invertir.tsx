@@ -1,3 +1,5 @@
+"use client";
+
 import { noto_200, noto_300, noto_thin } from "@/utils/fonts";
 import { Dropdown } from "primereact/dropdown";
 import { useTranslation } from "react-i18next";
@@ -10,7 +12,7 @@ const invertir = () => {
     <div className="py-28">
       {/* Hero */}
       <div className="w-full h-[70vh] grid place-items-center bg-[url(https://o.b5z.net/i/u/11000235/i/2-20150124-q03a1798_revised.jpg)] background-image">
-        <div className="w-[40%]">
+        <div className="w-[80%] lg:w-[40%]">
           <h2
             className={`bg-yellow-500 w-fit mb-[2px] text-7xl uppercase p-2 ${noto_300.className}`}
           >
@@ -55,7 +57,7 @@ const invertir = () => {
         </div>
       </div>
 
-      {/*  */}
+      {/* FERIAS */}
       <div className="bg-white mt-16 text-center">
         <h3 className={`text-4xl text-gray-800 font-semibold mb-10`}>
           {t("invest_page.upcoming_fairs.title")}
@@ -65,7 +67,7 @@ const invertir = () => {
           {t("invest_page.upcoming_fairs.description")}
         </p>
 
-        <div className="w-[70vw] grid grid-cols-2 gap-8 mx-auto mt-16">
+        <div className="w-[70vw] grid grid-cols-1 lg:grid-cols-2 gap-8 mx-auto mt-16">
           <div className="grid grid-cols-2 gap-4">
             {/* Img */}
             <div>
@@ -166,7 +168,7 @@ const invertir = () => {
         </h3>
         <form className="bg-white p-6 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] w-[45vw] mx-auto">
           {/* Name and Country/City Fields */}
-          <div className="grid grid-cols-2 gap-6 mb-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
             <div className="grid gap-2">
               <label>{t("invest_page.contact_form.fields.name")}</label>
               <input placeholder={t("invest_page.contact_form.fields.name")} />
@@ -186,7 +188,7 @@ const invertir = () => {
           </div>
 
           {/* Phone Number and Referral Fields */}
-          <div className="grid grid-cols-2 gap-6 mb-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
             <div className="grid gap-2">
               <label>{t("invest_page.contact_form.fields.phone")}</label>
               <input placeholder={t("invest_page.contact_form.fields.phone")} />
@@ -206,7 +208,7 @@ const invertir = () => {
               <label>
                 {t("invest_page.contact_form.fields.promote_options")}
               </label>
-              <div className="flex gap-3 text-sm mt-2">
+              <div className="grid grid-cols-3 lg:grid-cols-7 gap-3 text-sm mt-2">
                 <label className="flex items-center gap-8">
                   <input type="checkbox" className="!p-2" />{" "}
                   {t("invest_page.contact_form.days.mon")}

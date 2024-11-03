@@ -46,7 +46,8 @@
       "email": "Email",
       "phone_number": "Phone Number",
       "event_info": "Would you like info about any fair or event?",
-      "message": "Write your message"
+      "message": "Write your message",
+      "submit": "Send"
     }
   },
   "properties": {

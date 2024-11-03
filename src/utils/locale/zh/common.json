@@ -46,7 +46,8 @@
       "email": "邮箱",
       "phone_number": "电话号码",
       "event_info": "您想了解任何展会或活动的信息吗？",
-      "message": "写下您的留言"
+      "message": "写下您的留言",
+      "submit": "Send"
     }
   },
   "properties": {
@@ -117,13 +118,13 @@
       "title": "让我们为您提供建议",
       "options": {
         "projects": "规划中的项目",
-        "completed": "已完工的物业",
+        "completed": "已完成的物业",
         "land": "土地"
       }
     },
     "upcoming_fairs": {
       "title": "即将举行的房地产展会",
-      "description": "我们邀请您加入我们，共度愉快时光，同时我们将展示该国的绝佳投资机会。选择您的目的地并注册：",
+      "description": "我们邀请您加入我们，共度愉快时光，同时我们将展示该国的绝佳投资机会。请选择您的目的地并注册：",
       "event": {
         "location": "纽约 | 劳伦斯",
         "date": "日期：12月7日和8日",
@@ -135,28 +136,6 @@
         "email": "info@rentarica.com",
         "register_button": "在此注册"
       }
-    },
-    "contact_form": {
-      "title": "我们想知道如何能帮助您",
-      "fields": {
-        "name": "名字",
-        "country_city": "国家 | 城市",
-        "email": "邮箱",
-        "phone": "电话号码",
-        "referral": "您是如何听说我们的？",
-        "promote_options": "选择您想宣传的日子：",
-        "message": "写下您的留言"
-      },
-      "days": {
-        "mon": "周一",
-        "tue": "周二",
-        "wed": "周三",
-        "thu": "周四",
-        "fri": "周五",
-        "sat": "周六",
-        "sun": "周日"
-      },
-      "button": "提交"
     }
   }
 }

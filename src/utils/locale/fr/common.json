@@ -46,7 +46,8 @@
       "email": "Email",
       "phone_number": "Numéro de téléphone",
       "event_info": "Souhaitez-vous des informations sur un salon ou un événement ?",
-      "message": "Écrivez votre message"
+      "message": "Écrivez votre message",
+      "submit": "Enviar"
     }
   },
   "properties": {
@@ -110,53 +111,53 @@
   "invest_page": {
     "banner": {
       "title": "Investissez avec ",
-      "title2": "Vision :",
+      "title2": "Vision :",
       "subtitle": "Votre liberté commence maintenant"
     },
     "consultation_section": {
       "title": "Laissez-nous vous conseiller",
       "options": {
         "projects": "Projets en planification",
-        "completed": "Propriétés terminées",
+        "completed": "Propriétés achevées",
         "land": "Terrain"
       }
     },
     "upcoming_fairs": {
-      "title": "Prochains salons immobiliers",
-      "description": "Nous vous invitons à nous rejoindre pour un moment agréable pendant que nous vous présentons les grandes opportunités d'investissement dans ce pays. Choisissez votre destination et inscrivez-vous :",
+      "title": "Prochains Salons Immobiliers",
+      "description": "Nous vous invitons à nous rejoindre pour un moment agréable pendant que nous présentons les grandes opportunités d'investissement dans ce pays. Choisissez votre destination et inscrivez-vous :",
       "event": {
         "location": "New York | Lawrence",
-        "date": "Date : 7 et 8 décembre",
-        "hour": "Heure : 10h à 20h",
+        "date": "Date : 7 et 8 décembre",
+        "hour": "Heure : de 10h à 20h",
         "note": "Lieu à annoncer. Si vous êtes intéressé, veuillez vous inscrire et nous vous tiendrons informé une fois que nous aurons tous les détails."
       },
       "contact": {
-        "phone": "Téléphone : +1 809-893-6553",
+        "phone": "Téléphone : +1 809-893-6553",
         "email": "info@rentarica.com",
         "register_button": "Inscrivez-vous ici"
       }
-    },
-    "contact_form": {
-      "title": "Nous aimerions savoir comment nous pouvons vous aider",
-      "fields": {
-        "name": "Prénom",
-        "country_city": "Pays | Ville",
-        "email": "Email",
-        "phone": "Numéro de téléphone",
-        "referral": "Comment avez-vous entendu parler de nous ?",
-        "promote_options": "Choisissez le(s) jour(s) où vous souhaitez faire de la promotion :",
-        "message": "Écrivez votre message"
-      },
-      "days": {
-        "mon": "Lun",
-        "tue": "Mar",
-        "wed": "Mer",
-        "thu": "Jeu",
-        "fri": "Ven",
-        "sat": "Sam",
-        "sun": "Dim"
-      },
-      "button": "Soumettre"
     }
+  },
+  "contact_form": {
+    "title": "Nous aimerions savoir comment nous pouvons vous aider",
+    "fields": {
+      "name": "Prénom",
+      "country_city": "Pays | Ville",
+      "email": "Email",
+      "phone": "Numéro de téléphone",
+      "referral": "Comment avez-vous entendu parler de nous ?",
+      "promote_options": "Choisissez le(s) jour(s) où vous souhaitez faire de la promotion :",
+      "message": "Écrivez votre message"
+    },
+    "days": {
+      "mon": "Lun",
+      "tue": "Mar",
+      "wed": "Mer",
+      "thu": "Jeu",
+      "fri": "Ven",
+      "sat": "Sam",
+      "sun": "Dim"
+    },
+    "button": "Soumettre"
   }
 }

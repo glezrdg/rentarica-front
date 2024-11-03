@@ -35,13 +35,24 @@ html {
 } */
 
 /* COLORS */
-.background-image {
-  background-repeat: no-repeat;
+.background-image-about {
+  background-image: url('../../public/assets/home_images/quienes-somos.webp');
   background-attachment: fixed;
-  background-position: top;
-  background-size: cover;
+background-position: top right 35vw;
+  background-repeat: no-repeat;
+ 
 }
 
+@media (max-width: 500px) {
+  .background-image-about {
+    background-image: url('../../public/assets/home_images/quienes-somos.webp');
+    background-attachment: fixed;
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+  }
+}
 
 .super-shadow {
   @apply
@@ -65,3 +76,9 @@ input, textarea, select {
   focus:outline-none
   focus:bg-yellow-400
 }
+
+.social-media-icon{
+  margin: 0px 1rem;
+
+}
+
