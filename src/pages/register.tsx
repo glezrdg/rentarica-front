@@ -33,7 +33,7 @@ const RegisterProperty = () => {
       </div>
 
       {/* Options */}
-      <div className="grid grid-cols-2 lg:grid-cols-3 h-[400px] gap-4 mb-16">
+      <div className="grid grid-cols-2 lg:grid-cols-3 h-[400px] gap-4 mb-16 cursor-pointer">
         <div className="grid place-items-center bg-white super-shadow rounded-t-3xl transition-all duration-300 hover:shadow-orange-200 hover:text-orange-500">
           <div className="text-center">
             <FaHouseChimney className=" text-3xl lg:text-5xl mb-3 m-auto" />

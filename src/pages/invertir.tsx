@@ -11,16 +11,16 @@ const invertir = () => {
   return (
     <div className="py-28">
       {/* Hero */}
-      <div className="w-full h-[70vh] grid place-items-center bg-[url(https://o.b5z.net/i/u/11000235/i/2-20150124-q03a1798_revised.jpg)] background-image">
+      <div className="w-full h-[70vh] grid place-items-center  background-image-invertir">
         <div className="w-[80%] lg:w-[40%]">
           <h2
-            className={`bg-yellow-500 w-fit mb-[2px] text-7xl uppercase p-2 ${noto_300.className}`}
+            className={`bg-yellow-500 w-fit mb-[2px] text-3xl lg:text-7xl uppercase p-2 ${noto_300.className}`}
           >
             {t("invest_page.banner.title")}
           </h2>
           <div className="z-20">
             <h2
-              className={`bg-yellow-500 w-fit text-7xl uppercase p-2 z-50 pb-10 ${noto_300.className} `}
+              className={`bg-yellow-500 w-fit text-3xl lg:text-7xl uppercase p-2 z-50 pb-10 ${noto_300.className} `}
             >
               {t("invest_page.banner.title2")}
             </h2>

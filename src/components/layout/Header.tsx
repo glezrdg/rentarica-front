@@ -113,18 +113,6 @@ const Header = () => {
             onClick={() => setMobileNav(!mobileNav)}
             className={` md:!hidden   border-black  rounded-full  h-8 w-8  focus:text-accent-yellow-base focus:border-accent-yellow-base`}
           />
-          {/* AIRBNB */}
-          {/* <Link
-            href={"https://www.airbnb.com/users/486228112/listings"}
-            className=""
-            target="_blank"
-          >
-            <TbBrandAirbnb className="text-[#ff5a5f] text-3xl" />
-          </Link> */}
-          {/* WHATSAPP */}
-          {/* <Link href={"https://wa.me/18099028318"} className="" target="_blank">
-            <IoLogoWhatsapp className="text-[#25d366] text-3xl" />
-          </Link> */}
         </div>
       </nav>
 
@@ -133,8 +121,11 @@ const Header = () => {
           mobileNav ? "right-0" : "!right-full"
         } `}
       >
-        <ul className="grid h-[40%] place-items-center text-black font-bold gap-0 lg:gap-8 mt-10 text-xl">
+        <ul className="grid h-[70%] place-items-center text-black font-bold gap-0 lg:gap-8 mt-10 text-xl">
           <Link
+            onClick={() => {
+              setMobileNav(false);
+            }}
             href={"/propiedades"}
             className={`cursor-pointer transition-all flex items-center${
               activeLink === "projects"
@@ -147,6 +138,9 @@ const Header = () => {
             {t("home.header.buy_rent")}
           </Link>
           <Link
+            onClick={() => {
+              setMobileNav(false);
+            }}
             href={"/register"}
             className={`cursor-pointer transition-all flex items-center ${
               activeLink === "register"
@@ -158,6 +152,9 @@ const Header = () => {
             {t("home.header.register_property")}
           </Link>
           <Link
+            onClick={() => {
+              setMobileNav(false);
+            }}
             href={"/invertir"}
             className={`cursor-pointer transition-all flex items-center ${
               activeLink === "invertir"
@@ -170,6 +167,9 @@ const Header = () => {
             {t("home.header.invest_now")}
           </Link>
           <Link
+            onClick={() => {
+              setMobileNav(false);
+            }}
             href={"https://rentarica.trafico.do/"}
             className="cursor-pointer transition-all flex items-center"
             target="_blank"
@@ -177,6 +177,22 @@ const Header = () => {
             <div className=" bg-[#7c4810] rounded-full w-3 h-3 mr-2"></div>
 
             {t("home.header.fair")}
+          </Link>
+          {/* AIRBNB */}
+          <Link
+            href={"https://www.airbnb.com/users/486228112/listings"}
+            className="flex text-[#ff5a5f]"
+            target="_blank"
+          >
+            <TbBrandAirbnb className=" text-3xl mr-2" /> Airbnb
+          </Link>
+          {/* WHATSAPP */}
+          <Link
+            href={"https://wa.me/18099028318"}
+            className="flex text-[#25d366]"
+            target="_blank"
+          >
+            <IoLogoWhatsapp className=" text-3xl mr-2" /> Whatsapp
           </Link>
         </ul>
       </div>
