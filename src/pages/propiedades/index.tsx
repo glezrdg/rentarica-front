@@ -87,22 +87,9 @@ const index = () => {
       {/* PROJECTS CARDS */}
       <div className="container px-4 xl:px-0 m-auto mb-10 min-h-[80vh]">
         <div className="grid grid-cols-1  gap-4">
-          <div className="flex lg:hidden">
-            <Sidebar visible={visible} onHide={() => setVisible(false)}>
-              <h2>Filtros</h2>
-              <FilterProperties
-                filters={filters}
-                updateFilters={updateFilter}
-              />
-            </Sidebar>
-            <div className="flex items-center">
-              <span>Ordenar y filtrar</span>
-              <Button
-                icon="pi pi-arrow-right"
-                onClick={() => setVisible(true)}
-              />
-            </div>
-          </div>
+          <h1 className="text-5xl place-self-center font-semibold my-20 ">
+            Tu Próxima Inversión Inmobiliaria:
+          </h1>
           {/* <div className="hidden lg:flex">
             <FilterProperties filters={filters} updateFilters={updateFilter} />
           </div> */}
@@ -117,13 +104,13 @@ const index = () => {
                   onChange={(e) => updateFilter("title", e.target.value)}
                 />
               </div>
-              <div className="flex items-center ">
+              <div className="flex items-center flex-col lg:flex-row  ">
                 <div className=" rounded-md grid grid-cols-4 place-items-center text-xs gap-4 cursor-pointer  my-5 lg:mb-0 lg:mt-0">
                   <div
                     onClick={() => updateFilter("category", "")}
                     className={` px-4 py-2  w-full h-full grid place-items-center ${
                       filters.category === "" &&
-                      " border-accent-yellow-base border-b-2"
+                      " border-accent-yellow-base border-b-4 rounded-lg"
                     }`}
                   >
                     <img
@@ -138,7 +125,7 @@ const index = () => {
                   <div
                     className={` px-4 py-2  w-full h-full grid place-items-center ${
                       filters.category === "En venta" &&
-                      " border-accent-yellow-base border-b-2"
+                      " border-accent-yellow-base border-b-4 rounded-lg"
                     }`}
                     onClick={() => updateFilter("category", "En venta")}
                   >
@@ -154,7 +141,7 @@ const index = () => {
                   <div
                     className={` px-4 py-2  w-full h-full grid place-items-center ${
                       filters.category === "En Alquiler" &&
-                      " border-accent-yellow-base border-b-2"
+                      " border-accent-yellow-base border-b-4 rounded-lg"
                     }`}
                     onClick={() => updateFilter("category", "En Alquiler")}
                   >
@@ -170,7 +157,7 @@ const index = () => {
                   <div
                     className={` px-4 py-2  w-full h-full grid place-items-center ${
                       filters.category === "Terreno" &&
-                      " border-accent-yellow-base border-b-2"
+                      " border-accent-yellow-base border-b-4 rounded-lg"
                     }`}
                     onClick={() => updateFilter("category", "Terreno")}
                   >
@@ -185,11 +172,13 @@ const index = () => {
                   </div>
                 </div>
                 <div
-                  className="flex items-center justify-center ml-10 cursor-pointer rounded-xl border border-zinc-200 py-2 px-3"
+                  className="flex items-center justify-center self-start mt-10 lg:my-0  lg:self-auto lg:ml-10 cursor-pointer rounded-xl border border-zinc-200 py-2 px-6 lg:px-3"
                   onClick={() => setVisible(true)}
                 >
                   <VscSettings className="text-xl mr-2" />
-                  <span className="font-semibold transition-all">Filtros:</span>
+                  <span className="font-semibold transition-all">
+                    Más Filtros:
+                  </span>
                 </div>
               </div>
             </div>

@@ -7,7 +7,7 @@ const Footer = () => {
   const { t } = useTranslation("translation");
 
   return (
-    <footer className="bg-black py-10 relative">
+    <footer className="bg-black py-10 relative pb-[15vh] lg:pb-0">
       <div className="container xl:!w-[70%] m-auto grid grid-col-1 lg:grid-cols-10 text-white px-5 gap-10 lg:gap-0 ">
         <div className="col-span-3">
           <h3 className="flex items-center gap-4 text-xl mb-12">

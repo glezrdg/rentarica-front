@@ -9,7 +9,7 @@ import { FaYoutube } from "react-icons/fa";
 
 const SocialMedia = () => {
   return (
-    <div className="flex items-center text-white text-4xl my-5">
+    <div className="flex items-center text-white text-2xl lg:text-4xl my-5">
       <a href="https://www.instagram.com/rentarica.rd/">
         <FaInstagram className="social-media-icon" />
       </a>
