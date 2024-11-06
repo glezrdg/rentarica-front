@@ -88,8 +88,8 @@ const FilterProperties = ({ filters, updateFilters }: any) => {
           value={size}
           onChange={(e) => setSize(e.value)}
           range
-          min={40}
-          max={400}
+          min={1}
+          max={5000}
         />
       </div>
     </div>

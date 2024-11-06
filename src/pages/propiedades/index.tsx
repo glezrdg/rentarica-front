@@ -12,6 +12,8 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Sidebar } from "primereact/sidebar";
 import { Button } from "primereact/button";
+import { VscSettings } from "react-icons/vsc";
+import { BsHouseCheck } from "react-icons/bs";
 
 export type Property = {
   _id: string;
@@ -43,8 +45,8 @@ const index = () => {
     bedMax: 3,
     floorMin: 1,
     floorMax: 3,
-    sizeMin: 40,
-    sizeMax: 400,
+    sizeMin: 1,
+    sizeMax: 5000,
     bathMin: 1,
     bathMax: 6,
   });
@@ -54,6 +56,7 @@ const index = () => {
 
   useEffect(() => {
     handleGetProperties(filters);
+    console.log(properties, "lapropiedade");
   }, [filters]);
 
   function updateFilter(filterName: string, value: any) {
@@ -69,6 +72,7 @@ const index = () => {
         API_URL + "api/properties" + queryMapper(queries)
       );
       const data = await res.json();
+      console.log(data);
       setProperties(data);
     } catch (error: any) {
       console.error(error.message);
@@ -82,7 +86,7 @@ const index = () => {
 
       {/* PROJECTS CARDS */}
       <div className="container px-4 xl:px-0 m-auto mb-10 min-h-[80vh]">
-        <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-4">
+        <div className="grid grid-cols-1  gap-4">
           <div className="flex lg:hidden">
             <Sidebar visible={visible} onHide={() => setVisible(false)}>
               <h2>Filtros</h2>
@@ -99,12 +103,12 @@ const index = () => {
               />
             </div>
           </div>
-          <div className="hidden lg:flex">
+          {/* <div className="hidden lg:flex">
             <FilterProperties filters={filters} updateFilters={updateFilter} />
-          </div>
-          <div>
-            <div className="flex flex-col lg:flex-row  gap-2">
-              <div className="flex-2 flex items-center shadow-xl rounded-3xl h-[50px] md:h-[60px] w-full   lg:w-[30vw] border border-slate-200 overflow-hidden mb-10">
+          </div> */}
+          <div className="w-full">
+            <div className="flex flex-col  items-center justify-center  gap-2 w-full">
+              <div className=" flex items-center shadow-md rounded-3xl h-[50px]  w-full   lg:w-[50vw] border border-slate-200 overflow-hidden mb-10">
                 <i className="pi pi-search ml-4 text-xl text-slate-600" />
                 <input
                   className="bg-white focus:outline-none !border-none hover:!bg-white focus:!bg-white w-full h-full"
@@ -113,55 +117,84 @@ const index = () => {
                   onChange={(e) => updateFilter("title", e.target.value)}
                 />
               </div>
-              <div className="flex-1 overflow-hidden lg:h-[60px] lg:w-[20vw] border border-accent-yellow-base rounded-md grid grid-cols-4 place-items-center uppercase text-xs  cursor-pointer shadow-md my-5 lg:mb-10 lg:mt-0">
-                <div
-                  onClick={() => updateFilter("category", "")}
-                  className={` px-4 py-2  w-full h-full grid place-items-center ${
-                    filters.category === "" &&
-                    "text-white bg-accent-yellow-base"
-                  }`}
-                >
-                  <p className="text-base font-semibold">
-                    {t("properties.categories.all")}
-                  </p>
+              <div className="flex items-center ">
+                <div className=" rounded-md grid grid-cols-4 place-items-center text-xs gap-4 cursor-pointer  my-5 lg:mb-0 lg:mt-0">
+                  <div
+                    onClick={() => updateFilter("category", "")}
+                    className={` px-4 py-2  w-full h-full grid place-items-center ${
+                      filters.category === "" &&
+                      " border-accent-yellow-base border-b-2"
+                    }`}
+                  >
+                    <img
+                      src="/assets/svgs/house.svg"
+                      alt=""
+                      className="h-10 w-10"
+                    />
+                    <p className="text-base font-semibold mt-1">
+                      {t("properties.categories.all")}
+                    </p>
+                  </div>
+                  <div
+                    className={` px-4 py-2  w-full h-full grid place-items-center ${
+                      filters.category === "En venta" &&
+                      " border-accent-yellow-base border-b-2"
+                    }`}
+                    onClick={() => updateFilter("category", "En venta")}
+                  >
+                    <img
+                      src="/assets/svgs/onsale.svg"
+                      alt=""
+                      className="h-10 w-10"
+                    />
+                    <p className="text-base font-semibold mt-1">
+                      {t("properties.categories.sale")}
+                    </p>
+                  </div>
+                  <div
+                    className={` px-4 py-2  w-full h-full grid place-items-center ${
+                      filters.category === "En Alquiler" &&
+                      " border-accent-yellow-base border-b-2"
+                    }`}
+                    onClick={() => updateFilter("category", "En Alquiler")}
+                  >
+                    <img
+                      src="/assets/svgs/rent.svg"
+                      alt=""
+                      className="h-10 w-10"
+                    />
+                    <p className="text-base font-semibold mt-1">
+                      {t("properties.categories.rent")}
+                    </p>
+                  </div>
+                  <div
+                    className={` px-4 py-2  w-full h-full grid place-items-center ${
+                      filters.category === "Terreno" &&
+                      " border-accent-yellow-base border-b-2"
+                    }`}
+                    onClick={() => updateFilter("category", "Terreno")}
+                  >
+                    <img
+                      src="/assets/svgs/terrain.svg"
+                      alt=""
+                      className="h-10 w-10"
+                    />
+                    <p className="text-base font-semibold mt-1">
+                      {t("properties.categories.land")}
+                    </p>
+                  </div>
                 </div>
                 <div
-                  className={` p-4  w-full h-full grid place-items-center ${
-                    filters.category === "En venta" &&
-                    "text-white bg-accent-yellow-base"
-                  }`}
-                  onClick={() => updateFilter("category", "En venta")}
+                  className="flex items-center justify-center ml-10 cursor-pointer rounded-xl border border-zinc-200 py-2 px-3"
+                  onClick={() => setVisible(true)}
                 >
-                  <p className="text-base font-semibold">
-                    {t("properties.categories.sale")}
-                  </p>
-                </div>
-                <div
-                  className={` p-4  w-full h-full grid place-items-center ${
-                    filters.category === "En Alquiler" &&
-                    "text-white bg-accent-yellow-base"
-                  }`}
-                  onClick={() => updateFilter("category", "En Alquiler")}
-                >
-                  <p className="text-base font-semibold">
-                    {t("properties.categories.rent")}
-                  </p>
-                </div>
-                <div
-                  className={` p-4  w-full h-full grid place-items-center ${
-                    filters.category === "Terreno" &&
-                    "text-white bg-accent-yellow-base"
-                  }`}
-                  onClick={() => updateFilter("category", "Terreno")}
-                >
-                  <p className="text-base font-semibold">
-                    {t("properties.categories.land")}
-                  </p>
+                  <VscSettings className="text-xl mr-2" />
+                  <span className="font-semibold transition-all">Filtros:</span>
                 </div>
               </div>
             </div>
 
-            <div className="grid  w-full md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div className="grid  w-full md:grid-cols-2 lg:grid-cols-4 gap-10 mt-20">
               {properties.length ? (
                 <>
                   {properties.map((p) => (

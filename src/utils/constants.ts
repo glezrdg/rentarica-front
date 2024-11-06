@@ -1,1 +1,1 @@
-export const API_URL = "https://rentarica-backend-production.up.railway.app/";
+export const API_URL = "https://backend-rentarica-production.up.railway.app/";

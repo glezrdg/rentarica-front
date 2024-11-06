@@ -112,18 +112,20 @@ const Header = () => {
           {/* AIRBNB */}
           <Link
             href={"https://www.airbnb.com/users/486228112/listings"}
-            className="items-center font-bold text-[#ff5a5f] mx-4 lg:flex hidden hover:scale-105 transition-all"
+            className="items-center font-bold text-[#ff5a5f] mx-4 md:flex hidden  transition-all"
             target="_blank"
           >
-            <TbBrandAirbnb className=" text-3xl mr-2" /> Airbnb
+            <TbBrandAirbnb className=" text-3xl mr-2 hover:scale-105 transition-all" />{" "}
+            <span className="transition-all lg:flex hidden">Airbnb</span>
           </Link>
           {/* WHATSAPP */}
           <Link
             href={"https://wa.me/18099028318"}
-            className="items-center font-bold text-[#25d366] mx-2 lg:flex hidden hover:scale-105 transition-all"
+            className="items-center font-bold text-[#25d366] mx-2 md:flex hidden  "
             target="_blank"
           >
-            <IoLogoWhatsapp className=" text-3xl mr-2" /> Whatsapp
+            <IoLogoWhatsapp className=" text-3xl mr-2 hover:scale-105 transition-all" />{" "}
+            <span className="transition-all lg:flex hidden">Whatsapp</span>
           </Link>
           <RxHamburgerMenu
             onClick={() => setMobileNav(!mobileNav)}
@@ -200,7 +202,8 @@ const Header = () => {
             className="flex text-[#ff5a5f]"
             target="_blank"
           >
-            <TbBrandAirbnb className=" text-3xl mr-2" /> Airbnb
+            <TbBrandAirbnb className=" text-3xl mr-2" />{" "}
+            <span className="transition-all"> Airbnb</span>
           </Link>
           {/* WHATSAPP */}
           <Link
@@ -208,7 +211,8 @@ const Header = () => {
             className="flex text-[#25d366]"
             target="_blank"
           >
-            <IoLogoWhatsapp className=" text-3xl mr-2" /> Whatsapp
+            <IoLogoWhatsapp className=" text-3xl mr-2" />{" "}
+            <span className="transition-all"> Whatsapp</span>
           </Link>
         </ul>
       </div>
