@@ -81,7 +81,7 @@ const index = () => {
       <div className="pt-36"></div>
 
       {/* PROJECTS CARDS */}
-      <div className="container px-4 xl:px-0 m-auto mb-10">
+      <div className="container px-4 xl:px-0 m-auto mb-10 min-h-[80vh]">
         <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-4">
           <div className="flex lg:hidden">
             <Sidebar visible={visible} onHide={() => setVisible(false)}>
@@ -113,44 +113,55 @@ const index = () => {
                   onChange={(e) => updateFilter("title", e.target.value)}
                 />
               </div>
-              <div className="flex-1 overflow-hidden lg:h-[60px] lg:w-[20vw] border border-red-500 rounded-3xl grid grid-cols-4 place-items-center uppercase text-xs  cursor-pointer super-shadow my-5 lg:mb-10 lg:mt-0">
+              <div className="flex-1 overflow-hidden lg:h-[60px] lg:w-[20vw] border border-accent-yellow-base rounded-md grid grid-cols-4 place-items-center uppercase text-xs  cursor-pointer shadow-md my-5 lg:mb-10 lg:mt-0">
                 <div
                   onClick={() => updateFilter("category", "")}
-                  className={` p-4  w-full h-full grid place-items-center ${
-                    filters.category === "" && "text-white bg-red-500"
+                  className={` px-4 py-2  w-full h-full grid place-items-center ${
+                    filters.category === "" &&
+                    "text-white bg-accent-yellow-base"
                   }`}
                 >
-                  <p>{t("properties.categories.all")}</p>
+                  <p className="text-base font-semibold">
+                    {t("properties.categories.all")}
+                  </p>
                 </div>
                 <div
                   className={` p-4  w-full h-full grid place-items-center ${
-                    filters.category === "En venta" && "text-white bg-red-500"
+                    filters.category === "En venta" &&
+                    "text-white bg-accent-yellow-base"
                   }`}
                   onClick={() => updateFilter("category", "En venta")}
                 >
-                  <p>{t("properties.categories.sale")}</p>
+                  <p className="text-base font-semibold">
+                    {t("properties.categories.sale")}
+                  </p>
                 </div>
                 <div
                   className={` p-4  w-full h-full grid place-items-center ${
                     filters.category === "En Alquiler" &&
-                    "text-white bg-red-500"
+                    "text-white bg-accent-yellow-base"
                   }`}
                   onClick={() => updateFilter("category", "En Alquiler")}
                 >
-                  <p>{t("properties.categories.rent")}</p>
+                  <p className="text-base font-semibold">
+                    {t("properties.categories.rent")}
+                  </p>
                 </div>
                 <div
                   className={` p-4  w-full h-full grid place-items-center ${
-                    filters.category === "Terreno" && "text-white bg-red-500"
+                    filters.category === "Terreno" &&
+                    "text-white bg-accent-yellow-base"
                   }`}
                   onClick={() => updateFilter("category", "Terreno")}
                 >
-                  <p>{t("properties.categories.land")}</p>
+                  <p className="text-base font-semibold">
+                    {t("properties.categories.land")}
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div className="grid w-full md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div className="grid  w-full md:grid-cols-2 lg:grid-cols-3 gap-10">
               {properties.length ? (
                 <>
                   {properties.map((p) => (

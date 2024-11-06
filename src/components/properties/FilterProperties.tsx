@@ -29,7 +29,7 @@ const FilterProperties = ({ filters, updateFilters }: any) => {
   }, [bathroom, price, size, floors]);
 
   return (
-    <div className="bg-slate-100 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-lg p-4 space-y-12">
+    <div className=" shadow-md rounded-lg p-4 space-y-12 min-h-[60vh] bg-slate-100">
       {/* BATHROOMS */}
       <div>
         <h4 className={`text-lg uppercase mb-4`}>

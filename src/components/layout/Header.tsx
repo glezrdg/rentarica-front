@@ -56,7 +56,7 @@ const Header = () => {
         </ScrollWithOffsetLink>
 
         {/* NAVIGATION ScrollWithOffsetLinkS */}
-        <ul className="items-center gap-5 lg:gap-8 hidden md:flex">
+        <ul className="items-center gap-5 lg:gap-8  hidden md:flex ml-14">
           <Link
             href={"/propiedades"}
             className={`cursor-pointer transition-all flex items-center${
@@ -104,11 +104,27 @@ const Header = () => {
         </ul>
         <div className="flex items-center ">
           <Dropdown
-            className="h-9 mr-3 "
+            className="h-9 mr-3 font-semibold"
             options={["ES", "EN", "FR", "ZH"]}
             value={language}
             onChange={handleLanguageChange}
           />
+          {/* AIRBNB */}
+          <Link
+            href={"https://www.airbnb.com/users/486228112/listings"}
+            className="items-center font-bold text-[#ff5a5f] mx-4 lg:flex hidden hover:scale-105 transition-all"
+            target="_blank"
+          >
+            <TbBrandAirbnb className=" text-3xl mr-2" /> Airbnb
+          </Link>
+          {/* WHATSAPP */}
+          <Link
+            href={"https://wa.me/18099028318"}
+            className="items-center font-bold text-[#25d366] mx-2 lg:flex hidden hover:scale-105 transition-all"
+            target="_blank"
+          >
+            <IoLogoWhatsapp className=" text-3xl mr-2" /> Whatsapp
+          </Link>
           <RxHamburgerMenu
             onClick={() => setMobileNav(!mobileNav)}
             className={` md:!hidden   border-black  rounded-full  h-8 w-8  focus:text-accent-yellow-base focus:border-accent-yellow-base`}

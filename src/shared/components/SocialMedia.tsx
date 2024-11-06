@@ -9,13 +9,25 @@ import { FaYoutube } from "react-icons/fa";
 
 const SocialMedia = () => {
   return (
-    <div className="flex items-center text-white text-2xl my-5">
-      <FaInstagram className="social-media-icon" />
-      <FaFacebook className="social-media-icon" />
-      <FaXTwitter className="social-media-icon" />
-      <FaTiktok className="social-media-icon" />
-      <FaLinkedin className="social-media-icon" />
-      <FaYoutube className="social-media-icon" />
+    <div className="flex items-center text-white text-4xl my-5">
+      <a href="https://www.instagram.com/rentarica.rd/">
+        <FaInstagram className="social-media-icon" />
+      </a>
+      <a href="https://www.facebook.com/people/RentaricaRD/100085999827227/">
+        <FaFacebook className="social-media-icon" />
+      </a>
+      <a href="https://x.com/rentarica">
+        <FaXTwitter className="social-media-icon" />
+      </a>
+      <a href="https://www.tiktok.com/@rentarica.rd">
+        <FaTiktok className="social-media-icon" />
+      </a>
+      <a href="https://www.linkedin.com/company/rentarica/">
+        <FaLinkedin className="social-media-icon" />
+      </a>
+      <a href="https://www.youtube.com/@rentaricard">
+        <FaYoutube className="social-media-icon" />
+      </a>
     </div>
   );
 };
