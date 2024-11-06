@@ -56,7 +56,7 @@ const Header = () => {
         </ScrollWithOffsetLink>
 
         {/* NAVIGATION ScrollWithOffsetLinkS */}
-        <ul className="items-center gap-5 lg:gap-8  hidden md:flex ml-14">
+        <ul className="items-center gap-5 lg:gap-8  hidden lg:flex ml-14 text-sm xl:text-base">
           <Link
             href={"/propiedades"}
             className={`cursor-pointer transition-all flex items-center${
@@ -112,11 +112,11 @@ const Header = () => {
           {/* AIRBNB */}
           <Link
             href={"https://www.airbnb.com/users/486228112/listings"}
-            className="items-center font-bold text-[#ff5a5f] mx-4 md:flex hidden  transition-all"
+            className="items-center font-bold text-[#ff5a5f] xl:mx-4 md:flex hidden  transition-all"
             target="_blank"
           >
             <TbBrandAirbnb className=" text-3xl mr-2 hover:scale-105 transition-all" />{" "}
-            <span className="transition-all lg:flex hidden">Airbnb</span>
+            <span className="transition-all xl:flex hidden">Airbnb</span>
           </Link>
           {/* WHATSAPP */}
           <Link
@@ -125,17 +125,17 @@ const Header = () => {
             target="_blank"
           >
             <IoLogoWhatsapp className=" text-3xl mr-2 hover:scale-105 transition-all" />{" "}
-            <span className="transition-all lg:flex hidden">Whatsapp</span>
+            <span className="transition-all xl:flex hidden">Whatsapp</span>
           </Link>
           <RxHamburgerMenu
             onClick={() => setMobileNav(!mobileNav)}
-            className={` md:!hidden   border-black  rounded-full  h-8 w-8  focus:text-accent-yellow-base focus:border-accent-yellow-base`}
+            className={` lg:!hidden ml-10 mr-4  border-black  rounded-full  h-8 w-8  focus:text-accent-yellow-base focus:border-accent-yellow-base`}
           />
         </div>
       </nav>
 
       <div
-        className={`fixed md:hidden w-[100vw] h-[100vh] bg-white bg-opacity-95 transition-all  z-[5000] ${
+        className={`fixed lg:hidden w-[100vw] h-[100vh] bg-white bg-opacity-95 transition-all  z-[5000] ${
           mobileNav ? "right-0" : "!right-full"
         } `}
       >

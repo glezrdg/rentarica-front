@@ -20,25 +20,25 @@ const AboutUs = () => {
   return (
     <section
       id="perfil"
-      className="flex flex-col md:flex-row items-center gap-16 lg:h-[100vh] m-auto lg:px-4 xl:px-0 mt-10  xl:mb-0 border-b "
+      className="flex flex-col xl:flex-row items-center gap-16  m-auto py-10   mt-10  xl:mb-0 border-b "
     >
-      <div className="background-image-about w-full md:w-1/2  h-[40vh] lg:h-[100vh] 2xl"></div>
-      {/* <Image
-      className=""
+      <div className="background-image-about w-full md:w-1/2  h-[40vh] md:h-[100vh] 2xl xl:flex hidden"></div>
+      <Image
+        className="xl:hidden flex"
         src="/assets/home_images/quienes-somos.webp"
         width={1381}
         height={1173}
         alt="Picture of the author"
-      /> */}
+      />
 
-      <div className="text-center md:text-left flex-1 py-10">
+      <div className="text-center md:text-left  xl:w-1/2 px-10 lg::pr-10 ">
         <h1
           className={`text-4xl mb-8 t-blue-dark font-bold uppercase ${noto_300.className}`}
         >
           {t("home.about.title")}
         </h1>
 
-        <p className="text-sm lg:text-lg text-center lg:text-start px-10 lg:px-0 lg:w-[50%]">
+        <p className="text-sm md:w-2/3 lg:text-lg text-center md:text-start px-5  md:px-0 2xl:w-[50%]">
           {formatText(description)}
         </p>
 

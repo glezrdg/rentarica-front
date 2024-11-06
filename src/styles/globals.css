@@ -93,5 +93,9 @@ input, textarea, select {
 .social-media-icon:hover{
   color: #ffc200;
   scale: 1.05;
- 
+}
+@media (min-width: 2500px) {
+  .social-media-icon {
+   margin: 0px 2rem;
+  }
 }

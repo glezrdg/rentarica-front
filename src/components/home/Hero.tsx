@@ -27,7 +27,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative min-h-[60dvh] lg:h-screen w-full overflow-hidden">
+    <div className="relative min-h-[60dvh] md:h-[100dvh]  lg:h-screen w-full overflow-hidden">
       {/* Video de fondo */}
       <video
         className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover"
@@ -44,16 +44,16 @@ const Hero = () => {
 
       {/* Contenido sobre el video */}
       <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50">
-        <div className="w-full flex items-center  justify-center my-10">
+        <div className="w-full flex items-center  justify-center my-10 xl:mb-20 ">
           <SocialMedia />
         </div>
         <h1
-          className={`text-5xl md:text-[140px] md:w-[70%] lg:leading-[150px] font-thin uppercase text-white text-center ${noto_200.className}`}
+          className={`text-5xl md:text-[100px] xl:text-[140px] md:w-full lg:w-[70%] lg:leading-[150px] font-thin uppercase text-white text-center ${noto_200.className}`}
         >
           {t("home.hero.unforgettable")}
         </h1>
         <h1
-          className={`text-5xl md:text-[120px] text-black bg-white font-[100] uppercase lg:leading-[180px] lg:pr-24 text-center ${noto_thin.className}`}
+          className={`text-5xl md:text-[90px] xl:text-[120px] text-black bg-white font-[100] uppercase lg:leading-[180px] lg:pr-24 text-center ${noto_thin.className}`}
         >
           {t("home.hero.properties")}
         </h1>
