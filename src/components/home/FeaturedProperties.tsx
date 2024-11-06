@@ -36,7 +36,7 @@ const FeaturedProperties = () => {
         Propiedades Destacadas
       </h1>
       <div
-        className={`container mx-auto my-10 grid grid-cols-1 px-6 lg:px-0 lg:grid-cols-3 gap-10 transition-all duration-300 ${
+        className={`container mx-auto my-10 grid grid-cols-1 px-6 lg:px-0 lg:grid-cols-4 gap-10 transition-all duration-300 ${
           showAll ? "max-h-full" : "max-h-[70vh] overflow-hidden"
         } relative`}
       >

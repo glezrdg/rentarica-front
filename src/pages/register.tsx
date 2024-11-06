@@ -92,8 +92,10 @@ const RegisterProperty = () => {
         </Link>
       </div>
 
-      <div className=" w-full px-4 lg:px-0  lg:w-3/4 text-lg space-y-4">
-        <p>{t("register_property.additional_info.text")}</p>
+      <div className=" w-full flex flex-col items-center justify-center text-center lg:px-0  px-10 text-lg space-y-4">
+        <p className="w-2/3 my-5">
+          {t("register_property.additional_info.text")}
+        </p>
         <p>{t("register_property.additional_info.closing")}</p>
         <p>{t("register_property.additional_info.thank_you")}</p>
       </div>
