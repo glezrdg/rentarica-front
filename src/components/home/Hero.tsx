@@ -27,7 +27,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative min-h-[60dvh] md:h-[100dvh]  lg:h-screen w-full overflow-hidden">
+    <div className="relative min-h-[70dvh] md:h-[100dvh]  lg:h-screen w-full overflow-hidden">
       {/* Video de fondo */}
       <video
         className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover"
