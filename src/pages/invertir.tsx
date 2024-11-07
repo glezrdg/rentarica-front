@@ -9,9 +9,9 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa6";
 const invertir = () => {
   const { t } = useTranslation();
   return (
-    <div className="py-28">
+    <div className="py-28 ">
       {/* Hero */}
-      <div className="w-full h-[70vh] grid place-items-center  background-image-invertir">
+      <div className="w-full h-[50dvh] lg:h-[70vh] grid place-items-center  background-image-invertir">
         <div className="w-[80%] lg:w-[40%]">
           <h2
             className={`bg-yellow-500 w-fit mb-[2px] text-3xl lg:text-7xl uppercase p-2 ${noto_300.className}`}
@@ -27,7 +27,7 @@ const invertir = () => {
           </div>
           <div className="-z-10">
             <p
-              className={`bg-white text-black text-[52px] pt-7 -mt-8 uppercase  p-2 leading-[60px] ${noto_thin.className}`}
+              className={`bg-white text-black text-4xl lg:text-[52px] pt-7 -mt-8 uppercase  p-2 lg:leading-[60px] ${noto_thin.className}`}
             >
               {t("invest_page.banner.subtitle")}
             </p>
@@ -36,12 +36,12 @@ const invertir = () => {
       </div>
 
       {/*  */}
-      <div className="text-center mt-16">
-        <h2 className={`text-6xl uppercase ${noto_200.className}`}>
+      <div className="text-center mt-16 px-6">
+        <h2 className={`text-4xl lg:text-6xl uppercase ${noto_200.className}`}>
           {t("invest_page.consultation_section.title")}
         </h2>
 
-        <div className="w-[60vw] mx-auto mt-16 gap-10 grid">
+        <div className="lg:w-[60vw] mx-auto mt-16 gap-10 grid">
           <img
             src="https://static.wixstatic.com/media/828c94_e91d4c32bf6242298b29677d0bc1c5b0~mv2.png/v1/fill/w_1200,h_360,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/1.png"
             alt=""
@@ -63,7 +63,7 @@ const invertir = () => {
           {t("invest_page.upcoming_fairs.title")}
         </h3>
 
-        <p className="leading-8 w-[40%] m-auto">
+        <p className="leading-8 lg:w-[40%] m-auto">
           {t("invest_page.upcoming_fairs.description")}
         </p>
 
@@ -166,7 +166,7 @@ const invertir = () => {
         <h3 className="text-3xl text-gray-800 text-center font-semibold mb-10">
           {t("invest_page.contact_form.title")}
         </h3>
-        <form className="bg-white p-6 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] w-[45vw] mx-auto">
+        <form className="bg-white p-6 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]  lg:w-[45vw] mx-auto">
           {/* Name and Country/City Fields */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
             <div className="grid gap-2">

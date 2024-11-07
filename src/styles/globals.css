@@ -11,6 +11,7 @@
 
 html {
   scroll-behavior: smooth;
+  
 }
 
 
@@ -94,8 +95,35 @@ input, textarea, select {
   color: #ffc200;
   scale: 1.05;
 }
+@media (max-width: 320px) {
+  .social-media-icon {
+   margin: 0px 10px;
+  }
+}
 @media (min-width: 2500px) {
   .social-media-icon {
    margin: 0px 2rem;
   }
+}
+
+
+::-webkit-scrollbar-track
+{
+	
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+::-webkit-scrollbar
+{
+	width: 5px;
+  height: 5px;
+	background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+
+	background-color: #555;
 }

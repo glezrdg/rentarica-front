@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import { VscSettings } from "react-icons/vsc";
 import AirbnbEmbed from "@/components/properties/AirbnbEmbed";
 import { Sidebar } from "primereact/sidebar";
+import { CiCircleRemove } from "react-icons/ci";
 
 import { Dialog } from "primereact/dialog";
 
@@ -34,7 +35,7 @@ const index = () => {
     category: "",
     title: "",
     propertyType: "",
-    priceMin: 20000,
+    priceMin: 0,
     priceMax: 8000000,
     bedMin: 1,
     bedMax: 3,
@@ -51,7 +52,7 @@ const index = () => {
 
   useEffect(() => {
     handleGetProperties(filters);
-  }, []);
+  }, [filters.category]);
 
   function updateFilter(filterName: string, value: any) {
     setFilters((prevFilters) => ({
@@ -64,7 +65,7 @@ const index = () => {
       category: "",
       title: "",
       propertyType: "",
-      priceMin: 20000,
+      priceMin: 0,
       priceMax: 8000000,
       bedMin: 1,
       bedMax: 3,
@@ -98,16 +99,19 @@ const index = () => {
           Tu Próxima Inversión Inmobiliaria:
         </h1>
         <Dialog visible={visible} onHide={() => setVisible(false)}>
-          <h2>Filtros</h2>
-          <button
-            onClick={() => {
-              handleGetProperties(filters);
-              setVisible(false);
-            }}
-          >
-            Filtrar
-          </button>
-          <FilterProperties filters={filters} updateFilters={updateFilter} />
+          <div className="flex items-center flex-col ">
+            <h2 className="mb-4 px-2 text-xl font-semibold">Filtros</h2>
+            <FilterProperties filters={filters} updateFilters={updateFilter} />
+            <button
+              className="px-4 py-2 text-lg font-semibold rounded-lg bg-accent-yellow-base text-black my-4 shadow-sm self-end"
+              onClick={() => {
+                handleGetProperties(filters);
+                setVisible(false);
+              }}
+            >
+              Filtrar
+            </button>
+          </div>
         </Dialog>
         {/* <Sidebar visible={visible} onHide={() => setVisible(false)}>
           <h2>Filtros</h2>
@@ -220,7 +224,7 @@ const index = () => {
               handleGetProperties({}); // Fetch properties with cleared filters
             }}
           >
-            <VscSettings className="text-xl mr-2" />
+            <CiCircleRemove className="text-xl mr-2" />
             <span className="font-semibold transition-all">
               Limpiar Filtros
             </span>
@@ -230,7 +234,7 @@ const index = () => {
         {/* Sección de Propiedades o Airbnb */}
         <div className="w-full">
           {showAirbnb ? (
-            <div className="grid grid-flow-col overflow-x-scroll min-h-[40vh] p-4">
+            <div className="grid grid-flow-col overflow-x-scroll  min-h-[40vh] p-4">
               <AirbnbEmbed listingId="1279118026077470895" />
               <AirbnbEmbed listingId="1279856251934555362" />
               <AirbnbEmbed listingId="1222715409213583749" />

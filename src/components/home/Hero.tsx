@@ -59,7 +59,7 @@ const Hero = () => {
         </h1>
 
         <div className=" flex items-center gap-5 mt-10 text-md lg:text-2xl bg-accent-yellow-base border border-accent-yellow-base  rounded-sm shadow-sm px-4 py-2  lg:p-5   cursor-pointer  hover:text-accent-yellow-base hover:bg-transparent transition-all ">
-          <h4 className="text-xl font-semibold">
+          <h4 className="text-base md:text-xl lg:font-semibold">
             {t("home.hero.view_properties")}
           </h4>
           <FaPlus className="text-xs" />
