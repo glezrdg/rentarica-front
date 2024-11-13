@@ -78,6 +78,12 @@ const Services: React.FC<IServicesProps> = (props) => {
       image:
         "https://media.istockphoto.com/id/1470006282/photo/for-sale-real-estate-sign-in-front-of-new-house.jpg?s=612x612&w=0&k=20&c=fZV_4dxnMhc3nYE1ETFLiaYzn04JPMscHbV8wh2Xn6Q=",
     },
+    {
+      title: "Rentarica Owner's Club",
+      description:
+        "Descubre nuestras promociones y descuentos exclusivos para obtener el mejor valor en tu inversión inmobiliaria.",
+      image: "https://rentarica.trafico.do/wp-content/uploads/2024/06/4.jpeg",
+    },
   ];
 
   const [showAll, setShowAll] = useState<boolean>(false);

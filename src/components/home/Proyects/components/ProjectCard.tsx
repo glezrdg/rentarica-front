@@ -14,7 +14,7 @@ const PropertyCard: React.FC<IPropertyCardProps> = ({ property }) => {
       href={`/propiedades/${property?._id}`}
       className="grid relative rounded-lg bg-slate-100 w-full  overflow-hidden super-shadow"
     >
-      <div className="absolute right-5 top-2 bg-slate-100 p-2 px-3 rounded-md text-xs text-slate-600 uppercase font-semibold">
+      <div className="absolute right-5 top-2 bg-slate-800 p-2 px-3 rounded-md text-xs text-accent-yellow-base uppercase font-semibold">
         {property?.category}
       </div>
       {/* IMAGE */}
@@ -58,7 +58,9 @@ const PropertyCard: React.FC<IPropertyCardProps> = ({ property }) => {
           <p className="font-bold text-base uppercase">
             Desde USD${property.price}
           </p>
-          <p className="bg-yellow-400 px-2 h-9 leading-9 rounded-3xl">202327</p>
+          <p className="bg-yellow-400 px-2 h-9 leading-9 text-sm rounded-xl font-semibold">
+            202327
+          </p>
         </div>
       </div>
     </Link>

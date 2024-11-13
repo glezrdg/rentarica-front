@@ -20,7 +20,7 @@ export default function Home() {
       <Services />
 
       <AboutUs />
-      <AirbnbTestimonials />
+      {/* <AirbnbTestimonials /> */}
       <AnuncioPaneles />
       {/* <Projects /> */}
       <Clients />

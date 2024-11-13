@@ -1,0 +1,41 @@
+const zones = [
+    { label: "Todas las zonas", value: "" },
+    {
+      label: "Santo Domingo y Santiago",
+      items: [
+        { label: "Santo Domingo Centro", value: "Santo Domingo Centro" },
+        { label: "Santo Domingo Este", value: "Santo Domingo Este" },
+        { label: "Santo Domingo Norte", value: "Santo Domingo Norte" },
+        { label: "Santo Domingo Oeste", value: "Santo Domingo Oeste" },
+        { label: "Santiago", value: "Santiago" },
+      ],
+    },
+    {
+      label: "Zonas Turísticas",
+      items: [
+        { label: "Bávaro, Punta Cana y la Altagracia", value: "Bávaro" },
+        { label: "La Romana", value: "La Romana" },
+        { label: "Puerto Plata", value: "Puerto Plata" },
+        { label: "Samaná", value: "Samaná" },
+        { label: "San Pedro de Macorís", value: "San Pedro de Macorís" },
+      ],
+    },
+    {
+      label: "Otras Zonas",
+      items: [
+        { label: "Azua", value: "Azua" },
+        { label: "Bahoruco", value: "Bahoruco" },
+        { label: "Barahona", value: "Barahona" },
+        { label: "Dajabón", value: "Dajabón" },
+        { label: "Duarte", value: "Duarte" },
+        { label: "El Seibo", value: "El Seibo" },
+        { label: "Elías Piña", value: "Elías Piña" },
+        { label: "Espaillat", value: "Espaillat" },
+        { label: "Hato Mayor", value: "Hato Mayor" },
+        { label: "La Vega", value: "La Vega" },
+        { label: "Monte Cristi", value: "Monte Cristi" },
+        { label: "Pedernales", value: "Pedernales" },
+      ],
+    },
+  ];
+  

@@ -35,6 +35,7 @@ const index = () => {
     category: "",
     title: "",
     propertyType: "",
+    zone: "", // Agregamos el filtro de zona
     priceMin: 0,
     priceMax: 8000000,
     bedMin: 1,
@@ -64,6 +65,7 @@ const index = () => {
     setFilters({
       category: "",
       title: "",
+      zone: "",
       propertyType: "",
       priceMin: 0,
       priceMax: 8000000,
@@ -98,9 +100,13 @@ const index = () => {
         <h1 className="text-5xl place-self-center font-semibold my-20 ">
           Tu Próxima Inversión Inmobiliaria:
         </h1>
-        <Dialog visible={visible} onHide={() => setVisible(false)}>
+        <Dialog
+          visible={visible}
+          onHide={() => setVisible(false)}
+          className="w-[50vw] px-0"
+          header="Filtros"
+        >
           <div className="flex items-center flex-col ">
-            <h2 className="mb-4 px-2 text-xl font-semibold">Filtros</h2>
             <FilterProperties filters={filters} updateFilters={updateFilter} />
             <button
               className="px-4 py-2 text-lg font-semibold rounded-lg bg-accent-yellow-base text-black my-4 shadow-sm self-end"
