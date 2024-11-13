@@ -1,5 +1,5 @@
 import { noto_200 } from "@/utils/fonts";
-import React from "react";
+import React, { useState } from "react";
 import ServiceCard from "./components/ServiceCard";
 
 interface IServicesProps {
@@ -80,6 +80,8 @@ const Services: React.FC<IServicesProps> = (props) => {
     },
   ];
 
+  const [showAll, setShowAll] = useState<boolean>(false);
+
   return (
     <section id="services" className="!py-20 my-10 min-h-[100vh]">
       <div className="container m-auto px-4 xl:px-0">
@@ -92,9 +94,9 @@ const Services: React.FC<IServicesProps> = (props) => {
         </div>
 
         <div
-          className="grid md:grid-cols-2 lg:grid-cols-3 lg:gap-x-0 gap-8  mt-20 m-auto place-items-center h-[70vh] overflow-y-scroll w-[80vw] lg:w-[80dvw] xl:px-20 
-         snap-y scroll-smooth scroll-services
-        "
+          className={`relative grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20 m-auto place-items-center h-full w-[80vw] lg:w-[80dvw] xl:px-20 transition-all duration-300 ${
+            showAll ? "max-h-full" : "max-h-[70vh] overflow-hidden"
+          }`}
         >
           {services.map((service, index) => (
             <ServiceCard
@@ -104,7 +106,24 @@ const Services: React.FC<IServicesProps> = (props) => {
               backgroundImage={service.image}
             />
           ))}
+
+          {/* Difuminado */}
+          {!showAll && (
+            <div className="absolute bottom-0 left-0 w-full h-[10vh] bg-gradient-to-t from-white to-transparent pointer-events-none" />
+          )}
         </div>
+
+        {/* Botón para ver más */}
+        {!showAll && (
+          <div className="w-full flex items-center justify-center">
+            <button
+              onClick={() => setShowAll(true)}
+              className="mt-8 bg-accent-yellow-base border border-accent-yellow-base text-lg font-semibold  cursor-pointer  hover:scale-105 transition-all rounded-md shadow-sm px-4 py-2   "
+            >
+              Ver más
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

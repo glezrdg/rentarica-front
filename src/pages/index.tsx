@@ -10,6 +10,7 @@ import Projects from "@/components/home/Proyects/Projects";
 import Layout from "@/components/layout/Layout";
 import AnuncioPaneles from "@/shared/components/AnuncioPaneles";
 import FeaturedProperties from "@/components/home/FeaturedProperties";
+import AirbnbTestimonials from "@/components/home/AirbnbTestimonial";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Services />
 
       <AboutUs />
+      <AirbnbTestimonials />
       <AnuncioPaneles />
       {/* <Projects /> */}
       <Clients />

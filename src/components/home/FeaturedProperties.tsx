@@ -39,7 +39,7 @@ const FeaturedProperties = () => {
         className={`container relative mx-auto my-10 grid grid-cols-1 md:grid-cols-2 px-6 lg:px-10 lg:grid-cols-3 xl:grid-cols-4  gap-10 transition-all duration-300 ${
           showAll
             ? "max-h-full"
-            : "max-h-[80dvh] md:max-h-[70vh] overflow-hidden "
+            : "max-h-[80dvh] md:max-h-[80vh] overflow-hidden "
         } `}
       >
         {properties.length ? (
@@ -61,7 +61,7 @@ const FeaturedProperties = () => {
         {!showAll && (
           <div
             onClick={() => router.push("/propiedades")}
-            className="absolute bottom-5 place-self-center flex items-center gap-5 -mt-10 text-md lg:text-2xl bg-accent-yellow-base border border-accent-yellow-base  rounded-md shadow-sm px-4 py-2  lg:p-5   cursor-pointer  hover:scale-105 transition-all "
+            className="absolute bottom-2 place-self-center flex items-center gap-5 -mt-10 text-md lg:text-2xl bg-accent-yellow-base border border-accent-yellow-base  rounded-md shadow-sm px-4 py-2  lg:p-5   cursor-pointer  hover:scale-105 transition-all "
           >
             <h4 className="md:text-xl md:font-semibold">Ver mas propiedades</h4>
             <FaPlus className="text-xs" />

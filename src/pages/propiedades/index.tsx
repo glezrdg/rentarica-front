@@ -211,14 +211,14 @@ const index = () => {
           </div>
 
           <div
-            className="flex items-center justify-center self-start mt-10 lg:my-0 lg:self-auto lg:ml-10 cursor-pointer rounded-xl border border-zinc-200 py-2 px-6 lg:px-3"
+            className="flex items-center justify-center self-start mt-10 lg:my-0 lg:self-auto lg:ml-10 cursor-pointer rounded-xl border border-zinc-200 py-4 px-6 lg:px-3 hover:border-zinc-500 hover:bg-zinc-100 transition-button "
             onClick={() => setVisible(true)}
           >
             <VscSettings className="text-xl mr-2" />
             <span className="font-semibold transition-all">Más Filtros:</span>
           </div>
           <div
-            className="flex items-center justify-center self-start mt-10 lg:my-0 lg:self-auto lg:ml-10 cursor-pointer rounded-xl border border-zinc-200 py-2 px-6 lg:px-3"
+            className="flex items-center justify-center self-start mt-10 lg:my-0 lg:self-auto lg:ml-10 cursor-pointer rounded-xl border border-zinc-200 py-4 px-6 lg:px-3 hover:border-zinc-500 hover:bg-zinc-100 transition-button "
             onClick={() => {
               handleCleanFilters();
               handleGetProperties({}); // Fetch properties with cleared filters
@@ -234,7 +234,7 @@ const index = () => {
         {/* Sección de Propiedades o Airbnb */}
         <div className="w-full">
           {showAirbnb ? (
-            <div className="grid grid-flow-col overflow-x-scroll  min-h-[40vh] p-4">
+            <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2  min-h-[40vh] p-4">
               <AirbnbEmbed listingId="1279118026077470895" />
               <AirbnbEmbed listingId="1279856251934555362" />
               <AirbnbEmbed listingId="1222715409213583749" />

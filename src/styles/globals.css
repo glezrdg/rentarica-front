@@ -84,6 +84,11 @@ input, textarea, select {
   focus:outline-none
   focus:bg-yellow-400
 }
+.transition-button{
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
 
 .social-media-icon{
   margin: 0px 1rem;
