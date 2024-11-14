@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { PiBuildingApartment } from "react-icons/pi";
 
 interface IPropertyTypeSelectorProps {
   selectedType: string;
@@ -17,7 +18,7 @@ const propertyTypes = [
   { label: "Fincas", value: "farm", icon: "/assets/icons/farm.svg" },
   { label: "Naves", value: "warehouse", icon: "/assets/icons/warehouse.svg" },
   { label: "Oficinas", value: "office", icon: "/assets/icons/office.svg" },
-  { label: "Edificios", value: "building", icon: "/assets/icons/building.svg" },
+
   {
     label: "Penthouses",
     value: "penthouse",

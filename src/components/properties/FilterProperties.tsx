@@ -6,6 +6,7 @@ import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import PropertyTypeSelector from "./PropertiesType";
 import PropertyFeaturesSelector from "./PropertyFeaturesSelector";
+import { InputText } from "primereact/inputtext";
 
 const zones = [
   {
@@ -106,6 +107,12 @@ const FilterProperties = ({ filters, updateFilters }: any) => {
     }
   };
 
+  const footerContent = (
+    <div>
+      {/* <Button label="Ok" icon="pi pi-check" onClick={() => setVisible(false)} autoFocus /> */}
+    </div>
+  );
+
   return (
     <div className="shadow-md rounded-lg p-4 space-y-12 min-h-[60vh] ">
       <PropertyTypeSelector
@@ -113,7 +120,7 @@ const FilterProperties = ({ filters, updateFilters }: any) => {
         onSelectType={handleSelectPropertyType}
       />
       {/* Zonas Dropdown */}
-      <div>
+      <div className="border border-zinc-500 rounded-lg p-1">
         <Dropdown
           value={selectedCity}
           onChange={(e) => setSelectedCity(e.value)}
@@ -181,39 +188,51 @@ const FilterProperties = ({ filters, updateFilters }: any) => {
         </div>
       </div>
       <div>
-        <span>Features</span>
+        <span className="text-lg font-semibold pb-5">Features</span>
         <PropertyFeaturesSelector
           selectedFeatures={selectedFeatures}
           onSelectFeature={handleSelectFeature}
         />
       </div>
 
-      {/* FLOORS */}
-      <div>
-        <h4 className="text-lg uppercase mb-4">
-          {t("properties.filters.floors")} ({floors[0]} - {floors[1]})
-        </h4>
-        <Slider
-          value={floors}
-          onChange={(e) => setFloors(e.value)}
-          range
-          min={1}
-          max={3}
-        />
-      </div>
-
       {/* SIZE */}
       <div>
         <h4 className="text-lg uppercase mb-4">
-          {t("properties.filters.size")} ({size[0]} m² - {size[1]} m²)
+          {t("properties.filters.size")} (Desde {size[0]} m² - Hasta {size[1]}{" "}
+          m²)
         </h4>
-        <Slider
-          value={size}
-          onChange={(e) => setSize(e.value)}
-          range
-          min={1}
-          max={5000}
-        />
+        <div className="flex gap-4">
+          {/* Input para el tamaño mínimo */}
+          <InputText
+            value={size[0]}
+            onChange={(e) => {
+              const minSize = Number(e.target.value);
+              if (minSize <= size[1]) {
+                setSize([minSize, size[1]]);
+                updateFilters("sizeMin", minSize);
+              }
+            }}
+            placeholder="Desde m²"
+            className="p-2 border rounded-lg w-full bg-white text-black focus:bg-white"
+            type="number"
+            min={1}
+          />
+          {/* Input para el tamaño máximo */}
+          <InputText
+            value={size[1]}
+            onChange={(e) => {
+              const maxSize = Number(e.target.value);
+              if (maxSize >= size[0]) {
+                setSize([size[0], maxSize]);
+                updateFilters("sizeMax", maxSize);
+              }
+            }}
+            placeholder="Hasta m²"
+            className="p-2 border rounded-lg w-full bg-white text-black focus:bg-white"
+            type="number"
+            min={1}
+          />
+        </div>
       </div>
     </div>
   );

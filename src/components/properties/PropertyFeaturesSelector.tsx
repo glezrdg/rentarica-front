@@ -81,7 +81,7 @@ const PropertyFeaturesSelector: React.FC<IPropertyFeaturesSelectorProps> = ({
           }`}
         >
           <img src={feature.icon} alt={feature.label} className="w-6 h-6" />
-          <span className="text-base">{feature.label}</span>
+          <span className="text-base font-semibold">{feature.label}</span>
         </button>
       ))}
     </div>

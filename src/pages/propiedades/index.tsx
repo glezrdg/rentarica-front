@@ -103,20 +103,34 @@ const index = () => {
         <Dialog
           visible={visible}
           onHide={() => setVisible(false)}
-          className="w-[50vw] px-0"
+          className=" px-0"
           header="Filtros"
         >
           <div className="flex items-center flex-col ">
             <FilterProperties filters={filters} updateFilters={updateFilter} />
-            <button
-              className="px-4 py-2 text-lg font-semibold rounded-lg bg-accent-yellow-base text-black my-4 shadow-sm self-end"
-              onClick={() => {
-                handleGetProperties(filters);
-                setVisible(false);
-              }}
-            >
-              Filtrar
-            </button>
+            <div className="flex justify-between w-full pt-5">
+              <div
+                className="flex items-center justify-center self-start lg:my-0 lg:self-auto cursor-pointer rounded-xl border border-zinc-200 py-2 px-6 lg:px-3 hover:border-zinc-500 hover:bg-zinc-100 transition-button "
+                onClick={() => {
+                  handleCleanFilters();
+                  handleGetProperties({}); // Fetch properties with cleared filters
+                }}
+              >
+                <CiCircleRemove className="text-xl mr-2" />
+                <span className="font-semibold transition-all">
+                  Limpiar Filtros
+                </span>
+              </div>
+              <button
+                className="px-4 py-2 text-lg font-semibold rounded-lg bg-accent-yellow-base text-black  shadow-sm self-end"
+                onClick={() => {
+                  handleGetProperties(filters);
+                  setVisible(false);
+                }}
+              >
+                Ver Propiedades Filtradas
+              </button>
+            </div>
           </div>
         </Dialog>
         {/* <Sidebar visible={visible} onHide={() => setVisible(false)}>
