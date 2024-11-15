@@ -1,18 +1,18 @@
-import PropertyCard from "@/components/home/Proyects/components/ProjectCard";
-import Pagination from "@/components/Pagination";
-import FilterProperties from "@/components/properties/FilterProperties";
-import { API_URL } from "@/utils/constants";
-import { queryMapper } from "@/utils/queryMapper";
-import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
-import { VscSettings } from "react-icons/vsc";
-import AirbnbEmbed from "@/components/properties/AirbnbEmbed";
-import { Sidebar } from "primereact/sidebar";
-import { CiCircleRemove } from "react-icons/ci";
+import PropertyCard from '@/components/home/Proyects/components/ProjectCard'
+import Pagination from '@/components/Pagination'
+import FilterProperties from '@/components/properties/FilterProperties'
+import { API_URL } from '@/utils/constants'
+import { queryMapper } from '@/utils/queryMapper'
+import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
+import { VscSettings } from 'react-icons/vsc'
+import AirbnbEmbed from '@/components/properties/AirbnbEmbed'
+import { Sidebar } from 'primereact/sidebar'
+import { CiCircleRemove } from 'react-icons/ci'
 
 import { Dialog } from 'primereact/dialog'
-import { InputText } from "primereact/inputtext";
-import { IoMdSearch } from "react-icons/io";
+import { InputText } from 'primereact/inputtext'
+import { IoMdSearch } from 'react-icons/io'
 
 export type Property = {
   _id: string
@@ -46,7 +46,7 @@ const index = () => {
     priceMin: 0,
     priceMax: 8000000,
     bedMin: 1,
-    bedMax: 3,
+    bedMax: 6,
     floorMin: 1,
     floorMax: 3,
     sizeMin: 1,
@@ -109,8 +109,8 @@ const index = () => {
     <>
       <div className='pt-36'></div>
 
-      <div className="container px-4 xl:px-0 m-auto mb-10 min-h-[80vh] flex flex-col">
-        <h1 className="text-5xl place-self-center font-semibold my-20 ">
+      <div className='container px-4 xl:px-0 m-auto mb-10 min-h-[80vh] flex flex-col'>
+        <h1 className='text-5xl place-self-center font-semibold my-20 '>
           Tu Próxima Inversión Inmobiliaria:
         </h1>
         <Dialog
@@ -263,12 +263,12 @@ const index = () => {
             </span>
           </div>
         </div>
-        <div className="self-center flex items-center border-black rounded-lg border-b-2 mt-7 p-2">
+        <div className='self-center flex items-center border-black rounded-lg border-b-2 mt-7 p-2'>
           <input
-            className=" focus:outline-none  border-none"
-            placeholder="Buscar por código"
-          />{" "}
-          <IoMdSearch className="text-xl" />
+            className=' focus:outline-none  border-none'
+            placeholder='Buscar por código'
+          />{' '}
+          <IoMdSearch className='text-xl' />
         </div>
 
         {/* Sección de Propiedades o Airbnb */}

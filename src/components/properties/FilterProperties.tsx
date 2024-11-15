@@ -161,39 +161,111 @@ const FilterProperties = ({ filters, updateFilters }: any) => {
         <h4 className='text-lg uppercase '>
           {t('properties.filters.bathrooms')}
         </h4>
-        <div className='flex items-center space-x-4'>
-          <button
-            className='px-2 py-0 font-semibold text-lg border-zinc-400  hover:border-zinc-700 rounded-full border '
-            onClick={() => decrementCounter(setBathroomCount, bathroomCount, 1)}
-          >
-            -
-          </button>
-          <span className='text-xl'>{bathroomCount}</span>
-          <button
-            className='px-2 py-0 font-semibold text-lg border-zinc-400  hover:border-zinc-700 rounded-full border '
-            onClick={() => incrementCounter(setBathroomCount, bathroomCount)}
-          >
-            +
-          </button>
+        <div className='flex items-center gap-8'>
+          <div className='flex items-center space-x-4 relative'>
+            <label className='absolute -top-5 left-[55%] text-xs -translate-x-1/2'>
+              Desde
+            </label>
+            <button
+              className='px-2 py-0 font-semibold text-lg border-zinc-400  hover:border-zinc-700 rounded-full border '
+              onClick={() => {
+                if (filters.bathMin === 1) return
+                updateFilters('bathMin', filters.bathMin - 1)
+              }}
+            >
+              -
+            </button>
+            <span className='text-xl'>{filters.bathMin}</span>
+            <button
+              className='px-2 py-0 font-semibold text-lg border-zinc-400  hover:border-zinc-700 rounded-full border'
+              onClick={() => {
+                if (filters.bathMin === filters.maxBath) return
+                updateFilters('bathMin', filters.bathMin + 1)
+              }}
+            >
+              +
+            </button>
+          </div>
+          <div className='flex items-center space-x-4 relative'>
+            <label className='absolute -top-5 left-[55%] text-xs -translate-x-1/2'>
+              Hasta
+            </label>
+            <button
+              className='px-2 py-0 font-semibold text-lg border-zinc-400  hover:border-zinc-700 rounded-full border'
+              onClick={() => {
+                if (filters.bathMax === filters.minBath) return
+                updateFilters('bathMax', filters.bathMax - 1)
+              }}
+            >
+              -
+            </button>
+            <span className='text-xl'>{filters.bathMax}</span>
+            <button
+              className='px-2 py-0 font-semibold text-lg border-zinc-400  hover:border-zinc-700 rounded-full border'
+              onClick={() => {
+                if (filters.bathMax > 10) return
+                updateFilters('bathMax', filters.bathMax + 1)
+              }}
+            >
+              +
+            </button>
+          </div>
         </div>
       </div>
       {/* HABITACIONE */}
       <div className='flex items-center justify-between'>
         <h4 className='text-lg uppercase '>HABITACIONES</h4>
-        <div className='flex items-center space-x-4'>
-          <button
-            className='px-2 py-0 font-semibold text-lg border-zinc-400  hover:border-zinc-700 rounded-full border '
-            onClick={() => decrementCounter(setRoomCount, roomCount, 1)}
-          >
-            -
-          </button>
-          <span className='text-xl'>{roomCount}</span>
-          <button
-            className='px-2 py-0 font-semibold text-lg border-zinc-400  hover:border-zinc-700 rounded-full border '
-            onClick={() => incrementCounter(setRoomCount, roomCount)}
-          >
-            +
-          </button>
+        <div className='flex items-center gap-8'>
+          {/* MIN */}
+          <div className='flex items-center space-x-4 relative'>
+            <label className='absolute -top-5 left-[55%] text-xs -translate-x-1/2'>
+              Desde
+            </label>
+            <button
+              className='px-2 py-0 font-semibold text-lg border-zinc-400  hover:border-zinc-700 rounded-full border '
+              onClick={() => {
+                if (filters.bedMin === 1) return
+                updateFilters('bedMin', filters.bedMin - 1)
+              }}
+            >
+              -
+            </button>
+            <span className='text-xl'>{filters.bedMin}</span>
+            <button
+              className='px-2 py-0 font-semibold text-lg border-zinc-400  hover:border-zinc-700 rounded-full border '
+              onClick={() => {
+                if (filters.bedMin === filters.bedMax) return
+                updateFilters('bedMin', filters.bedMin + 1)
+              }}
+            >
+              +
+            </button>
+          </div>
+          {/* MAX */}
+          <div className='flex items-center space-x-4 relative'>
+            <label className='absolute -top-5 left-[55%] text-xs -translate-x-1/2'>
+              Hasta
+            </label>
+            <button
+              className='px-2 py-0 font-semibold text-lg border-zinc-400  hover:border-zinc-700 rounded-full border '
+              onClick={() => {
+                if (filters.bedMax === filters.bedMin) return
+                updateFilters('bedMax', filters.bedMax - 1)
+              }}
+            >
+              -
+            </button>
+            <span className='text-xl'>{filters.bedMax}</span>
+            <button
+              className='px-2 py-0 font-semibold text-lg border-zinc-400  hover:border-zinc-700 rounded-full border '
+              onClick={() => {
+                if (filters.bedMax > 15) return
+                updateFilters('bedMax', filters.bedMax + 1)
+              }}
+            >
+              +
+            </button>
+          </div>
         </div>
       </div>
       <div>
