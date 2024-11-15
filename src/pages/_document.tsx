@@ -1,19 +1,16 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang='en'>
+    <Html lang="en">
       <Head>
         <title>Rentarica</title>
-        <link
-          rel='icon'
-          href='/assets/logos/logo_without_text_light.png'
-        ></link>
+        <link rel="icon" href="/assets/logos/rentarica-icon.webp"></link>
       </Head>
-      <body className='antialiased'>
+      <body className="antialiased">
         <Main />
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }
