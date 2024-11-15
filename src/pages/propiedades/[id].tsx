@@ -11,6 +11,7 @@ import { API_URL } from '@/utils/constants'
 import { useTranslation } from 'react-i18next'
 import { TiArrowLeftThick } from 'react-icons/ti'
 import { useRouter } from 'next/router'
+import { propertyFeatures } from '@/utils/data'
 
 export const getServerSideProps = (async ({ query }) => {
   // Fetch data from external API
@@ -58,6 +59,34 @@ const PropertyDetail = ({
             className='text-lg py-6 text-justify text-slate-600'
             dangerouslySetInnerHTML={{ __html: property.description }}
           />
+
+          {property?.items?.length ? (
+            <>
+              <ul className='text-lg flex items-center gap-4 flex-wrap max-w-[700px] my-6 text-justify py-4 text-slate-600'>
+                {property?.items?.map((i) => {
+                  const feature = propertyFeatures.find((e) => e.value == i)
+                  return (
+                    <button
+                      key={i}
+                      className={`flex items-center gap-2 p-2 rounded-lg transition-colors borderbg-yellow-300 border-yellow-500`}
+                    >
+                      <img
+                        src={feature?.icon}
+                        alt={feature?.label}
+                        className='w-6 h-6'
+                      />
+                      <span className='text-base font-semibold'>
+                        {' '}
+                        {propertyFeatures.find((e) => e.value == i)?.label}
+                      </span>
+                    </button>
+                  )
+                })}
+              </ul>
+            </>
+          ) : (
+            ''
+          )}
 
           <div className='grid grid-cols-3 w-1/2 gap-3'>
             <div>

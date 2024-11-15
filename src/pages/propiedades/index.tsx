@@ -30,6 +30,7 @@ export type Property = {
   selectedFeatures: any[]
   isActive: true
   unitPrice: true
+  code: string
 }
 
 const index = () => {
@@ -53,6 +54,7 @@ const index = () => {
     selectedPropertyType: '',
     selectedFeatures: [],
     active: true,
+    code: '',
   })
 
   const [visible, setVisible] = useState(false)
@@ -87,6 +89,7 @@ const index = () => {
       selectedFeatures: [],
       selectedPropertyType: '',
       active: true,
+      code: '',
     })
   }
 
@@ -111,17 +114,17 @@ const index = () => {
         <Dialog
           visible={visible}
           onHide={() => setVisible(false)}
-          className=' px-0'
+          className='px-0'
           header='Filtros'
         >
           <div className='flex items-center flex-col '>
             <FilterProperties filters={filters} updateFilters={updateFilter} />
-            <div className='flex justify-between w-full pt-5'>
+            <div className='flex justify-between w-full pt-5 sticky bottom-0 bg-white'>
               <div
                 className='flex items-center justify-center self-start lg:my-0 lg:self-auto cursor-pointer rounded-xl border border-zinc-200 py-2 px-6 lg:px-3 hover:border-zinc-500 hover:bg-zinc-100 transition-button '
                 onClick={() => {
                   handleCleanFilters()
-                  handleGetProperties({}) // Fetch properties with cleared filters
+                  handleGetProperties(filters) // Fetch properties with cleared filters
                 }}
               >
                 <CiCircleRemove className='text-xl mr-2' />
@@ -249,7 +252,7 @@ const index = () => {
             className='flex items-center justify-center self-start mt-10 lg:my-0 lg:self-auto lg:ml-10 cursor-pointer rounded-xl border border-zinc-200 py-4 px-6 lg:px-3 hover:border-zinc-500 hover:bg-zinc-100 transition-button '
             onClick={() => {
               handleCleanFilters()
-              handleGetProperties({}) // Fetch properties with cleared filters
+              handleGetProperties(filters) // Fetch properties with cleared filters
             }}
           >
             <CiCircleRemove className='text-xl mr-2' />

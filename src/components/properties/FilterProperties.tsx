@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next'
 import PropertyTypeSelector from './PropertiesType'
 import PropertyFeaturesSelector from './PropertyFeaturesSelector'
 import { InputText } from 'primereact/inputtext'
+import { InputNumber } from 'primereact/inputnumber'
 
 const zones = [
   {
@@ -116,6 +117,12 @@ const FilterProperties = ({ filters, updateFilters }: any) => {
 
   return (
     <div className='shadow-md rounded-lg p-4 space-y-12 min-h-[60vh] '>
+      <InputNumber
+        placeholder='Codigo de propiedad'
+        className='w-full !h-[30px]'
+        value={filters.code}
+        onChange={(e) => updateFilters('code', e.value)}
+      />
       <PropertyTypeSelector
         selectedType={selectedPropertyType}
         onSelectType={handleSelectPropertyType}

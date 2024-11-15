@@ -59,7 +59,7 @@ const PropertyCard: React.FC<IPropertyCardProps> = ({ property }) => {
             {property.unitPrice} USD${property.price}
           </p>
           <p className='bg-yellow-400 px-2 h-9 leading-9 text-sm rounded-xl font-semibold'>
-            202327
+            {property.code}
           </p>
         </div>
       </div>
