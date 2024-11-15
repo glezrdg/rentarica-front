@@ -33,51 +33,66 @@ const RegisterProperty = () => {
       </div>
 
       {/* Options */}
-      <div className="grid grid-cols-2 lg:grid-cols-3 h-[45dvh] lg:h-[40dvh] xl:h-[400px] gap-4 mb-16 cursor-pointer px-4 md:px-20">
-        <div className="grid place-items-center bg-white super-shadow rounded-t-3xl transition-all duration-300 hover:shadow-orange-200 hover:text-orange-500">
+      <div className="grid grid-cols-2 lg:grid-cols-3 h-[45dvh] lg:h-[40dvh] xl:h-[400px] gap-4 mb-16 cursor-pointer px-4 md:px-20 xl:px-0">
+        <a
+          href="https://es.surveymonkey.com/r/RentaricaPropertyOnBoard"
+          className="grid place-items-center bg-white super-shadow rounded-t-3xl transition-all duration-300 hover:shadow-orange-200 hover:text-orange-500"
+        >
           <div className="text-center">
             <FaHouseChimney className=" text-3xl lg:text-4xl xl:text-5xl mb-3 m-auto" />
             <p className=" text-base lg:text-lg font-semibold xl:text-xl">
               {t("register_property.buttons.sell_property")}
             </p>
           </div>
-        </div>
+        </a>
 
-        <div className="grid place-items-center bg-white super-shadow rounded-t-3xl transition-all duration-300 hover:shadow-orange-200 hover:text-orange-500">
+        <a
+          href="https://es.surveymonkey.com/r/RentaricaTerrenosOnBoard"
+          className="grid place-items-center bg-white super-shadow rounded-t-3xl transition-all duration-300 hover:shadow-orange-200 hover:text-orange-500"
+        >
           <div className="text-center">
             <GiIsland className=" text-3xl lg:text-4xl xl:text-5xl mb-3 m-auto" />
             <p className=" text-base lg:text-lg font-semibold xl:text-xl">
               {t("register_property.buttons.sell_land")}
             </p>
           </div>
-        </div>
+        </a>
 
-        <div className="grid place-items-center bg-white super-shadow rounded-t-3xl transition-all duration-300 hover:shadow-orange-200 hover:text-orange-500">
+        <a
+          href="https://es.surveymonkey.com/r/RentaricaOnBoardRentals"
+          className="grid place-items-center bg-white super-shadow rounded-t-3xl transition-all duration-300 hover:shadow-orange-200 hover:text-orange-500"
+        >
           <div className="text-center">
             <i className="pi pi-dollar  text-3xl lg:text-4xl xl:text-5xl mb-3" />
             <p className=" text-base lg:text-lg font-semibold xl:text-xl">
               {t("register_property.buttons.rent_property")}
             </p>
           </div>
-        </div>
+        </a>
 
-        <div className="grid place-items-center bg-white super-shadow rounded-t-3xl transition-all duration-300 hover:shadow-orange-200 hover:text-orange-500">
+        <a
+          href="https://es.surveymonkey.com/r/RentaricaQuieroInvertir"
+          className="grid place-items-center bg-white super-shadow rounded-t-3xl transition-all duration-300 hover:shadow-orange-200 hover:text-orange-500"
+        >
           <div className="text-center">
             <FaMoneyBillTrendUp className=" text-3xl lg:text-4xl xl:text-5xl mb-3 mx-auto" />
             <p className=" text-base lg:text-lg font-semibold xl:text-xl">
               {t("register_property.buttons.invest")}
             </p>
           </div>
-        </div>
+        </a>
 
-        <div className="grid place-items-center bg-white super-shadow rounded-t-3xl transition-all duration-300 hover:shadow-orange-200 hover:text-orange-500">
+        <a
+          href="https://es.surveymonkey.com/r/RenatricaBuscoHogar"
+          className="grid place-items-center bg-white super-shadow rounded-t-3xl transition-all duration-300 hover:shadow-orange-200 hover:text-orange-500"
+        >
           <div className="text-center">
             <BiSearchAlt className=" text-3xl lg:text-4xl xl:text-5xl mb-3 m-auto" />
             <p className=" text-base lg:text-lg font-semibold xl:text-xl">
               {t("register_property.buttons.find_home")}
             </p>
           </div>
-        </div>
+        </a>
 
         <Link
           href="/services/anunciate"
