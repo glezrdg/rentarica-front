@@ -62,7 +62,7 @@ const AboutUs = () => {
 
           <button
             onClick={() => setExpanded(!expanded)}
-            className="bg-yellow-500 p-4 text-xl my-10"
+            className="flex items-center gap-5 mt-5 text-md lg:text-xl font-semibold m bg-accent-yellow-base border border-accent-yellow-base  rounded-md shadow-sm px-4 py-2  cursor-pointer  hover:scale-105 transition-all "
           >
             {expanded ? "Ver menos" : "Ver más"}
           </button>
