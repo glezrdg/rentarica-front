@@ -166,7 +166,7 @@ const invertir = () => {
         <h3 className="text-3xl text-gray-800 text-center font-semibold mb-10">
           {t("invest_page.contact_form.title")}
         </h3>
-        <form className="bg-white p-6 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]  lg:w-[45vw] mx-auto">
+        <form className="bg-white p-6 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]  lg:w-[45vw] mx-auto  inputs-invertir">
           {/* Name and Country/City Fields */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
             <div className="grid gap-2">

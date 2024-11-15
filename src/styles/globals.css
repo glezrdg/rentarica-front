@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 :root {
   --background: #ffffff;
@@ -11,22 +11,17 @@
 
 html {
   scroll-behavior: smooth;
-  
 }
 
-
-
-@layer components{
+@layer components {
   .container {
-    @apply 
-    xl:w-[95%]
+    @apply xl:w-[95%];
   }
 }
 
 .p-galleria-thumbnail-container {
   background: transparent;
 }
-
 
 /* @media (prefers-color-scheme: dark) {
   :root {
@@ -37,43 +32,34 @@ html {
 
 /* COLORS */
 .background-image-about {
-  background-image: url('../../public/assets/home_images/quienes-somos.webp');
+  background-image: url("../../public/assets/home_images/quienes-somos.webp");
   background-attachment: fixed;
-background-position: top right 35vw;
+  background-position: top right 35vw;
   background-repeat: no-repeat;
- 
 }
 
 @media (max-width: 500px) {
   .background-image-about {
-    background-image: url('../../public/assets/home_images/quienes-somos.webp');
+    background-image: url("../../public/assets/home_images/quienes-somos.webp");
     background-attachment: fixed;
-  background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-   
   }
 }
 .background-image-invertir {
-  background-image: url('../../public/assets/home_images/bg-invertir.webp');
+  background-image: url("../../public/assets/home_images/bg-invertir.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
- 
 }
 
 .super-shadow {
-  @apply
-  shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]
+  @apply shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)];
 }
 
-
-
-/* INPUT */
-
-input, textarea, select {
-  @apply
-  appearance-none
+.inputs-invertir input {
+  @apply appearance-none
   p-[18px]
   border-2
   border-yellow-400
@@ -82,53 +68,63 @@ input, textarea, select {
   transition-all
   placeholder:text-black
   focus:outline-none
-  focus:bg-yellow-400
-}
-.transition-button{
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 300ms;
+  focus:bg-yellow-400;
 }
 
-.social-media-icon{
+/* INPUT */
+
+select {
+  @apply appearance-none
+  p-[18px]
+  border-2
+  border-yellow-400
+  text-sm
+  hover:bg-yellow-400
+  transition-all
+  placeholder:text-black
+  focus:outline-none
+  focus:bg-yellow-400;
+}
+.transition-button {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.social-media-icon {
   margin: 0px 1rem;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
 }
-.social-media-icon:hover{
+.social-media-icon:hover {
   color: #ffc200;
   scale: 1.05;
 }
 @media (max-width: 320px) {
   .social-media-icon {
-   margin: 0px 10px;
+    margin: 0px 10px;
   }
 }
 @media (min-width: 2500px) {
   .social-media-icon {
-   margin: 0px 2rem;
+    margin: 0px 2rem;
   }
 }
 
-
-::-webkit-scrollbar-track
-{
-	
-	border-radius: 10px;
-	background-color: #fff;
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #fff;
 }
 
-::-webkit-scrollbar
-{
-	width: 5px;
+::-webkit-scrollbar {
+  width: 5px;
   height: 5px;
-	background-color: #fff;
+  background-color: #fff;
 }
 
-::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
 
-	background-color: #555;
+  background-color: #555;
 }

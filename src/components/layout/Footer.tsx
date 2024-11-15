@@ -60,35 +60,35 @@ const Footer = () => {
             {t("footer.message_form.title")}
           </h3>
 
-          <form className="w-full  grid grid-cols-2 gap-7">
+          <form className="w-full  grid grid-cols-2 gap-7 mb-10">
             <div className="flex flex-col">
               <label>{t("footer.message_form.name")}</label>
-              <input className="!bg-transparent border-b-2 border-white rounded-none focus:outline-none " />
+              <input className="!bg-transparent border-b-2 border-white rounded-none focus:outline-none  mt-2" />
             </div>
             <div className="flex flex-col">
               <label>{t("footer.message_form.last_name")}</label>
-              <input className="!bg-transparent border-b-2 border-white rounded-none focus:outline-none " />
+              <input className="!bg-transparent border-b-2 border-white rounded-none focus:outline-none  mt-2" />
             </div>
             <div className="flex flex-col">
               <label>{t("footer.message_form.email")}</label>
-              <input className="!bg-transparent border-b-2 border-white rounded-none focus:outline-none " />
+              <input className="!bg-transparent border-b-2 border-white rounded-none focus:outline-none  mt-2" />
             </div>
             <div className="flex flex-col">
               <label>{t("footer.message_form.phone_number")}</label>
-              <input className="!bg-transparent border-b-2 border-white rounded-none focus:outline-none " />
+              <input className="!bg-transparent border-b-2 border-white rounded-none focus:outline-none  mt-2" />
             </div>
             <div className="flex flex-col">
               <label>{t("footer.message_form.message")}</label>
-              <textarea className="!bg-transparent border-b-2 border-white rounded-none focus:outline-none " />
+              <textarea className="!bg-transparent border-b-2 border-white rounded-none focus:outline-none  mt-2" />
             </div>
             <div className="flex flex-col">
               <label>{t("footer.message_form.event_info")}</label>
               <input
-                className="!bg-transparent border-b-2 border-white rounded-none focus:outline-none "
+                className="!bg-transparent border-b-2 border-white rounded-none focus:outline-none  mt-2"
                 placeholder={t("footer.message_form.placeholder")}
               />
             </div>
-            <button className="bg-yellow-500 p-2 text-xl w-32 text-black">
+            <button className="bg-yellow-500 p-2 text-xl w-32 text-black self-end place-self-end col-span-2">
               {t("footer.message_form.submit")}
             </button>
           </form>
