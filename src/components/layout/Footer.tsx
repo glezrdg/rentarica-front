@@ -83,10 +83,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col">
               <label>{t("footer.message_form.event_info")}</label>
-              <input
-                className="!bg-transparent border-b-2 border-white rounded-none focus:outline-none  mt-2"
-                placeholder={t("footer.message_form.placeholder")}
-              />
+              <input className="!bg-transparent border-b-2 border-white rounded-none focus:outline-none  mt-2" />
             </div>
             <button className="bg-yellow-500 p-2 text-xl w-32 text-black self-end place-self-end col-span-2">
               {t("footer.message_form.submit")}

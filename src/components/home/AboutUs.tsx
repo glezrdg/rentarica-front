@@ -26,7 +26,7 @@ const AboutUs = () => {
         className="flex flex-col xl:flex-row items-center gap-16 m-auto py-10 mt-10 xl:mb-0 border-b"
       >
         <Image
-          className="w-[50vw] flex self-start"
+          className="lg:w-[50vw] flex self-start"
           src="/assets/home_images/quienes-somos.webp"
           width={1381}
           height={1173}
@@ -62,7 +62,7 @@ const AboutUs = () => {
 
           <button
             onClick={() => setExpanded(!expanded)}
-            className="flex items-center gap-5 mt-5 text-md lg:text-xl font-semibold m bg-accent-yellow-base border border-accent-yellow-base  rounded-md shadow-sm px-4 py-2  cursor-pointer  hover:scale-105 transition-all "
+            className="flex items-center gap-5 mt-5 text-md lg:text-xl font-semibold  bg-accent-yellow-base border border-accent-yellow-base  rounded-md shadow-sm px-4 py-2  cursor-pointer  hover:scale-105 transition-all mx-auto lg:m-0"
           >
             {expanded ? "Ver menos" : "Ver más"}
           </button>

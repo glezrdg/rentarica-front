@@ -1,34 +1,16 @@
-import React, { useState } from "react";
-import ScrollWithOffsetLink from "@/hooks/ScrollWithOffsetLink";
-import { Galleria } from "primereact/galleria";
-import { noto, noto_200, noto_thin } from "@/utils/fonts";
-import { useTranslation } from "react-i18next";
+import React, { useState, useEffect } from "react";
 import SocialMedia from "@/shared/components/SocialMedia";
 import { FaPlus } from "react-icons/fa";
+import { noto_200, noto_thin } from "@/utils/fonts";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
-  const [selectedImage, setSelectedImage] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const { t } = useTranslation();
 
-  const images = [
-    "https://iili.io/dthmYPV.jpg",
-    "https://iili.io/dthmSNs.jpg",
-    "https://iili.io/dthmrxf.jpg",
-  ];
-
-  const itemTemplate = (item: any) => {
-    return (
-      <img
-        src={item.itemImageSrc}
-        alt={item.alt}
-        className="w-screen h-screen object-cover"
-      />
-    );
-  };
-
-  return (
-    <div className="relative min-h-[80dvh] md:h-[100dvh]  lg:h-screen xl:min-h-[100dvh] w-full overflow-hidden">
-      {/* Video de fondo */}
+  // Array con los diferentes Heros
+  const heros = [
+    <div className="relative w-full mt-[10vh] lg:pt-0 h-[50dvh] lg:h-screen">
       <video
         className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover"
         autoPlay
@@ -43,7 +25,7 @@ const Hero = () => {
       </video>
 
       {/* Contenido sobre el video */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 pt-[10vh]">
+      <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 ">
         <div className="w-full flex items-center  justify-center mt-10 md:mb-0 xl:mb-10 ">
           <SocialMedia />
         </div>
@@ -64,6 +46,53 @@ const Hero = () => {
           </h4>
           <FaPlus className="text-xs" />
         </div>
+      </div>
+    </div>,
+    <div className="mt-[10dvh] lg:mt-0 relative w-full h-[50dvh] lg:h-[100vh] ">
+      <div className="background-image-hero absolute inset-0  object-cover bg-center flex items-center justify-evenly">
+        <div className="w-1/3"></div>
+        <div className="flex flex-col items-center justify-center h-full">
+          <img
+            src="/assets/home_images/hero/banner-feria-2.webp"
+            className="h-[20dvh] lg:h-[50vh]  self-start "
+            alt=""
+          />
+          <h2 className="lg:text-4xl font-bold text-white -mt-10">
+            Recibe un Bono de US$2,000 dólares <br /> en la propiedad de tu
+            preferencia!{" "}
+          </h2>
+          <a
+            href="https://rentarica.trafico.do/"
+            className="bg-accent-yellow-base px-4 py-2 mt-5 lg:px-20 lg:py-5 lg:text-5xl font-semibold lg:mt-20 rounded-full"
+          >
+            Registrate Aquí
+          </a>
+        </div>
+      </div>
+    </div>,
+    <div className="relative w-full h-[50dvh] mt-[10vh] lg:mt-0 lg:h-screen background-image-hero2 flex items-center justify-center"></div>,
+  ];
+
+  // Cambia de slide cada 4 segundos
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % heros.length);
+    }, 10000);
+
+    return () => clearInterval(interval);
+  }, [heros.length]);
+
+  return (
+    <div className="relative max-h-[60dvh] lg:max-h-[100dvh] md:h-[100dvh]  lg:h-screen w-full overflow-hidden">
+      <div
+        className="flex transition-transform duration-1000 ease-in-out"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
+        {heros.map((hero, index) => (
+          <div key={index} className="w-full h-full flex-shrink-0">
+            {hero}
+          </div>
+        ))}
       </div>
     </div>
   );

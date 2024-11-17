@@ -37,7 +37,7 @@ const PropertyTypeSelector: React.FC<IPropertyTypeSelectorProps> = ({
         <button
           key={type.value}
           onClick={() => onSelectType(type.value)}
-          className={`flex items-center gap-4 p-2 rounded-lg hover:bg-zinc-100 transition-colors border border-zinc-100  ${
+          className={`flex items-center gap-4 p-2 rounded-lg hover:bg-zinc-200 transition-colors border border-zinc-200  ${
             selectedType === type.value ? "bg-accent-yellow-base" : "bg-white"
           }`}
         >

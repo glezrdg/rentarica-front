@@ -22,6 +22,22 @@ html {
 .p-galleria-thumbnail-container {
   background: transparent;
 }
+/* Cambiar el color de la barra del rango */
+.p-slider-range {
+  background-color: #505050 !important; /* Cambia este color por el que desees */
+}
+
+/* Cambiar el color del thumb (círculos blancos) */
+.p-slider-handle {
+  background-color: #ffc200 !important; /* Cambia este color por el que desees */
+  border-color: rgb(196, 118, 2) !important;
+}
+
+/* Opcional: Cambiar el color del borde del thumb al hacer hover */
+.p-slider-handle:hover {
+  background-color: #ce9e01 !important;
+  border-color: #ffc200 !important;
+}
 
 /* @media (prefers-color-scheme: dark) {
   :root {
@@ -37,6 +53,18 @@ html {
   background-position: top right 35vw;
   background-repeat: no-repeat;
 }
+.background-image-hero {
+  background-image: url("../../public/assets/home_images/hero/banner-feria.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.background-image-hero2 {
+  background-image: url("../../public/assets/home_images/hero/banner-short-rental.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
 
 @media (max-width: 500px) {
   .background-image-about {
@@ -45,6 +73,18 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+  }
+  .background-image-hero {
+    background-image: url("../../public/assets/home_images/hero/banner-feria.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .background-image-hero2 {
+    background-image: url("../../public/assets/home_images/hero/banner-short-rental.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 }
 .background-image-invertir {
