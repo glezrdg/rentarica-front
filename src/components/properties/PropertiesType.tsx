@@ -32,7 +32,7 @@ const PropertyTypeSelector: React.FC<IPropertyTypeSelectorProps> = ({
   onSelectType,
 }) => {
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
       {propertyTypes.map((type) => (
         <button
           key={type.value}

@@ -54,10 +54,10 @@ const Hero = () => {
         <div className="flex flex-col items-center justify-center h-full">
           <img
             src="/assets/home_images/hero/banner-feria-2.webp"
-            className="h-[20dvh] lg:h-[50vh]  self-start "
+            className="h-[20dvh] lg:h-[50vh]  self-start -mt-4"
             alt=""
           />
-          <h2 className="lg:text-4xl font-bold text-white -mt-10">
+          <h2 className="text-xs md:text-sm lg:text-4xl font-bold text-white  ">
             Recibe un Bono de US$2,000 dólares <br /> en la propiedad de tu
             preferencia!{" "}
           </h2>

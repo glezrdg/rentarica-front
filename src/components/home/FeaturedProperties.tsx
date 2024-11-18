@@ -31,7 +31,7 @@ const FeaturedProperties = () => {
   return (
     <div className="flex flex-col items-center pt-[10vh] lg:pb-[10vh]">
       <h1
-        className={`text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold mb-5 lg:my-10 lg:mb-16 ${noto_200.className}`}
+        className={`text-4xl px-4 text-center md:text-6xl lg:text-7xl xl:text-8xl font-semibold mb-5 lg:my-10 lg:mb-16 ${noto_200.className}`}
       >
         Propiedades Destacadas
       </h1>

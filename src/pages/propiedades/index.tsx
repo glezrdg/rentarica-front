@@ -120,12 +120,14 @@ const index = () => {
         <Dialog
           visible={visible}
           onHide={() => setVisible(false)}
-          className="px-0"
+          className="px-1"
           header="Filtros"
+          style={{ width: "75vw" }}
+          breakpoints={{ "960px": "80vw", "641px": "95vw" }}
         >
-          <div className="flex items-center flex-col ">
+          <div className="flex items-center flex-col px-4">
             <FilterProperties filters={filters} updateFilters={updateFilter} />
-            <div className="flex justify-between w-full pt-5 sticky bottom-0 ">
+            <div className="flex justify-between w-full  pt-5 sticky z-40 bottom-0 ">
               <div
                 className="flex items-center justify-center self-start lg:my-0 lg:self-auto cursor-pointer rounded-xl border border-zinc-200 py-2 px-6 lg:px-3 hover:border-zinc-500 hover:bg-zinc-100 transition-button bg-white"
                 onClick={() => {
@@ -139,7 +141,7 @@ const index = () => {
                 </span>
               </div>
               <button
-                className="px-4 py-2 text-lg font-semibold rounded-lg bg-accent-yellow-base text-black  shadow-sm self-end"
+                className="px-4 py-2 text-sm lg:text-lg font-semibold rounded-lg bg-accent-yellow-base text-black  shadow-sm self-end "
                 onClick={() => {
                   handleGetProperties(filters);
                   setVisible(false);
@@ -247,24 +249,26 @@ const index = () => {
             </div>
           </div>
 
-          <div
-            className="flex items-center justify-center self-start mt-10 lg:my-0 lg:self-auto lg:ml-10 cursor-pointer rounded-xl border border-zinc-200 py-4 px-6 lg:px-3 hover:border-zinc-500 hover:bg-zinc-100 transition-button "
-            onClick={() => setVisible(true)}
-          >
-            <VscSettings className="text-xl mr-2" />
-            <span className="font-semibold transition-all">Más Filtros:</span>
-          </div>
-          <div
-            className="flex items-center justify-center self-start mt-10 lg:my-0 lg:self-auto lg:ml-10 cursor-pointer rounded-xl border border-zinc-200 py-4 px-6 lg:px-3 hover:border-zinc-500 hover:bg-zinc-100 transition-button "
-            onClick={() => {
-              handleCleanFilters();
-              handleGetProperties(filters); // Fetch properties with cleared filters
-            }}
-          >
-            <CiCircleRemove className="text-xl mr-2" />
-            <span className="font-semibold transition-all">
-              Limpiar Filtros
-            </span>
+          <div className="flex ">
+            <div
+              className="flex items-center justify-center self-start mt-10 lg:my-0 lg:self-auto lg:ml-10 cursor-pointer rounded-xl border border-zinc-200 py-4 px-6 lg:px-3 hover:border-zinc-500 hover:bg-zinc-100 transition-button "
+              onClick={() => setVisible(true)}
+            >
+              <VscSettings className="text-xl mr-2" />
+              <span className="font-semibold transition-all">Más Filtros:</span>
+            </div>
+            <div
+              className="flex items-center ml-4 justify-center self-start mt-10 lg:my-0 lg:self-auto lg:ml-10 cursor-pointer rounded-xl border border-zinc-200 py-4 px-6 lg:px-3 hover:border-zinc-500 hover:bg-zinc-100 transition-button "
+              onClick={() => {
+                handleCleanFilters();
+                handleGetProperties(filters); // Fetch properties with cleared filters
+              }}
+            >
+              <CiCircleRemove className="text-xl mr-2" />
+              <span className="font-semibold transition-all">
+                Limpiar Filtros
+              </span>
+            </div>
           </div>
         </div>
 

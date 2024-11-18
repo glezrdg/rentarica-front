@@ -117,7 +117,7 @@ const FilterProperties = ({ filters, updateFilters }: any) => {
   );
 
   return (
-    <div className="shadow-md rounded-lg p-4 space-y-12 min-h-[60vh] ">
+    <div className="shadow-md rounded-lg lg:p-4 space-y-12 min-h-[60vh] ">
       {/* <InputNumber
         placeholder="Codigo de propiedad"
         className="w-full !h-[30px]"
@@ -132,7 +132,7 @@ const FilterProperties = ({ filters, updateFilters }: any) => {
         />
       </div>
       {/* Zonas Dropdown */}
-      <div className=" flex items-center justify-between ">
+      <div className=" flex flex-col-reverse lg:flex-row items-center justify-between ">
         <Dropdown
           value={zone}
           onChange={(e) => setZone(e.value)}
@@ -141,10 +141,10 @@ const FilterProperties = ({ filters, updateFilters }: any) => {
           optionGroupLabel="label"
           optionGroupChildren="items"
           placeholder="Selecciona una zona"
-          className="w-[50%] border-black rounded-lg border-b-2  p-2 mr-4"
+          className="w-full lg:w-[50%] border-black rounded-lg border-b-2  p-2 lg:mr-4 mb-4 lg:mb-0  "
           filter
         />
-        <div className="flex items-center justify-center w-[50%] ml-4">
+        <div className="flex items-center justify-center w-full lg:w-[50%] lg:ml-4 mb-4 lg:mb-0">
           <div className="w-full flex  items-center border-black rounded-lg border-b-2  p-2">
             <input
               className=" w-[90%] focus:outline-none border-none p-2"

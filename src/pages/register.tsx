@@ -40,7 +40,7 @@ const RegisterProperty = () => {
         >
           <div className="text-center">
             <FaHouseChimney className=" text-3xl lg:text-4xl xl:text-5xl mb-3 m-auto" />
-            <p className=" text-base lg:text-lg font-semibold xl:text-xl">
+            <p className=" text-sm md:text-base lg:text-lg font-semibold xl:text-xl">
               {t("register_property.buttons.sell_property")}
             </p>
           </div>
@@ -52,7 +52,7 @@ const RegisterProperty = () => {
         >
           <div className="text-center">
             <GiIsland className=" text-3xl lg:text-4xl xl:text-5xl mb-3 m-auto" />
-            <p className=" text-base lg:text-lg font-semibold xl:text-xl">
+            <p className=" text-sm md:text-base lg:text-lg font-semibold xl:text-xl">
               {t("register_property.buttons.sell_land")}
             </p>
           </div>
@@ -64,7 +64,7 @@ const RegisterProperty = () => {
         >
           <div className="text-center">
             <i className="pi pi-dollar  text-3xl lg:text-4xl xl:text-5xl mb-3" />
-            <p className=" text-base lg:text-lg font-semibold xl:text-xl">
+            <p className=" text-sm md:text-base lg:text-lg font-semibold xl:text-xl">
               {t("register_property.buttons.rent_property")}
             </p>
           </div>
@@ -76,7 +76,7 @@ const RegisterProperty = () => {
         >
           <div className="text-center">
             <FaMoneyBillTrendUp className=" text-3xl lg:text-4xl xl:text-5xl mb-3 mx-auto" />
-            <p className=" text-base lg:text-lg font-semibold xl:text-xl">
+            <p className=" text-sm md:text-base lg:text-lg font-semibold xl:text-xl">
               {t("register_property.buttons.invest")}
             </p>
           </div>
@@ -88,7 +88,7 @@ const RegisterProperty = () => {
         >
           <div className="text-center">
             <BiSearchAlt className=" text-3xl lg:text-4xl xl:text-5xl mb-3 m-auto" />
-            <p className=" text-base lg:text-lg font-semibold xl:text-xl">
+            <p className=" text-sm md:text-base lg:text-lg font-semibold xl:text-xl">
               {t("register_property.buttons.find_home")}
             </p>
           </div>
@@ -100,7 +100,7 @@ const RegisterProperty = () => {
         >
           <div className="text-center">
             <Gi3dStairs className="text-3xl lg:text-4xl xl:text-5xl mb-3 m-auto" />
-            <p className=" text-base lg:text-lg font-semibold xl:text-xl">
+            <p className=" text-sm md:text-base lg:text-lg font-semibold xl:text-xl">
               {t("register_property.buttons.advertise")}
             </p>
           </div>
