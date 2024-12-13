@@ -122,8 +122,6 @@ const index = () => {
           onHide={() => setVisible(false)}
           className="px-1"
           header="Filtros"
-          style={{ width: "75vw" }}
-          breakpoints={{ "960px": "80vw", "641px": "95vw" }}
         >
           <div className="flex items-center flex-col px-4">
             <FilterProperties filters={filters} updateFilters={updateFilter} />

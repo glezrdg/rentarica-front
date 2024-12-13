@@ -1,6 +1,5 @@
 "use client";
 
-import { upcomingFairs } from "@/utils/data";
 import { noto_200, noto_300, noto_thin } from "@/utils/fonts";
 import { Dropdown } from "primereact/dropdown";
 import { useTranslation } from "react-i18next";
@@ -69,40 +68,37 @@ const invertir = () => {
         </p>
 
         <div className="w-[70vw] grid grid-cols-1 lg:grid-cols-2 gap-8 mx-auto mt-16">
-          {upcomingFairs.map((i) => (
-            <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4">
             {/* Img */}
             <div>
               <img
-                src={i.img}
+                src="https://static.wixstatic.com/media/828c94_4201a7f3fac541c8b9b22322e034c1fc~mv2.jpg/v1/fill/w_345,h_464,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Pier-6-at-Brooklyn-Bridge-Park.jpg"
                 alt=""
-                className="shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)] w-full"
+                className="shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]"
               />
             </div>
             {/* Info */}
             <div className="text-start">
               <h4 className="text-xl mb-2">
-                {i.title}
+                {t("invest_page.upcoming_fairs.event.location")}
               </h4>
-             {i.date && i.time ? <>
-              <p className="text-sm">
+              <label className="text-sm">
                 {t("invest_page.upcoming_fairs.event.date")}
-              </p>
-              <p className="text-sm">
+              </label>
+              <label className="text-sm">
                 {t("invest_page.upcoming_fairs.event.hour")}
-              </p>
-             </>: <><p>.</p></>}
+              </label>
 
               <p className="my-6 text-[13px]">
-                {i.description}
+                {t("invest_page.upcoming_fairs.event.location")}
               </p>
 
-              <p className="text-sm">
+              <label className="text-sm">
                 {t("invest_page.upcoming_fairs.contact.phone")}
-              </p>
-              <p className="text-sm block">
+              </label>
+              <label className="text-sm block">
                 {t("invest_page.upcoming_fairs.contact.email")}
-              </p>
+              </label>
 
               <button className="flex gap-4 items-center text-sm bg-orange-500 p-3 my-2">
                 {t("invest_page.upcoming_fairs.contact.register_button")}
@@ -117,7 +113,51 @@ const invertir = () => {
               </div>
             </div>
           </div>
-          ))}
+          <div className="grid grid-cols-2 gap-4">
+            {/* Img */}
+            <div>
+              <img
+                src="https://static.wixstatic.com/media/828c94_4201a7f3fac541c8b9b22322e034c1fc~mv2.jpg/v1/fill/w_345,h_464,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Pier-6-at-Brooklyn-Bridge-Park.jpg"
+                alt=""
+                className="shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]"
+              />
+            </div>
+            {/* Info */}
+            <div className="text-start">
+              <h4 className="text-xl mb-2">
+                {t("invest_page.upcoming_fairs.event.location")}
+              </h4>
+              <label className="text-sm">
+                {t("invest_page.upcoming_fairs.event.date")}
+              </label>
+              <label className="text-sm">
+                {t("invest_page.upcoming_fairs.event.hour")}
+              </label>
+
+              <p className="my-6 text-[13px]">
+                {t("invest_page.upcoming_fairs.event.location")}
+              </p>
+
+              <label className="text-sm">
+                {t("invest_page.upcoming_fairs.contact.phone")}
+              </label>
+              <label className="text-sm block">
+                {t("invest_page.upcoming_fairs.contact.email")}
+              </label>
+
+              <button className="flex gap-4 items-center text-sm bg-orange-500 p-3 my-2">
+                {t("invest_page.upcoming_fairs.contact.phone")}
+                <FaArrowRight />
+              </button>
+
+              {/* Social media */}
+              <div className="flex gap-2">
+                <FaInstagram />
+                <FaFacebook />
+                <FaTwitter />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

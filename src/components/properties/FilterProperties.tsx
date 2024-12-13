@@ -122,7 +122,12 @@ const FilterProperties = ({ filters, updateFilters }: any) => {
         placeholder="Codigo de propiedad"
         className="w-full !h-[30px]"
         value={filters.code}
-        onChange={(e) => updateFilters("code", e.value)}
+        onChange={(e) 
+        
+        
+        
+        
+        => updateFilters("code", e.value)}
       /> */}
       <div>
         <h4 className="font-semibold text-lg mb-4">Tipo de propiedad:</h4>
