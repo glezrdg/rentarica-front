@@ -81,7 +81,7 @@ const SolarForm = () => {
           <h2 className="text-5xl font-semibold mb-4">¡Cotiza con nosotros!</h2>
           <div className="text-xl">
             <p className="mb-6">
-              Déjanos tus datos y en breve estaremos comunicándonos contigo..
+              Déjanos tus datos y en breve estaremos comunicándonos contigo...
             </p>
             <p className="mb-4">
               <strong>Phone:</strong> 809-780-7577
