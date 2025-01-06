@@ -124,6 +124,7 @@ const Hero = () => {
             {t("home.hero.view_properties")}
           </h4>
           <FaPlus className="text-xs" />
+          
         </div>
       </div>
     </div>
