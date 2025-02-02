@@ -2,10 +2,73 @@ import { noto_300 } from "@/utils/fonts";
 import Image from "next/image";
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Galleria, GalleriaResponsiveOptions } from "primereact/galleria";
 
 const AboutUs = () => {
   const { t } = useTranslation();
   const [expanded, setExpanded] = useState(false);
+
+  // Arreglo de imágenes basado en archivos dentro de /public/assets/fotos_personal
+  const images = [
+    {
+      itemImageSrc: "/assets/fotos_personal/equipo.jpg",
+      thumbnailImageSrc: "/assets/fotos_personal/equipo.jpg",
+      alt: "Persona 0",
+    },
+    {
+      itemImageSrc: "/assets/fotos_personal/Elizabeth Camacho.jpg",
+      thumbnailImageSrc: "/assets/fotos_personal/Elizabeth Camacho.jpg",
+      alt: "Persona 1",
+    },
+    {
+      itemImageSrc: "/assets/fotos_personal/Gabriela_Escobar.jpg",
+      thumbnailImageSrc: "/assets/fotos_personal/Gabriela_Escobar.jpg",
+      alt: "Persona 2",
+    },
+    {
+      itemImageSrc: "/assets/fotos_personal/Grace .jpg",
+      thumbnailImageSrc: "/assets/fotos_personal/Grace .jpg",
+      alt: "Persona 3",
+    },
+
+    {
+      itemImageSrc: "/assets/fotos_personal/Marisol Mora- Foto Profesional.jpg",
+      thumbnailImageSrc:
+        "/assets/fotos_personal/Marisol Mora- Foto Profesional.jpg",
+      alt: "Persona 5",
+    },
+  ];
+
+  // Configuración de la galería responsive
+  const responsiveOptions: GalleriaResponsiveOptions[] = [
+    { breakpoint: "991px", numVisible: 4 },
+    { breakpoint: "767px", numVisible: 3 },
+    { breakpoint: "575px", numVisible: 1 },
+  ];
+
+  const itemTemplate = (item: any) => {
+    return (
+      <img
+        src={item.itemImageSrc}
+        alt={item.alt}
+        style={{
+          height: "600px",
+          objectFit: "cover",
+          display: "block",
+        }}
+      />
+    );
+  };
+
+  const thumbnailTemplate = (item: any) => {
+    return (
+      <img
+        src={item.thumbnailImageSrc}
+        alt={item.alt}
+        style={{ height: "100px" }}
+      />
+    );
+  };
 
   const formatText = (text: string) => {
     return text.split(". ").map((sentence, index) => (
@@ -23,24 +86,35 @@ const AboutUs = () => {
     <>
       <section
         id="perfil"
-        className="flex flex-col xl:flex-row items-center gap-16 m-auto py-10 mt-10 xl:mb-0 border-b"
+        className="flex flex-col xl:flex-row items-center gap-16 m-auto  mt-10 xl:mb-0 border-b pb-40"
       >
-        <Image
+        {/* <Image
           className="lg:w-[50vw] flex self-start"
           src="/assets/home_images/quienes-somos.webp"
           width={1381}
           height={1173}
           alt="Picture of the author"
-        />
+        /> */}
+        <div className=" xl:w-1/2 flex justify-end">
+          <Galleria
+            value={images}
+            responsiveOptions={responsiveOptions}
+            numVisible={3}
+            style={{ maxWidth: "600px", maxHeight: " 600px" }}
+            item={itemTemplate}
+            thumbnail={thumbnailTemplate}
+            showItemNavigators
+            showThumbnails={false}
+          />
+        </div>
 
-        <div className="text-center md:text-left xl:w-1/2 px-10 lg:pr-10">
+        <div className="text-center md:text-left xl:w-1/2 px-10 lg:pr-10 pt-20">
           <h1
             className={`text-5xl mb-8 t-blue-dark font-bold uppercase ${noto_300.className}`}
           >
             {t("home.about.title")}
           </h1>
 
-          {/* Texto inicial con más líneas visibles */}
           <div
             className={`relative text-sm md:w-2/3 lg:text-lg text-center md:text-start px-5 md:px-0 2xl:w-[50%] ${
               expanded ? "" : "line-clamp-6"
@@ -54,7 +128,6 @@ const AboutUs = () => {
               {formatText(description)}
             </p>
 
-            {/* Gradiente para difuminado */}
             {!expanded && (
               <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
             )}
@@ -70,6 +143,11 @@ const AboutUs = () => {
           <div className="w-9 border-[3px] my-8 border-gray-700 hidden lg:flex"></div>
         </div>
       </section>
+
+      {/* Galleria */}
+      <div className="flex w-full justify-center mt-10">
+        <div className="card"></div>
+      </div>
     </>
   );
 };
