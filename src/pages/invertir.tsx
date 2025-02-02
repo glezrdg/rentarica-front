@@ -5,6 +5,7 @@ import { Dropdown } from "primereact/dropdown";
 import { useTranslation } from "react-i18next";
 import { FaArrowRight } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa6";
+import Link from "next/link";
 
 const invertir = () => {
   const { t } = useTranslation();
@@ -57,203 +58,59 @@ const invertir = () => {
         </div>
       </div>
 
-      {/* FERIAS */}
-      <div className="bg-white mt-16 text-center">
-        <h3 className={`text-4xl text-gray-800 font-semibold mb-10`}>
-          {t("invest_page.upcoming_fairs.title")}
-        </h3>
-
-        <p className="leading-8 lg:w-[40%] m-auto">
-          {t("invest_page.upcoming_fairs.description")}
-        </p>
-
-        <div className="w-[70vw] grid grid-cols-1 lg:grid-cols-2 gap-8 mx-auto mt-16">
-          <div className="grid grid-cols-2 gap-4">
-            {/* Img */}
-            <div>
-              <img
-                src="https://static.wixstatic.com/media/828c94_4201a7f3fac541c8b9b22322e034c1fc~mv2.jpg/v1/fill/w_345,h_464,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Pier-6-at-Brooklyn-Bridge-Park.jpg"
-                alt=""
-                className="shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]"
-              />
-            </div>
-            {/* Info */}
-            <div className="text-start">
-              <h4 className="text-xl mb-2">
-                {t("invest_page.upcoming_fairs.event.location")}
-              </h4>
-              <label className="text-sm">
-                {t("invest_page.upcoming_fairs.event.date")}
-              </label>
-              <label className="text-sm">
-                {t("invest_page.upcoming_fairs.event.hour")}
-              </label>
-
-              <p className="my-6 text-[13px]">
-                {t("invest_page.upcoming_fairs.event.location")}
-              </p>
-
-              <label className="text-sm">
-                {t("invest_page.upcoming_fairs.contact.phone")}
-              </label>
-              <label className="text-sm block">
-                {t("invest_page.upcoming_fairs.contact.email")}
-              </label>
-
-              <button className="flex gap-4 items-center text-sm bg-orange-500 p-3 my-2">
-                {t("invest_page.upcoming_fairs.contact.register_button")}
-                <FaArrowRight />
-              </button>
-
-              {/* Social media */}
-              <div className="flex gap-2">
-                <FaInstagram />
-                <FaFacebook />
-                <FaTwitter />
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            {/* Img */}
-            <div>
-              <img
-                src="https://static.wixstatic.com/media/828c94_4201a7f3fac541c8b9b22322e034c1fc~mv2.jpg/v1/fill/w_345,h_464,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Pier-6-at-Brooklyn-Bridge-Park.jpg"
-                alt=""
-                className="shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]"
-              />
-            </div>
-            {/* Info */}
-            <div className="text-start">
-              <h4 className="text-xl mb-2">
-                {t("invest_page.upcoming_fairs.event.location")}
-              </h4>
-              <label className="text-sm">
-                {t("invest_page.upcoming_fairs.event.date")}
-              </label>
-              <label className="text-sm">
-                {t("invest_page.upcoming_fairs.event.hour")}
-              </label>
-
-              <p className="my-6 text-[13px]">
-                {t("invest_page.upcoming_fairs.event.location")}
-              </p>
-
-              <label className="text-sm">
-                {t("invest_page.upcoming_fairs.contact.phone")}
-              </label>
-              <label className="text-sm block">
-                {t("invest_page.upcoming_fairs.contact.email")}
-              </label>
-
-              <button className="flex gap-4 items-center text-sm bg-orange-500 p-3 my-2">
-                {t("invest_page.upcoming_fairs.contact.phone")}
-                <FaArrowRight />
-              </button>
-
-              {/* Social media */}
-              <div className="flex gap-2">
-                <FaInstagram />
-                <FaFacebook />
-                <FaTwitter />
-              </div>
-            </div>
+      <div className="bg-white mt-16 text-center flex items-center flex-col mb-40 ">
+        <div className="w-full mx-4 lg:w-2/3 xl:w-[60%] 2xl:w-1/2">
+          <h1 className="text-2xl xl:text-4xl font-semibold">
+            {" "}
+            Rentarica Real Estate Summit
+          </h1>
+          <p className="my-10 text-sm mx-4 xl:mx-0 xl:text-lg">
+            En Rentarica, conectamos sueños con oportunidades a través de
+            nuestras ferias inmobiliarias internacionales. Nos enorgullece ser
+            un puente entre desarrolladores y expatriados interesados en
+            invertir en República Dominicana, creando un espacio donde la
+            innovación, el entretenimiento y las oportunidades se encuentran.
+          </p>
+          <p className="mb-10 text-sm mx-4 xl:mx-0 xl:text-lg">
+            Con más de 10 ferias inmobiliarias exitosas, hemos demostrado
+            nuestra capacidad para producir eventos que no solo generan
+            resultados rentables para nuestros desarrolladores, sino que también
+            ofrecen una experiencia unica, enriquecedora y entretenida para
+            nuestros asistentes.
+          </p>
+          <span className=" text-xl xl:text-3xl font-semibold my-5 mb-10">
+            Haz realidad tus metas con Rentarica
+          </span>
+          <p className="mt-10 text-sm mx-4 xl:mx-0 xl:text-lg">
+            <span>
+              ¿Deseas organizar una feria internacional con nosotros o encontrar
+              la propiedad de tus sueños?
+            </span>
+            Estamos aquí para asesorarte en cada paso del camino. Con Rentarica,
+            cada evento y cada inversión cuentan con la experiencia y compromiso
+            de un equipo dedicado a tu éxito. ¿Listo para comenzar?
+          </p>
+          <div className="flex flex-col md:flex-row  items-center w-full mt-12 xl:mt-20 justify-center text-base xl:text-xl">
+            <Link
+              href="assets/documents/Dossier Rentarica General- Propietarios .pdf"
+              target="_blank"
+              download
+              className="mx-6 bg-accent-yellow-base rounded-md shadow-md my-2 px-6 py-4 hover:bg-transparent border border-accent-yellow-base hover:text-accent-yellow-base transition-all hover:scale-105  font-semibold"
+            >
+              Organiza tu feria con nosotros
+            </Link>
+            <Link
+              href="https://rentarica.trafico.do/"
+              target="_blank"
+              className="mx-6  bg-accent-yellow-base rounded-md shadow-md my-2 px-6 py-4 hover:bg-transparent border border-accent-yellow-base hover:text-accent-yellow-base transition-all hover:scale-105  font-semibold"
+            >
+              Quiero Mi Próxima Propiedad
+            </Link>
           </div>
         </div>
       </div>
 
-      {/* FORM */}
-      <section className="mt-16">
-        <h3 className="text-3xl text-gray-800 text-center font-semibold mb-10">
-          {t("invest_page.contact_form.title")}
-        </h3>
-        <form className="bg-white p-6 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]  lg:w-[45vw] mx-auto  inputs-invertir">
-          {/* Name and Country/City Fields */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-            <div className="grid gap-2">
-              <label>{t("invest_page.contact_form.fields.name")}</label>
-              <input placeholder={t("invest_page.contact_form.fields.name")} />
-            </div>
-            <div className="grid gap-2">
-              <label>{t("invest_page.contact_form.fields.country_city")}</label>
-              <input
-                placeholder={t("invest_page.contact_form.fields.country_city")}
-              />
-            </div>
-          </div>
-
-          {/* Email Field */}
-          <div className="grid gap-2 mb-6">
-            <label>{t("invest_page.contact_form.fields.email")}</label>
-            <input placeholder={t("invest_page.contact_form.fields.email")} />
-          </div>
-
-          {/* Phone Number and Referral Fields */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-            <div className="grid gap-2">
-              <label>{t("invest_page.contact_form.fields.phone")}</label>
-              <input placeholder={t("invest_page.contact_form.fields.phone")} />
-            </div>
-            <div className="grid gap-2">
-              <label>{t("invest_page.contact_form.fields.referral")}</label>
-              <Dropdown
-                placeholder={t("invest_page.contact_form.fields.referral")}
-                options={[]}
-              />
-            </div>
-          </div>
-
-          {/* Promotion Days and Message Fields */}
-          <div className="grid gap-6 mb-6">
-            <div className="grid gap-2">
-              <label>
-                {t("invest_page.contact_form.fields.promote_options")}
-              </label>
-              <div className="grid grid-cols-3 lg:grid-cols-7 gap-3 text-sm mt-2">
-                <label className="flex items-center gap-8">
-                  <input type="checkbox" className="!p-2" />{" "}
-                  {t("invest_page.contact_form.days.mon")}
-                </label>
-                <label className="flex items-center gap-8">
-                  <input type="checkbox" className="!p-2" />{" "}
-                  {t("invest_page.contact_form.days.tue")}
-                </label>
-                <label className="flex items-center gap-8">
-                  <input type="checkbox" className="!p-2" />{" "}
-                  {t("invest_page.contact_form.days.wed")}
-                </label>
-                <label className="flex items-center gap-8">
-                  <input type="checkbox" className="!p-2" />{" "}
-                  {t("invest_page.contact_form.days.thu")}
-                </label>
-                <label className="flex items-center gap-8">
-                  <input type="checkbox" className="!p-2" />{" "}
-                  {t("invest_page.contact_form.days.fri")}
-                </label>
-                <label className="flex items-center gap-8">
-                  <input type="checkbox" className="!p-2" />{" "}
-                  {t("invest_page.contact_form.days.sat")}
-                </label>
-                <label className="flex items-center gap-8">
-                  <input type="checkbox" className="!p-2" />{" "}
-                  {t("invest_page.contact_form.days.sun")}
-                </label>
-              </div>
-            </div>
-            <div className="grid gap-2">
-              <textarea
-                placeholder={t("invest_page.contact_form.fields.message")}
-              />
-            </div>
-          </div>
-
-          {/* Submit Button */}
-          <div className="w-full flex mt-12">
-            <button className="bg-yellow-500 font-bold w-[20rem] m-auto p-3 text-xl">
-              {t("invest_page.contact_form.button")}
-            </button>
-          </div>
-        </form>
-      </section>
+      <section className="mt-16"></section>
     </div>
   );
 };

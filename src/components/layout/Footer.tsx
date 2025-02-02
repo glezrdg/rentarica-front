@@ -66,25 +66,34 @@ const Footer = () => {
             {t("footer.menu.title")}
           </h3>
           <ul className="space-y-3 pl-2">
-            <Link href={"/#perfil"} className="block">
+            <Link href={"/"} className="block">
               {t("footer.menu.home")}
             </Link>
-            <Link href={"/#services"} className="block">
+            <Link href={"/invertir"} className="block">
               {t("footer.menu.invest_with_us")}
             </Link>
-            <Link href={"/#projects"} className="block">
+            <Link
+              href={"https://rentarica.trafico.do/"}
+              target="_blank"
+              className="block"
+            >
               {t("footer.menu.rentarica_fair")}
             </Link>
-            <Link href={"/#contact"} className="block">
+            <Link href={"/register"} className="block">
               {t("footer.menu.register_property")}
             </Link>
-            <Link href={"/#contact"} className="block">
+            {/* <Link
+              href={"/assets/documents/Catálogo-Rentarica.pdf"} 
+              target="_blank"
+              download
+              className="block"
+            >
               {t("footer.menu.advertise_with_us")}
-            </Link>
+            </Link> */}
             <Link href={"/panelessolares"} className="block">
               {t("footer.menu.solar_panels")}
             </Link>
-            <Link href={"/#contact"} className="block">
+            <Link href={"/propiedades"} className="block">
               {t("footer.menu.properties")}
             </Link>
           </ul>

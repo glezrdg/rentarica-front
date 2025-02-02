@@ -54,7 +54,6 @@ const FeaturedProperties = () => {
           </div>
         )}
 
-        {/* Difuminado en la parte inferior */}
         {!showAll && (
           <div className="absolute bottom-0 left-0 w-full h-[40vh] bg-gradient-to-t from-white to-transparent pointer-events-none" />
         )}
@@ -68,8 +67,6 @@ const FeaturedProperties = () => {
           </div>
         )}
       </div>
-
-      {/* Botón para ver más */}
     </div>
   );
 };
