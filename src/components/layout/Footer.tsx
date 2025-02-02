@@ -82,14 +82,14 @@ const Footer = () => {
             <Link href={"/register"} className="block">
               {t("footer.menu.register_property")}
             </Link>
-            {/* <Link
-              href={"/assets/documents/Catálogo-Rentarica.pdf"} 
+            <Link
+              href={"/assets/documents/Catálogo-Rentarica.pdf"}
               target="_blank"
               download
               className="block"
             >
               {t("footer.menu.advertise_with_us")}
-            </Link> */}
+            </Link>
             <Link href={"/panelessolares"} className="block">
               {t("footer.menu.solar_panels")}
             </Link>
