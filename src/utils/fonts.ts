@@ -1,25 +1,30 @@
-import { Playpen_Sans, Noto_Sans } from 'next/font/google'
+import { Playpen_Sans, Noto_Sans } from "next/font/google";
 
+export const noto_600 = Noto_Sans({
+  weight: "600",
+  subsets: ["latin"],
+  display: "swap",
+});
 export const noto = Noto_Sans({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap'
-})
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const noto_300 = Noto_Sans({
-  weight: '300',
-  subsets: ['latin'],
-  display: 'swap'
-})
+  weight: "300",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const noto_200 = Noto_Sans({
-  weight: '200',
-  subsets: ['latin'],
-  display: 'swap'
-})
+  weight: "200",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const noto_thin = Noto_Sans({
-  weight: '100',
-  subsets: ['latin'],
-  display: 'swap'
-})
+  weight: "100",
+  subsets: ["latin"],
+  display: "swap",
+});

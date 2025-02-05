@@ -1,6 +1,6 @@
 "use client";
 
-import { noto_200, noto_300, noto_thin } from "@/utils/fonts";
+import { noto_200, noto_300, noto_600, noto_thin } from "@/utils/fonts";
 import { Dropdown } from "primereact/dropdown";
 import { useTranslation } from "react-i18next";
 import { FaArrowRight } from "react-icons/fa";
@@ -12,37 +12,142 @@ const invertir = () => {
   return (
     <div className="py-28 ">
       {/* Hero */}
-      <div className="w-full h-[50dvh] lg:h-[70vh] grid place-items-center  background-image-invertir">
-        <div className="w-[80%] lg:w-[40%]">
-          <h2
-            className={`bg-yellow-500 w-fit mb-[2px] text-3xl lg:text-7xl uppercase p-2 ${noto_300.className}`}
-          >
-            {t("invest_page.banner.title")}
-          </h2>
-          <div className="z-20">
+      <div className="w-full h-[50dvh] lg:h-[70vh] grid place-items-center  relative overflow-hidden mb-10">
+        <img
+          src="assets/home_images/bg-invertir.webp"
+          alt=""
+          className="w-full absolute object-center"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-50 grid place-content-center text-white">
+          <div className="border-l-2 border-white pl-4">
+            <h2
+              className={` w-fit  text-3xl lg:text-7xl uppercase p-2 ${noto_600.className}`}
+            >
+              {/* {t("invest_page.banner.title")} */}
+              Invierte con <br /> Nosotros
+            </h2>
+            {/* <div className="z-20">
             <h2
               className={`bg-yellow-500 w-fit text-3xl lg:text-7xl uppercase p-2 z-50 pb-10 ${noto_300.className} `}
             >
               {t("invest_page.banner.title2")}
             </h2>
-          </div>
-          <div className="-z-10">
-            <p
-              className={`bg-white text-black text-4xl lg:text-[52px] pt-7 -mt-8 uppercase  p-2 lg:leading-[60px] ${noto_thin.className}`}
-            >
-              {t("invest_page.banner.subtitle")}
-            </p>
+          </div> */}
+            <div className="">
+              <p
+                className={`text-white text-4xl lg:text-[52px] pt-7 pb-4 uppercase ${noto_300.className}`}
+              >
+                {/* {t("invest_page.banner.subtitle")} */}y Haz Crecer tu
+                Patrimonio
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       {/*  */}
-      <div className="text-center mt-16 px-6">
+      <div className="text-center mt-16 px-6 bg-slate-500">
         <h2 className={`text-4xl lg:text-6xl uppercase ${noto_200.className}`}>
           {t("invest_page.consultation_section.title")}
         </h2>
 
-        <div className="lg:w-[60vw] mx-auto mt-16 gap-10 grid">
+        <div className="w-1/2 justify-self-center my-10 mt-20">
+          <p className=" text-lg font-semibold ">
+            Explora oportunidades únicas de inversión en la República
+            Dominicana. Ya sea que estés interesado en terrenos estratégicamente
+            ubicados, proyectos en planos, alquiler de naves industriales o la
+            adquisición de propiedades terminadas, estamos aquí para guiarte
+            hacia inversiones seguras y rentables. Con nuestro equipo de
+            expertos, tu inversión estará respaldada por conocimiento,
+            experiencia y confianza.
+          </p>
+        </div>
+        <h3 className="text-4xl font-semibold py-10 ">Opciones de Inversion</h3>
+        <div className=" grid grid-cols-2 xl:w-[50%] gap-10 mx-auto place-items-center w-full mt-20">
+          <div className="relative group flex items-center justify-center text-center card1">
+            <span className="text-xl font-semibold absolute bg-black p-2 text-white self-start mt-4 rounded-sm z-10">
+              Terrenos
+            </span>
+            <span className="absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100 px-4 text-white  p-2 text-lg  ">
+              Compra terrenos estratégicamente ubicados en zonas de alto
+              crecimiento. Ideales para desarrollos comerciales, residenciales o
+              turísticos.
+            </span>
+            <img
+              className="w-[400px] h-[300px] rounded-sm shadow-sm"
+              src="assets/invertir_images/terrenos.avif"
+              alt=""
+            />
+            <a
+              href=""
+              className="bg-accent-yellow-base px-2 py-1  rounded-sm absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100  p-2   bottom-10"
+            >
+              Ver Propiedades
+            </a>
+          </div>
+          <div className="relative group flex items-center justify-center text-center card1">
+            <span className="text-xl font-semibold absolute bg-black p-2 text-white self-start mt-4 rounded-sm z-10">
+              Proyectos en Planos
+            </span>
+            <span className="absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100 px-4 text-white  p-2 text-lg  ">
+              Invierte en proyectos en etapas iniciales con precios competitivos
+              y un alto potencial de revalorización.
+            </span>
+            <img
+              className="w-[400px] h-[300px] rounded-sm shadow-sm"
+              src="assets/invertir_images/planos.jpg"
+              alt=""
+            />
+            <a
+              href=""
+              className="bg-accent-yellow-base px-2 py-1  rounded-sm absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100  p-2   bottom-10"
+            >
+              Ver Propiedades
+            </a>
+          </div>
+          <div className="relative group flex items-center justify-center text-center card1">
+            <span className="text-xl font-semibold absolute bg-black p-2 text-white self-start mt-4 rounded-sm z-10">
+              Naves Industriales
+            </span>
+            <span className="absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100 px-4 text-white  p-2 text-lg  ">
+              Alquiler y compra de naves industriales en ubicaciones clave,
+              perfectas para negocios logísticos, manufactura o almacenamiento.
+            </span>
+            <img
+              className="w-[400px] h-[300px] rounded-sm shadow-sm"
+              src="assets/invertir_images/naves.jpg"
+              alt=""
+            />
+            <a
+              href=""
+              className="bg-accent-yellow-base px-2 py-1  rounded-sm absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100  p-2   bottom-10"
+            >
+              Ver Propiedades
+            </a>
+          </div>
+          <div className="relative group flex items-center justify-center text-center card1">
+            <span className="text-xl font-semibold absolute bg-black p-2 text-white self-start mt-4 rounded-sm z-10">
+              Propiedades Terminadas
+            </span>
+            <span className="absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100 px-4 text-white  p-2 text-lg  ">
+              Adquiere propiedades completamente listas para generar ingresos,
+              desde apartamentos hasta locales comerciales.
+            </span>
+            <img
+              className="w-[400px] h-[300px] rounded-sm shadow-sm"
+              src="assets/invertir_images/finished.png"
+              alt=""
+            />
+            <a
+              href=""
+              className="bg-accent-yellow-base px-2 py-1  rounded-sm absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100  p-2   bottom-10"
+            >
+              Ver Propiedades
+            </a>
+          </div>
+        </div>
+
+        {/* <div className="lg:w-[60vw] mx-auto mt-16 gap-10 grid">
           <img
             src="https://static.wixstatic.com/media/828c94_e91d4c32bf6242298b29677d0bc1c5b0~mv2.png/v1/fill/w_1200,h_360,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/1.png"
             alt=""
@@ -55,7 +160,7 @@ const invertir = () => {
             src="https://static.wixstatic.com/media/828c94_3944dc6b74a4450bb064560085d280ce~mv2.png/v1/fill/w_1200,h_360,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/Terrenos.png"
             alt=""
           />
-        </div>
+        </div> */}
       </div>
 
       <div className="bg-white mt-16 text-center flex items-center flex-col mb-40 ">
