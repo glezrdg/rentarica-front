@@ -171,16 +171,7 @@ select {
 /* 
 ---------------- */
 
-p {
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #666666;
 
-  &.small {
-    font-size: 14px;
-  }
-}
 
 .go-corner {
   display: flex;

@@ -77,7 +77,7 @@ const ServiceCard: React.FC<IServiceCardProps> = ({
             visible ? "opacity-100" : "opacity-0"
           }`}
         >
-          <p className="text-base">{description}</p>
+          <p className="text-base text-white">{description}</p>
           <button
             className="mt-6 bg-accent-yellow-base font-semibold  px-4 py-2 hover:bg-transparent border border-accent-yellow-base hover:text-accent-yellow-base transition-all  rounded-sm shadow-lg text-black"
             onClick={handleAction}

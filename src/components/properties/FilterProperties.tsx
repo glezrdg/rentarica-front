@@ -152,10 +152,13 @@ const FilterProperties = ({ filters, updateFilters }: any) => {
         <div className="flex items-center justify-center w-full lg:w-[50%] lg:ml-4 mb-4 lg:mb-0">
           <div className="w-full flex  items-center border-black rounded-lg border-b-2  p-2">
             <input
+              type="number"
               className=" w-[90%] focus:outline-none border-none p-2"
               placeholder="Buscar por código de propiedad"
               value={filters.code}
-              onChange={(e: any) => updateFilters("code", e.value)}
+              onChange={(e: any) => {
+                updateFilters("code", e.target.value);
+              }}
             />{" "}
             <IoMdSearch className="text-xl" />
           </div>

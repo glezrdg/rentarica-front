@@ -1,18 +1,15 @@
 "use client";
 
-import { noto_200, noto_300, noto_600, noto_thin } from "@/utils/fonts";
-import { Dropdown } from "primereact/dropdown";
-import { useTranslation } from "react-i18next";
-import { FaArrowRight } from "react-icons/fa";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa6";
+import { noto_200, noto_300, noto_600 } from "@/utils/fonts";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const invertir = () => {
   const { t } = useTranslation();
   return (
-    <div className="py-28 ">
+    <div className="pt-28 ">
       {/* Hero */}
-      <div className="w-full h-[50dvh] lg:h-[70vh] grid place-items-center  relative overflow-hidden mb-10">
+      <div className="w-full h-[50dvh] lg:h-[70vh] grid place-items-center  relative overflow-hidden ">
         <img
           src="assets/home_images/bg-invertir.webp"
           alt=""
@@ -46,13 +43,13 @@ const invertir = () => {
       </div>
 
       {/*  */}
-      <div className="text-center mt-16 px-6 bg-slate-500">
+      <div className="text-center pt-20 px-6 bg-orange-100">
         <h2 className={`text-4xl lg:text-6xl uppercase ${noto_200.className}`}>
           {t("invest_page.consultation_section.title")}
         </h2>
 
         <div className="w-1/2 justify-self-center my-10 mt-20">
-          <p className=" text-lg font-semibold ">
+          <p className=" text-lg font-semibold text-balance bg-accent-yellow-base p-4 rounded-lg shadow-md text-black">
             Explora oportunidades únicas de inversión en la República
             Dominicana. Ya sea que estés interesado en terrenos estratégicamente
             ubicados, proyectos en planos, alquiler de naves industriales o la
@@ -62,13 +59,32 @@ const invertir = () => {
             experiencia y confianza.
           </p>
         </div>
-        <h3 className="text-4xl font-semibold py-10 ">Opciones de Inversion</h3>
-        <div className=" grid grid-cols-2 xl:w-[50%] gap-10 mx-auto place-items-center w-full mt-20">
+        <h3 className="text-4xl font-semibold py-10 ">
+          Opciones de Inversión:
+        </h3>
+
+        {/* <div className="my-10 grid grid-cols-4">
+          <div className="relative w-[300px] h-[300px] bg-cover bg-center bg-no-repeat bg-[url('public/.
+          assets/invertir_images/terrenos.avif')]">
+           
+            <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
+            <div className="relative z-10 flex flex-col items-center justify-center h-full text-white p-4">
+              <h2 className="text-xl font-semibold">Terrenos</h2>
+              <p className="mt-2 text-center">
+                Compra terrenos estratégicamente ubicados en zonas de alto
+                crecimiento. Ideales para desarrollos comerciales, residenciales
+                o turísticos.
+              </p>
+            </div>
+          </div>
+        </div> */}
+        <div className=" grid grid-cols-2 xl:grid-cols-4  2xl:w-[80%] gap-10 mx-auto place-items-center w-full mt-20 pb-20">
           <div className="relative group flex items-center justify-center text-center card1">
             <span className="text-xl font-semibold absolute bg-black p-2 text-white self-start mt-4 rounded-sm z-10">
               Terrenos
             </span>
-            <span className="absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100 px-4 text-white  p-2 text-lg  ">
+            <span className="absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100 px-4 text-white  p-2 text-lg  text-balance">
               Compra terrenos estratégicamente ubicados en zonas de alto
               crecimiento. Ideales para desarrollos comerciales, residenciales o
               turísticos.
@@ -89,7 +105,7 @@ const invertir = () => {
             <span className="text-xl font-semibold absolute bg-black p-2 text-white self-start mt-4 rounded-sm z-10">
               Proyectos en Planos
             </span>
-            <span className="absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100 px-4 text-white  p-2 text-lg  ">
+            <span className="absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100 px-4 text-white  p-2 text-lg  text-balance">
               Invierte en proyectos en etapas iniciales con precios competitivos
               y un alto potencial de revalorización.
             </span>
@@ -109,7 +125,7 @@ const invertir = () => {
             <span className="text-xl font-semibold absolute bg-black p-2 text-white self-start mt-4 rounded-sm z-10">
               Naves Industriales
             </span>
-            <span className="absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100 px-4 text-white  p-2 text-lg  ">
+            <span className="absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100 px-4 text-white  p-2 text-lg text-balance ">
               Alquiler y compra de naves industriales en ubicaciones clave,
               perfectas para negocios logísticos, manufactura o almacenamiento.
             </span>
@@ -129,7 +145,7 @@ const invertir = () => {
             <span className="text-xl font-semibold absolute bg-black p-2 text-white self-start mt-4 rounded-sm z-10">
               Propiedades Terminadas
             </span>
-            <span className="absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100 px-4 text-white  p-2 text-lg  ">
+            <span className="absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100 px-4 text-white  p-2 text-lg  text-balance">
               Adquiere propiedades completamente listas para generar ingresos,
               desde apartamentos hasta locales comerciales.
             </span>
@@ -163,30 +179,35 @@ const invertir = () => {
         </div> */}
       </div>
 
-      <div className="bg-white mt-16 text-center flex items-center flex-col mb-40 ">
-        <div className="w-full mx-4 lg:w-2/3 xl:w-[60%] 2xl:w-1/2">
-          <h1 className="text-2xl xl:text-4xl font-semibold">
+      <div className="  bg-white text-center flex items-center pt-10  ">
+        <img
+          src="assets/invertir_images/feria-invertir.jpg"
+          className="xl:w-1/2 rounded-lg shadow-lg"
+          alt=""
+        />
+        <div className="xl:w-1/2  lg:w-2/3  2xl:w-1/2 pt-10">
+          <h1 className="text-2xl 2xl:text-4xl font-semibold">
             {" "}
             Rentarica Real Estate Summit
           </h1>
-          <p className="my-10 text-sm mx-4 xl:mx-0 xl:text-lg">
+          <p className="my-5 xl:my-10 text-sm mx-4 xl:mx-0 2xl:text-base text-balance">
             En Rentarica, conectamos sueños con oportunidades a través de
             nuestras ferias inmobiliarias internacionales. Nos enorgullece ser
             un puente entre desarrolladores y expatriados interesados en
             invertir en República Dominicana, creando un espacio donde la
             innovación, el entretenimiento y las oportunidades se encuentran.
           </p>
-          <p className="mb-10 text-sm mx-4 xl:mx-0 xl:text-lg">
+          <p className=" text-sm mx-4 xl:mx-0 2xl:text-base text-balance">
             Con más de 10 ferias inmobiliarias exitosas, hemos demostrado
             nuestra capacidad para producir eventos que no solo generan
             resultados rentables para nuestros desarrolladores, sino que también
             ofrecen una experiencia unica, enriquecedora y entretenida para
             nuestros asistentes.
           </p>
-          <span className=" text-xl xl:text-3xl font-semibold my-5 mb-10">
+          <h2 className=" text-2xl 2xl:text-4xl font-semibold my-5 xl:my-10  ">
             Haz realidad tus metas con Rentarica
-          </span>
-          <p className="mt-10 text-sm mx-4 xl:mx-0 xl:text-lg">
+          </h2>
+          <p className=" text-sm mx-4 xl:mx-0 2xl:text-base text-balance">
             <span>
               ¿Deseas organizar una feria internacional con nosotros o encontrar
               la propiedad de tus sueños?
@@ -200,14 +221,14 @@ const invertir = () => {
               href="assets/documents/Dossier Rentarica General- Propietarios .pdf"
               target="_blank"
               download
-              className="mx-6 bg-accent-yellow-base rounded-md shadow-md my-2 px-6 py-4 hover:bg-transparent border border-accent-yellow-base hover:text-accent-yellow-base transition-all hover:scale-105  font-semibold"
+              className="mx-6 text-sm xl:text-base 2xl:text-lg  bg-accent-yellow-base rounded-md shadow-md xl:my-2 px-3 py-2 xl:px-6 xl:py-4  border-2 hover:border-accent-yellow-base font-semibold hover:bg-black hover:text-accent-yellow-base transition-all hover:scale-105  "
             >
               Organiza tu feria con nosotros
             </Link>
             <Link
               href="https://rentarica.trafico.do/"
               target="_blank"
-              className="mx-6  bg-accent-yellow-base rounded-md shadow-md my-2 px-6 py-4 hover:bg-transparent border border-accent-yellow-base hover:text-accent-yellow-base transition-all hover:scale-105  font-semibold"
+              className="mx-6 text-smxl:text-base 2xl:text-lg  bg-accent-yellow-base rounded-md shadow-md xl:my-2 px-3 py-2 xl:px-6 xl:py-4  border-2 hover:border-accent-yellow-base font-semibold hover:bg-black hover:text-accent-yellow-base transition-all hover:scale-105  "
             >
               Quiero Mi Próxima Propiedad
             </Link>

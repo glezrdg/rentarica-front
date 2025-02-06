@@ -31,7 +31,7 @@ const PropertyFeaturesSelector: React.FC<IPropertyFeaturesSelectorProps> = ({
               : "bg-white border-zinc-300"
           }`}
         >
-          <img src={feature.icon} alt={feature.label} className="w-6 h-6" />
+          <i className={feature.icon} />
           <span className="text-base font-semibold">{feature.label}</span>
         </button>
       ))}

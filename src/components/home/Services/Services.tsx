@@ -77,8 +77,8 @@ const Services: React.FC<IServicesProps> = (props) => {
         "Promociona tu proyecto, propiedad o negocio con nosotros y alcanza una audiencia amplia y cualificada.",
       image:
         "https://verticalcpa.ca/wp-content/uploads/2022/12/Small-Business-Accounting-Picture-4.jpg",
-      action: "Cotiza con Nosotros",
-      contactEmail: "info@rentarica.com", // Example contact email
+      action: "Nuestros Paquetes",
+      fileUrl: "/assets/documents/Catálogo-Rentarica.pdf", // Example file URL for download
     },
   ];
 

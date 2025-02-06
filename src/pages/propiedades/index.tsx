@@ -32,7 +32,8 @@ export type Property = {
   selectedFeatures: any[];
   isActive: true;
   unitPrice: true;
-  code: string;
+  code: number;
+  googleMapsLink?: string;
 };
 
 const index = () => {

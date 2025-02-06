@@ -11,8 +11,23 @@ const AboutUs = () => {
   // Arreglo de imágenes basado en archivos dentro de /public/assets/fotos_personal
   const images = [
     {
-      itemImageSrc: "/assets/fotos_personal/equipo.jpg",
-      thumbnailImageSrc: "/assets/fotos_personal/equipo.jpg",
+      itemImageSrc: "/assets/fotos_personal/quienes-somos.webp",
+      thumbnailImageSrc: "/assets/fotos_personal/quienes-somos.webp",
+      alt: "Persona 0",
+    },
+    {
+      itemImageSrc: "/assets/fotos_personal/Jorge Perrotta.jpg",
+      thumbnailImageSrc: "/assets/fotos_personal/Jorge Perrotta.jpg",
+      alt: "Persona 0",
+    },
+    {
+      itemImageSrc: "/assets/fotos_personal/Madrileydi Martinez.jpg",
+      thumbnailImageSrc: "/assets/fotos_personal/Madrileydi Martinez.jpg",
+      alt: "Persona 0",
+    },
+    {
+      itemImageSrc: "/assets/fotos_personal/Sergio Carlo.jpg",
+      thumbnailImageSrc: "/assets/fotos_personal/Sergio Carlo.jpg",
       alt: "Persona 0",
     },
     {
@@ -21,20 +36,24 @@ const AboutUs = () => {
       alt: "Persona 1",
     },
     {
-      itemImageSrc: "/assets/fotos_personal/Gabriela_Escobar.jpg",
-      thumbnailImageSrc: "/assets/fotos_personal/Gabriela_Escobar.jpg",
+      itemImageSrc: "/assets/fotos_personal/Gabriela Escobar.jpg",
+      thumbnailImageSrc: "/assets/fotos_personal/Gabriela Escobar.jpg",
       alt: "Persona 2",
     },
     {
-      itemImageSrc: "/assets/fotos_personal/Grace .jpg",
-      thumbnailImageSrc: "/assets/fotos_personal/Grace .jpg",
+      itemImageSrc: "/assets/fotos_personal/Belen Martinez.jpg",
+      thumbnailImageSrc: "/assets/fotos_personal/Belen Martinez.jpg",
+      alt: "Persona 3",
+    },
+    {
+      itemImageSrc: "/assets/fotos_personal/Grace Murphy.jpg",
+      thumbnailImageSrc: "/assets/fotos_personal/Grace Murphy.jpg",
       alt: "Persona 3",
     },
 
     {
-      itemImageSrc: "/assets/fotos_personal/Marisol Mora- Foto Profesional.jpg",
-      thumbnailImageSrc:
-        "/assets/fotos_personal/Marisol Mora- Foto Profesional.jpg",
+      itemImageSrc: "/assets/fotos_personal/Marisol Mora.jpg",
+      thumbnailImageSrc: "/assets/fotos_personal/Marisol Mora.jpg",
       alt: "Persona 5",
     },
   ];
@@ -105,6 +124,9 @@ const AboutUs = () => {
             thumbnail={thumbnailTemplate}
             showItemNavigators
             showThumbnails={false}
+            autoPlay
+            circular
+            transitionInterval={2000}
           />
         </div>
 
