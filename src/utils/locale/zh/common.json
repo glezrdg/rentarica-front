@@ -1,27 +1,199 @@
 {
+  "header": {
+    "buy_rent": "购买 | 租赁",
+    "register_property": "登记您的物业",
+    "invest_now": "立即投资",
+    "fair": "展会"
+  },
   "home": {
-    "header": {
-      "buy_rent": "购买 | 租赁",
-      "register_property": "登记您的物业",
-      "invest_now": "立即投资",
-      "fair": "展会"
-    },
     "hero": {
-      "unforgettable": "难忘的",
-      "properties": "房源列表",
-      "view_properties": "查看房源"
+      "title1": "难忘的",
+      "title2": "房产",
+      "button": "查看房产"
+    },
+    "featuredProperties": {
+      "title": "精选房产",
+      "button": "查看更多房产"
+    },
+    "aboutUs": {
+      "title": "我们是谁？",
+      "description": "在 Rentarica，我们致力于帮助您探索多米尼加共和国最好的度假目的地。无论您是想购买房产、租赁房产还是投资房地产，我们的专家团队都会在每一步为您提供指导。我们以提供个性化服务为荣，确保所有客户都拥有难忘而愉快的体验。您可以放心地将您的房产交给 Rentarica，我们将让您轻松享受房地产投资的回报。立即联系我们，了解更多关于我们如何帮助您实现房地产目标的信息。",
+      "buttonTrue": "查看更多",
+      "buttonFalse": "收起"
     },
     "services": {
-      "welcome_message": "我们致力于",
-      "manage_property": "管理",
-      "rent_property": "出租",
-      "sell_property": "出售"
-    },
-    "about": {
-      "title": "关于我们...",
-      "description": "在 Rentarica，我们致力于帮助您探索多米尼加共和国最好的度假胜地。无论您想购买物业、租赁物业还是投资房地产，我们的专家团队都会在每一步为您提供指导。我们以提供个性化服务为荣，确保所有客户都有难忘而愉快的体验。您可以信任 Rentarica，我们会妥善管理您的物业，让您放松并享受您的房地产投资带来的收益。今天就联系我们，了解我们如何帮助您在多米尼加共和国实现您的房地产目标。",
-      "button_text": "下载手册"
+      "title": "我们的服务",
+      "serviceCards": {
+        "internationalFairs": "国际展会",
+        "internationalFairsDescription": "我们为希望扩大曝光率并实现更高销售和盈利的开发商举办国际展会。",
+        "internationalFairsAction": "更多信息",
+        "salesAndRentals": "销售与租赁",
+        "salesAndRentalsDescription": "我们高效快速地促成房产的销售和租赁，将您与最佳买家和租客连接。",
+        "salesAndRentalsAction": "联系我们",
+        "administrationAndReservations": "管理与预订",
+        "administrationAndReservationsDescription": "我们负责管理您的房产，同时提供短期预订服务，并提供卓越的客户服务，最大化盈利并关注每一个细节，确保无忧体验。",
+        "administrationAndReservationsAction": "我们的套餐",
+        "concierge": "礼宾服务",
+        "conciergeDescription": "个性化服务，满足您的所有需求，确保每个细节都为您的假期提供独特体验。",
+        "conciergeAction": "获取报价",
+        "eventAccommodationManagement": "活动住宿管理",
+        "eventAccommodationManagementDescription": "我们为活动客人管理住宿，确保优质客户服务、舒适和便利。",
+        "eventAccommodationManagementAction": "获取报价",
+        "turnkey": "交钥匙服务",
+        "turnkeyDescription": "我们提供全方位服务，从购买房产所需的一切到管理服务，让您只需享受生活。",
+        "turnkeyAction": "获取报价",
+        "rentaricaOwnersClub": "Rentarica 业主俱乐部",
+        "rentaricaOwnersClubDescription": "加入我们的业主和合作伙伴家庭，探索 Rentarica 为您提供的所有优势。",
+        "rentaricaOwnersClubAction": "点击下载",
+        "advertiseWithUs": "与我们合作推广",
+        "advertiseWithUsDescription": "通过我们推广您的项目、房产或业务，触达广泛且合格的受众。",
+        "advertiseWithUsAction": "我们的套餐"
+      },
+      "button": "查看更多"
     }
+  },
+  "properties": {
+    "propertiesTitle": "您的下一次房地产投资",
+    "propertiesFilter1": "全部",
+    "propertiesFilter2": "出售",
+    "propertiesFilter3": "出租",
+    "propertiesFilter4": "短租",
+    "propertiesMoreFilters": "更多筛选条件",
+    "propertiesCleanFilters": "清除筛选",
+    "propertiesViewFilteredProperties": "查看筛选后的房源",
+    "filters": {
+      "propertyType": {
+        "type1": "公寓",
+        "type2": "房屋",
+        "type3": "别墅",
+        "type4": "地块",
+        "type5": "农场",
+        "type6": "仓库",
+        "type7": "办公室",
+        "type8": "顶层公寓",
+        "type9": "商业"
+      },
+      "typePropertyLabel": "物业类型：",
+      "zoneSearch": "选择地区",
+      "codeSearch": "按房源代码搜索",
+      "priceSearch": "价格",
+      "bathroomsRange": "浴室",
+      "roomsRange": "房间",
+      "sizeRange": "面积",
+      "propertyFeature": {
+        "feature1": "空调 (A/C)",
+        "feature2": "中央空调",
+        "feature3": "预装空调",
+        "feature4": "分体式空调",
+        "feature5": "吊扇",
+        "feature6": "屋顶通道",
+        "feature7": "带家具",
+        "feature8": "附属建筑",
+        "feature9": "社交区",
+        "feature10": "运动区",
+        "feature11": "电梯",
+        "feature12": "阳台",
+        "feature13": "公共浴室",
+        "feature14": "热水器",
+        "feature15": "蓄水池",
+        "feature16": "热厨房",
+        "feature17": "餐厅",
+        "feature18": "礼宾服务",
+        "feature19": "檐口",
+        "feature20": "早餐区",
+        "feature21": "垃圾道",
+        "feature22": "规划中",
+        "feature23": "紧急楼梯",
+        "feature24": "楼梯",
+        "feature25": "休息区",
+        "feature26": "书房",
+        "feature27": "家庭房",
+        "feature28": "健身房",
+        "feature29": "凉亭",
+        "feature30": "佣人房",
+        "feature31": "逆变器",
+        "feature32": "按摩浴缸",
+        "feature33": "洗衣区",
+        "feature34": "储物柜",
+        "feature35": "大堂",
+        "feature36": "夹层",
+        "feature37": "停车位",
+        "feature38": "有顶停车位",
+        "feature39": "庭院",
+        "feature40": "可携带宠物",
+        "feature41": "游泳池",
+        "feature42": "公共备用发电机",
+        "feature43": "全面备用发电机",
+        "feature44": "水井",
+        "feature45": "电动大门",
+        "feature46": "门厅",
+        "feature47": "防护栏",
+        "feature48": "客厅",
+        "feature49": "客厅/餐厅",
+        "feature50": "活动厅",
+        "feature51": "安保",
+        "feature52": "有线电视",
+        "feature53": "露台",
+        "feature54": "带顶露台",
+        "feature55": "水箱",
+        "feature56": "传输/A",
+        "feature57": "围栏"
+      }
+    }
+  },
+
+  "register": {
+    "title": "出售或出租您的房产：从这里开始！",
+    "description1": "作为我们优化和加快该流程的一部分，我们开发了一份表格，以帮助我们高效地收集您的需求信息。",
+    "description2": "每个类别中都包含了我们提供的服务。在填写时，请记得选择是出售还是短期出租。",
+    "description3": "每个按钮都会引导您到相应的链接，在那里您可以根据房产类型和您的需求完成表格。",
+    "sellProperty": "出售我的房产",
+    "sellSlot": "出售我的土地",
+    "rent": "出租我的房产",
+    "invest": "投资",
+    "searchHome": "寻找住房",
+    "promoteWithUs": "与我们合作推广",
+    "additionalInfo1": "如果您有任何疑问、需要帮助或暂时没有全部信息，请随时填写表格。我们会与您联系，并在过程中完善所有细节。",
+    "additionalInfo2": "我们会在每一步提供帮助。",
+    "additionalInfo3": "感谢您的信任！"
+  },
+
+  "invest": {
+    "landing": {
+      "titlePart1": "与",
+      "titlePart2": "我们投资",
+      "titleContinuation": "并增加您的财富"
+    },
+    "investments": {
+      "title": "让我们为您提供建议",
+      "description": "探索多米尼加共和国的独特投资机会。无论您对战略位置的土地、期房项目、工业仓库租赁还是现房购买感兴趣，我们都能为您提供安全可靠的投资指导。凭借我们专家团队的支持，您的投资将建立在专业知识、经验和信任的基础上。",
+      "callToAction": "投资选项:",
+      "goToPropertiesButton": "查看房产",
+      "callToActionButton": "立即咨询",
+      "slots": {
+        "title": "土地",
+        "description": "购买位于高增长地区的战略性土地，适用于商业、住宅或旅游开发。"
+      },
+      "projects": {
+        "title": "期房项目",
+        "description": "投资早期阶段的项目，价格具有竞争力，并具有较高的升值潜力。"
+      },
+      "warehouses": {
+        "title": "工业仓库",
+        "description": "租赁或购买位于关键位置的工业仓库，适用于物流、制造业或仓储业务。"
+      },
+      "finishedProperties": {
+        "title": "现房物业",
+        "description": "购买完全建成并可立即产生收益的物业，包括公寓和商业空间。"
+      }
+    },
+    "fairTitle": "房地产高峰会",
+    "fairDescription1": "在 Rentarica，我们通过国际房地产博览会将梦想变为现实。我们自豪地成为开发商和希望在多米尼加共和国投资的海外人士之间的桥梁，打造一个创新、娱乐和机遇并存的交流空间。",
+    "fairDescription2": "我们已成功举办了超过10场房地产博览会，证明了我们能够举办不仅为开发商带来可观回报，还能为参会者提供独特、丰富和有趣体验的活动。",
+    "fairTitle2": "与 Rentarica 一起实现您的目标",
+    "fairDescription3": "您想和我们一起举办国际房地产展会，还是寻找您梦想中的房产？我们将为您提供全程指导。与 Rentarica 合作，每一次活动和每一项投资都伴随着专业经验和团队的承诺。准备好开始了吗？",
+    "fairButton1": "与我们一起组织展会",
+    "fairButton2": "寻找我的下一处房产"
   },
   "footer": {
     "menu": {
@@ -48,94 +220,6 @@
       "event_info": "您想了解任何展会或活动的信息吗？",
       "message": "写下您的留言",
       "submit": "Send"
-    }
-  },
-  "properties": {
-    "filters": {
-      "bathrooms": "浴室",
-      "price": "价格",
-      "floors": "楼层",
-      "size": "面积"
-    },
-    "search_placeholder": "按代码搜索...",
-    "no_results": "未找到结果",
-    "categories": {
-      "all": "全部",
-      "sale": "出售",
-      "rent": "出租",
-      "land": "土地"
-    }
-  },
-  "property_details": {
-    "title": "物业详情",
-    "category": "类别",
-    "price": "起价 USD",
-    "location": "位置",
-    "description": {
-      "title": "描述"
-    },
-    "apartment_features": {
-      "title": "公寓特色",
-      "items": "特色列表"
-    },
-    "apartment_details": {
-      "title": "公寓详情",
-      "property_type": "物业类型",
-      "property_type_value": "公寓",
-      "bedrooms": "卧室",
-      "bathrooms": "浴室",
-      "size": "面积",
-      "floors": "楼层",
-      "year_built": "建造年份"
-    }
-  },
-  "register_property": {
-    "title": "出售或出租您的物业：从这里开始！",
-    "intro": "作为我们优化和简化这一过程的努力的一部分，我们开发了一份表格，帮助您更有效地收集重要信息。",
-    "instructions": "在每个分类中都有我们提供的服务。在填写表格时，请务必根据物业是出售还是短期出租来选择正确的选项。",
-    "cta": "每个按钮都会引导您到正确的表格，以完成取决于物业类型和您想要的操作。",
-    "buttons": {
-      "sell_property": "出售我的物业",
-      "sell_land": "出售我的土地",
-      "rent_property": "出租我的物业",
-      "invest": "投资",
-      "find_home": "寻找家园",
-      "advertise": "与我们合作宣传"
-    },
-    "additional_info": {
-      "text": "如果您有任何问题，需要帮助，或者手头没有一些信息，请不要犹豫离开表格。我们会与您联系，并在过程中帮助您完成。",
-      "closing": "我们将在每一步为您提供帮助。",
-      "thank_you": "感谢您的信任！"
-    }
-  },
-  "invest_page": {
-    "banner": {
-      "title": "与我们一起投资",
-      "title2": "愿景：",
-      "subtitle": "您的自由现在开始"
-    },
-    "consultation_section": {
-      "title": "让我们为您提供建议",
-      "options": {
-        "projects": "规划中的项目",
-        "completed": "已完成的物业",
-        "land": "土地"
-      }
-    },
-    "upcoming_fairs": {
-      "title": "即将举行的房地产展会",
-      "description": "我们邀请您加入我们，共度愉快时光，同时我们将展示该国的绝佳投资机会。请选择您的目的地并注册：",
-      "event": {
-        "location": "纽约 | 劳伦斯",
-        "date": "日期：12月7日和8日",
-        "hour": "时间：上午10点至晚上8点",
-        "note": "地点待定。如果您有兴趣，请注册，我们一旦有所有细节将及时通知您。"
-      },
-      "contact": {
-        "phone": "电话：+1 809-893-6553",
-        "email": "info@rentarica.com",
-        "register_button": "在此注册"
-      }
     }
   }
 }

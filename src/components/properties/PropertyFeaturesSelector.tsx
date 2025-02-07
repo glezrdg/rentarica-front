@@ -1,5 +1,6 @@
 import { propertyFeatures } from "@/utils/data";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 interface IPropertyFeaturesSelectorProps {
   selectedFeatures: string[];
@@ -18,6 +19,7 @@ const PropertyFeaturesSelector: React.FC<IPropertyFeaturesSelectorProps> = ({
 
     onSelectFeature(updatedFeatures);
   };
+  const { t } = useTranslation();
 
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -32,7 +34,7 @@ const PropertyFeaturesSelector: React.FC<IPropertyFeaturesSelectorProps> = ({
           }`}
         >
           <i className={feature.icon} />
-          <span className="text-base font-semibold">{feature.label}</span>
+          <span className="text-base font-semibold">{t(feature.label)}</span>
         </button>
       ))}
     </div>

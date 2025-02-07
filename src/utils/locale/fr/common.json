@@ -1,27 +1,200 @@
 {
+  "header": {
+    "buy_rent": "Acheter | Louer",
+    "register_property": "Enregistrez votre propriété",
+    "invest_now": "Investissez maintenant",
+    "fair": "Salon"
+  },
   "home": {
-    "header": {
-      "buy_rent": "Acheter | Louer",
-      "register_property": "Enregistrez votre propriété",
-      "invest_now": "Investissez maintenant",
-      "fair": "Salon"
-    },
     "hero": {
-      "unforgettable": "inoubliable",
-      "properties": "LISTE DES PROPRIÉTÉS",
-      "view_properties": "Voir les propriétés"
+      "title1": "PROPRIÉTÉS",
+      "title2": "INOUBLIABLES",
+      "button": "Voir les propriétés"
+    },
+    "featuredProperties": {
+      "title": "Propriétés en Vedette",
+      "button": "Voir plus de propriétés"
+    },
+    "aboutUs": {
+      "title": "QUI SOMMES-NOUS?",
+      "description": "Chez Rentarica, nous sommes dédiés à vous aider à explorer les meilleures destinations de vacances en République dominicaine. Que vous cherchiez à acheter une propriété, louer un bien immobilier ou investir dans l'immobilier, notre équipe d'experts est là pour vous guider à chaque étape. Nous sommes fiers de fournir un service personnalisé pour garantir que tous nos clients vivent une expérience mémorable et agréable. Vous pouvez avoir confiance que vos propriétés sont entre de bonnes mains avec Rentarica, vous permettant de vous détendre et de profiter des avantages de votre investissement immobilier. Contactez-nous dès aujourd'hui pour en savoir plus sur la façon dont nous pouvons vous aider à atteindre vos objectifs immobiliers en République dominicaine.",
+      "buttonTrue": "Voir plus",
+      "buttonFalse": "Voir moins"
     },
     "services": {
-      "welcome_message": "Nous sommes dédiés à",
-      "manage_property": "Gérer",
-      "rent_property": "Louer",
-      "sell_property": "Vendre"
-    },
-    "about": {
-      "title": "À propos de nous...",
-      "description": "Chez Rentarica, nous nous engageons à vous aider à explorer les meilleures destinations de vacances en République dominicaine. Que vous cherchiez à acheter une propriété, louer une propriété ou investir dans l'immobilier, notre équipe d'experts est là pour vous guider à chaque étape. Nous sommes fiers de fournir un service personnalisé pour nous assurer que tous nos clients vivent une expérience mémorable et agréable. Vous pouvez avoir confiance que vos propriétés sont entre de bonnes mains avec Rentarica, vous permettant de vous détendre et de profiter des avantages de votre investissement immobilier. Contactez-nous dès aujourd'hui pour en savoir plus sur la façon dont nous pouvons vous aider à atteindre vos objectifs immobiliers en République dominicaine.",
-      "button_text": "Télécharger la brochure"
+      "title": "Nos Services",
+      "serviceCards": {
+        "internationalFairs": "Foires Internationales",
+        "internationalFairsDescription": "Nous organisons des foires internationales pour les développeurs souhaitant accroître leur visibilité et atteindre de meilleures ventes et rentabilités dans leurs projets.",
+        "internationalFairsAction": "Plus d'Info",
+        "salesAndRentals": "Ventes & Locations",
+        "salesAndRentalsDescription": "Nous facilitons la vente et la location rapide et efficace de propriétés, en vous mettant en relation avec les meilleurs acheteurs et locataires.",
+        "salesAndRentalsAction": "Contactez-nous",
+        "administrationAndReservations": "Administration & Gestion des Réservations",
+        "administrationAndReservationsDescription": "Nous gérons et prenons soin de votre propriété tout en générant des réservations à court terme et en offrant un excellent service client, maximisant la rentabilité et prenant soin de chaque détail pour une expérience sans soucis.",
+        "administrationAndReservationsAction": "Nos Forfaits",
+        "concierge": "Conciergerie",
+        "conciergeDescription": "Un service personnalisé pour répondre à tous vos besoins et garantir une expérience unique dans chaque détail de vos vacances.",
+        "conciergeAction": "Demander un devis",
+        "eventAccommodationManagement": "Gestion des Hébergements pour Événements",
+        "eventAccommodationManagementDescription": "Nous gérons les hébergements pour vos invités d'événements, en assurant un excellent service client, confort et commodité.",
+        "eventAccommodationManagementAction": "Demander un devis",
+        "turnkey": "Solutions Clé en Main",
+        "turnkeyDescription": "Nous offrons un service complet qui prend en charge tout, de l'achat de tout ce dont votre propriété a besoin à la gestion, pour que vous n'ayez qu'à profiter.",
+        "turnkeyAction": "Demander un devis",
+        "rentaricaOwnersClub": "Rentarica Owner's Club",
+        "rentaricaOwnersClubDescription": "Découvrez tous les avantages que Rentarica offre lorsque vous rejoignez notre famille de propriétaires et de partenaires.",
+        "rentaricaOwnersClubAction": "Téléchargez-le ici",
+        "advertiseWithUs": "Annoncez avec Nous",
+        "advertiseWithUsDescription": "Promouvez votre projet, propriété ou entreprise avec nous et atteignez un public large et qualifié.",
+        "advertiseWithUsAction": "Nos Forfaits"
+      },
+      "button": "Voir plus"
     }
+  },
+
+  "properties": {
+    "propertiesTitle": "Votre prochain investissement immobilier",
+    "propertiesFilter1": "Toutes",
+    "propertiesFilter2": "À vendre",
+    "propertiesFilter3": "À louer",
+    "propertiesFilter4": "Location courte durée",
+    "propertiesMoreFilters": "Plus de filtres",
+    "propertiesCleanFilters": "Effacer les filtres",
+    "propertiesViewFilteredProperties": "Voir les propriétés filtrées",
+    "filters": {
+      "propertyType": {
+        "type1": "Appartements",
+        "type2": "Maisons",
+        "type3": "Villas",
+        "type4": "Terrains",
+        "type5": "Fermes",
+        "type6": "Entrepôts",
+        "type7": "Bureaux",
+        "type8": "Penthouses",
+        "type9": "Entreprises"
+      },
+      "typePropertyLabel": "Type de propriété :",
+      "zoneSearch": "Sélectionnez une zone",
+      "codeSearch": "Rechercher par code de propriété",
+      "priceSearch": "Prix",
+      "bathroomsRange": "Salles de bain",
+      "roomsRange": "Chambres",
+      "sizeRange": "Taille",
+      "propertyFeature": {
+        "feature1": "Climatisation (A/C)",
+        "feature2": "Climatisation centrale",
+        "feature3": "Climatisation pré-installée",
+        "feature4": "Climatisation split",
+        "feature5": "Ventilateurs de plafond",
+        "feature6": "Accès au toit",
+        "feature7": "Meublé",
+        "feature8": "Annexes",
+        "feature9": "Espace commun",
+        "feature10": "Zones sportives",
+        "feature11": "Ascenseur",
+        "feature12": "Balcon",
+        "feature13": "Salle de bain commune",
+        "feature14": "Chauffe-eau",
+        "feature15": "Citerne",
+        "feature16": "Cuisine chaude",
+        "feature17": "Salle à manger",
+        "feature18": "Concierge",
+        "feature19": "Corniches",
+        "feature20": "Coin petit déjeuner",
+        "feature21": "Vide-ordures",
+        "feature22": "En plan",
+        "feature23": "Escaliers de secours",
+        "feature24": "Escaliers",
+        "feature25": "Salle de séjour",
+        "feature26": "Bureau/Étude",
+        "feature27": "Salle familiale",
+        "feature28": "Salle de sport",
+        "feature29": "Kiosque/Gazebo",
+        "feature30": "Chambre de service",
+        "feature31": "Onduleur",
+        "feature32": "Jacuzzi",
+        "feature33": "Buanderie",
+        "feature34": "Casier de rangement",
+        "feature35": "Hall d'entrée",
+        "feature36": "Mezzanine",
+        "feature37": "Parking",
+        "feature38": "Parking couvert",
+        "feature39": "Patio",
+        "feature40": "Animaux acceptés",
+        "feature41": "Piscine",
+        "feature42": "Générateur électrique (commun)",
+        "feature43": "Générateur électrique complet",
+        "feature44": "Puits",
+        "feature45": "Portail électrique",
+        "feature46": "Hall / Vestibule",
+        "feature47": "Barres de sécurité",
+        "feature48": "Salon",
+        "feature49": "Salon/Salle à manger",
+        "feature50": "Salle polyvalente",
+        "feature51": "Sécurité",
+        "feature52": "Câble TV",
+        "feature53": "Terrasse",
+        "feature54": "Terrasse couverte",
+        "feature55": "Réservoir d'eau",
+        "feature56": "Transfert/A",
+        "feature57": "Clôtures"
+      }
+    }
+  },
+
+  "register": {
+    "title": "Vendez ou Louez Votre Propriété : Commencez Ici !",
+    "description1": "Dans le cadre de notre effort pour optimiser et accélérer ce processus, nous avons développé un formulaire qui nous aidera à collecter efficacement les informations essentielles sur vos besoins.",
+    "description2": "Chaque catégorie comprend les services que nous offrons. Lors du remplissage, n'oubliez pas de préciser s'il s'agit d'une vente ou d'une location de courte durée.",
+    "description3": "Chaque bouton vous dirigera vers le lien où vous pourrez compléter le formulaire en fonction du type de propriété et de votre projet.",
+    "sellProperty": "Vendre Ma Propriété",
+    "sellSlot": "Vendre Mon Terrain",
+    "rent": "Louer Ma Propriété",
+    "invest": "Investir",
+    "searchHome": "Je Recherche un Logement",
+    "promoteWithUs": "Annoncez avec Nous",
+    "additionalInfo1": "Si vous avez des questions, besoin d'aide ou si vous n'avez pas toutes les informations à portée de main, n'hésitez pas à remplir le formulaire. Nous vous contacterons et complèterons les détails au fur et à mesure.",
+    "additionalInfo2": "Nous sommes là pour vous accompagner à chaque étape.",
+    "additionalInfo3": "Merci de nous faire confiance !"
+  },
+
+  "invest": {
+    "landing": {
+      "titlePart1": "Investissez avec",
+      "titlePart2": "Nous",
+      "titleContinuation": "et Développez Votre Patrimoine"
+    },
+    "investments": {
+      "title": "Laissez-nous vous conseiller",
+      "description": "Explorez des opportunités d'investissement uniques en République dominicaine. Que vous soyez intéressé par des terrains stratégiquement situés, des projets en phase de pré-construction, la location d'entrepôts industriels ou l'acquisition de propriétés terminées, nous sommes là pour vous guider vers des investissements sûrs et rentables. Avec notre équipe d'experts, votre investissement est soutenu par des connaissances, de l'expérience et de la confiance.",
+      "callToAction": "Investissez dans :",
+      "goToPropertiesButton": "Voir les Propriétés",
+      "callToActionButton": "Consultez Ici",
+      "slots": {
+        "title": "Terrains",
+        "description": "Achetez des terrains stratégiquement situés dans des zones à forte croissance. Idéaux pour des développements commerciaux, résidentiels ou touristiques."
+      },
+      "projects": {
+        "title": "Projets en Pré-Construction",
+        "description": "Investissez dans des projets en phases initiales avec des prix compétitifs et un fort potentiel de valorisation."
+      },
+      "warehouses": {
+        "title": "Entrepôts Industriels",
+        "description": "Louez ou achetez des entrepôts industriels situés dans des emplacements clés, parfaits pour la logistique, la fabrication ou le stockage."
+      },
+      "finishedProperties": {
+        "title": "Propriétés Terminées",
+        "description": "Acquérez des propriétés entièrement terminées et prêtes à générer des revenus, allant des appartements aux locaux commerciaux."
+      }
+    },
+    "fairTitle": "Sommet Immobilier",
+    "fairDescription1": "Chez Rentarica, nous connectons les rêves aux opportunités grâce à nos salons immobiliers internationaux. Nous sommes fiers d'être un pont entre les promoteurs et les expatriés souhaitant investir en République dominicaine, créant un espace où l'innovation, le divertissement et les opportunités se rencontrent.",
+    "fairDescription2": "Avec plus de 10 salons immobiliers réussis, nous avons prouvé notre capacité à produire des événements qui génèrent non seulement des résultats rentables pour les promoteurs, mais qui offrent également une expérience unique, enrichissante et divertissante aux participants.",
+    "fairTitle2": "Réalisez Vos Objectifs avec Rentarica",
+    "fairDescription3": "Souhaitez-vous organiser un salon international avec nous ou trouver la propriété de vos rêves ? Nous sommes là pour vous accompagner à chaque étape. Avec Rentarica, chaque événement et investissement bénéficie de l'expérience et de l'engagement d'une équipe dédiée à votre succès. Prêt à commencer ?",
+    "fairButton1": "Organisez Votre Salon avec Nous",
+    "fairButton2": "Trouvez Ma Prochaine Propriété"
   },
   "footer": {
     "menu": {
@@ -49,115 +222,5 @@
       "message": "Écrivez votre message",
       "submit": "Enviar"
     }
-  },
-  "properties": {
-    "filters": {
-      "bathrooms": "Salles de bain",
-      "price": "Prix",
-      "floors": "Étages",
-      "size": "Taille"
-    },
-    "search_placeholder": "Rechercher par code...",
-    "no_results": "Aucun résultat trouvé",
-    "categories": {
-      "all": "Tous",
-      "sale": "Vente",
-      "rent": "Location",
-      "land": "Terrain"
-    }
-  },
-  "property_details": {
-    "title": "Détails de la propriété",
-    "category": "Catégorie",
-    "price": "À partir de USD",
-    "location": "Emplacement",
-    "description": {
-      "title": "Description"
-    },
-    "apartment_features": {
-      "title": "Caractéristiques de l'appartement",
-      "items": "Liste des caractéristiques"
-    },
-    "apartment_details": {
-      "title": "Détails de l'appartement",
-      "property_type": "Type de propriété",
-      "property_type_value": "Appartement",
-      "bedrooms": "Chambres",
-      "bathrooms": "Salles de bain",
-      "size": "Taille",
-      "floors": "Étages",
-      "year_built": "Année de construction"
-    }
-  },
-  "register_property": {
-    "title": "Vendez ou louez votre propriété : Commencez ici !",
-    "intro": "Dans le cadre de nos efforts pour optimiser et simplifier ce processus, nous avons développé un formulaire pour vous aider à rassembler des informations cruciales plus efficacement.",
-    "instructions": "Dans chaque classification se trouvent nos services que nous offrons. Lors du remplissage du formulaire, assurez-vous de choisir le bon en fonction de s'il s'agit d'une vente ou d'une location à court terme.",
-    "cta": "Chaque bouton vous mène au bon formulaire à remplir, en fonction du type de propriété et de ce que vous voulez en faire.",
-    "buttons": {
-      "sell_property": "Vendre ma propriété",
-      "sell_land": "Vendre mon terrain",
-      "rent_property": "Louer ma propriété",
-      "invest": "Investir",
-      "find_home": "Trouver une maison",
-      "advertise": "Faites de la publicité avec nous"
-    },
-    "additional_info": {
-      "text": "Si vous avez des questions, avez besoin d'aide ou n'avez pas certaines informations à portée de main, n'hésitez pas à quitter le formulaire. Nous prendrons contact avec vous et vous aiderons à le compléter en cours de route.",
-      "closing": "Nous sommes là pour vous aider à chaque étape.",
-      "thank_you": "Merci de nous faire confiance !"
-    }
-  },
-  "invest_page": {
-    "banner": {
-      "title": "Investissez avec ",
-      "title2": "Vision :",
-      "subtitle": "Votre liberté commence maintenant"
-    },
-    "consultation_section": {
-      "title": "Laissez-nous vous conseiller",
-      "options": {
-        "projects": "Projets en planification",
-        "completed": "Propriétés achevées",
-        "land": "Terrain"
-      }
-    },
-    "upcoming_fairs": {
-      "title": "Prochains Salons Immobiliers",
-      "description": "Nous vous invitons à nous rejoindre pour un moment agréable pendant que nous présentons les grandes opportunités d'investissement dans ce pays. Choisissez votre destination et inscrivez-vous :",
-      "event": {
-        "location": "New York | Lawrence",
-        "date": "Date : 7 et 8 décembre",
-        "hour": "Heure : de 10h à 20h",
-        "note": "Lieu à annoncer. Si vous êtes intéressé, veuillez vous inscrire et nous vous tiendrons informé une fois que nous aurons tous les détails."
-      },
-      "contact": {
-        "phone": "Téléphone : +1 809-893-6553",
-        "email": "info@rentarica.com",
-        "register_button": "Inscrivez-vous ici"
-      }
-    }
-  },
-  "contact_form": {
-    "title": "Nous aimerions savoir comment nous pouvons vous aider",
-    "fields": {
-      "name": "Prénom",
-      "country_city": "Pays | Ville",
-      "email": "Email",
-      "phone": "Numéro de téléphone",
-      "referral": "Comment avez-vous entendu parler de nous ?",
-      "promote_options": "Choisissez le(s) jour(s) où vous souhaitez faire de la promotion :",
-      "message": "Écrivez votre message"
-    },
-    "days": {
-      "mon": "Lun",
-      "tue": "Mar",
-      "wed": "Mer",
-      "thu": "Jeu",
-      "fri": "Ven",
-      "sat": "Sam",
-      "sun": "Dim"
-    },
-    "button": "Soumettre"
   }
 }

@@ -66,7 +66,7 @@ const ContactUs: React.FC<IContactUsProps> = ({ bg }) => {
 
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="w-1/2 grid grid-cols-2 gap-7 mb-10"
+        className="lg:w-1/2 grid grid-cols-2 gap-7 mb-10"
       >
         <div className="flex flex-col">
           <label>{t("footer.message_form.name")}</label>

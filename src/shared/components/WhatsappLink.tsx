@@ -22,12 +22,12 @@ const WhatsAppLink = ({ propertyName }: any) => {
   return (
     <Link
       href={whatsappUrl}
-      className="items-center font-bold text-[#25d366] mx-2 md:flex hidden"
+      className="items-center font-bold text-[#25d366] mx-2 flex  mt-5"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <IoLogoWhatsapp className=" text-3xl mr-2 hover:scale-105 transition-all" />{" "}
-      <span className="transition-all xl:flex hidden">Whatsapp</span>
+      <IoLogoWhatsapp className="text-3xl mr-2 hover:scale-105 transition-all" />{" "}
+      <span className="transition-all text-2xl 2xl:text-3xl">Whatsapp</span>
     </Link>
   );
 };

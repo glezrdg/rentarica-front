@@ -101,7 +101,7 @@ const AboutUs = () => {
     ));
   };
 
-  let description = t("home.about.description");
+  let description = t("home.aboutUs.description");
 
   return (
     <>
@@ -135,7 +135,7 @@ const AboutUs = () => {
           <h1
             className={`text-5xl mb-8 t-blue-dark font-bold uppercase ${noto_300.className}`}
           >
-            {t("home.about.title")}
+            {t("home.aboutUs.title")}
           </h1>
 
           <div
@@ -160,7 +160,9 @@ const AboutUs = () => {
             onClick={() => setExpanded(!expanded)}
             className="flex items-center gap-5 mt-5 text-md lg:text-xl font-semibold  bg-accent-yellow-base border border-accent-yellow-base  rounded-md shadow-sm px-4 py-2  cursor-pointer  hover:scale-105 transition-all mx-auto lg:m-0"
           >
-            {expanded ? "Ver menos" : "Ver más"}
+            {expanded
+              ? t("home.aboutUs.buttonFalse")
+              : t("home.aboutUs.buttonTrue")}
           </button>
 
           <div className="w-9 border-[3px] my-8 border-gray-700 hidden lg:flex"></div>

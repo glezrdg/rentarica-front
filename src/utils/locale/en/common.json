@@ -1,28 +1,58 @@
 {
+  "header": {
+    "buy_rent": "Buy | Rent",
+    "register_property": "Register Your Property",
+    "invest_now": "Invest Now",
+    "fair": "Fair"
+  },
   "home": {
-    "header": {
-      "buy_rent": "Buy | Rent",
-      "register_property": "Register Your Property",
-      "invest_now": "Invest Now",
-      "fair": "Fair"
-    },
     "hero": {
-      "unforgettable": "unforgettable ",
-      "properties": "LISTINGS",
-      "view_properties": "View properties"
+      "title1": "UNFORGETTABLE",
+      "title2": "PROPERTIES",
+      "button": "See properties"
+    },
+    "featuredProperties": {
+      "title": "Featured Properties",
+      "button": "See more properties"
+    },
+    "aboutUs": {
+      "title": "WHO ARE WE?",
+      "description": "At Rentarica, we are dedicated to helping you explore the best vacation destinations in the Dominican Republic. Whether you're looking to buy a property, rent a property, or invest in real estate, our team of experts is here to guide you every step of the way. We pride ourselves on providing personalized service to ensure all our clients have a memorable and pleasant experience. You can trust that your properties are in good hands with Rentarica, allowing you to relax and enjoy the benefits of your real estate investment. Contact us today to learn more about how we can help you achieve your real estate goals in the Dominican Republic.",
+      "buttonTrue": "See more",
+      "buttonFalse": "See less"
     },
     "services": {
-      "welcome_message": "We are dedicated to",
-      "manage_property": "Manage",
-      "rent_property": "Rent",
-      "sell_property": "Sell"
-    },
-    "about": {
-      "title": "About us...",
-      "description": "At Rentarica, we are dedicated to helping you explore the best vacation destinations in the Dominican Republic. Whether you are looking to buy a property, rent a property or invest in real estate, our team of experts is here to guide you every step of the way. We pride ourselves on providing personalized service to ensure that all of our clients have a memorable and enjoyable experience. You can trust that your properties are in good hands with Rentarica, allowing you to relax and enjoy the benefits of your real estate investment. Contact us today to learn more about how we can help you achieve your real estate goals in the Dominican Republic.",
-      "button_text": "Download Brochure"
+      "title": "Our Services",
+      "serviceCards": {
+        "internationalFairs": "International Fairs",
+        "internationalFairsDescription": "We organize international fairs for developers looking to expand their exposure and achieve greater sales and profitability in their projects.",
+        "internationalFairsAction": "More Info",
+        "salesAndRentals": "Sales & Rentals",
+        "salesAndRentalsDescription": "We facilitate the quick and effective sale and rental of properties, connecting you with the best buyers and tenants.",
+        "salesAndRentalsAction": "Contact Us",
+        "administrationAndReservations": "Administration & Reservation Management",
+        "administrationAndReservationsDescription": "We manage and take care of your property while generating short-term reservations and providing excellent customer service, maximizing profitability and taking care of every detail for a worry-free experience.",
+        "administrationAndReservationsAction": "Our Packages",
+        "concierge": "Concierge",
+        "conciergeDescription": "Personalized service to cover all your needs and ensure a unique experience in every detail of your vacation.",
+        "conciergeAction": "Request a Quote",
+        "eventAccommodationManagement": "Event Accommodation Management",
+        "eventAccommodationManagementDescription": "We manage accommodations for your event guests, ensuring excellent customer service, comfort, and convenience.",
+        "eventAccommodationManagementAction": "Request a Quote",
+        "turnkey": "Turnkey Solutions",
+        "turnkeyDescription": "We offer a comprehensive service that takes care of everything from purchasing everything your property needs to management, so you only have to enjoy.",
+        "turnkeyAction": "Request a Quote",
+        "rentaricaOwnersClub": "Rentarica Owner's Club",
+        "rentaricaOwnersClubDescription": "Discover all the benefits Rentarica offers when you join our family of owners and partners.",
+        "rentaricaOwnersClubAction": "Download it here",
+        "advertiseWithUs": "Advertise with Us",
+        "advertiseWithUsDescription": "Promote your project, property, or business with us and reach a broad and qualified audience.",
+        "advertiseWithUsAction": "Our Packages"
+      },
+      "button": "See more"
     }
   },
+
   "footer": {
     "menu": {
       "title": "Menu",
@@ -50,115 +80,150 @@
       "submit": "Send"
     }
   },
-  "properties": {
-    "filters": {
-      "bathrooms": "Bathrooms",
-      "price": "Price",
-      "floors": "Floors",
-      "size": "Size"
-    },
 
-    "search_placeholder": "Search by code...",
-    "no_results": "No results found",
-    "categories": {
-      "all": "All",
-      "sale": "Sale",
-      "rent": "Rent",
-      "land": "Land"
+  "properties": {
+    "propertiesTitle": "Your Next Real Estate Investment",
+    "propertiesFilter1": "All",
+    "propertiesFilter2": "For Sale",
+    "propertiesFilter3": "For Rent",
+    "propertiesFilter4": "Short-Term Rental",
+    "propertiesMoreFilters": "More Filters",
+    "propertiesCleanFilters": "Clear Filters",
+    "propertiesViewFilteredProperties": "View Filtered Properties",
+    "filters": {
+      "propertyType": {
+        "type1": "Apartments",
+        "type2": "Houses",
+        "type3": "Villas",
+        "type4": "Plots",
+        "type5": "Farms",
+        "type6": "Warehouses",
+        "type7": "Offices",
+        "type8": "Penthouses",
+        "type9": "Businesses"
+      },
+      "typePropertyLabel": "Property Type:",
+      "zoneSearch": "Select an area",
+      "codeSearch": "Search by property code",
+      "priceSearch": "Price",
+      "bathroomsRange": "Bathrooms",
+      "roomsRange": "Rooms",
+      "sizeRange": "Size",
+      "propertyFeature": {
+        "feature1": "A/C",
+        "feature2": "Central A/C",
+        "feature3": "Pre-Installed A/C",
+        "feature4": "Split A/C",
+        "feature5": "Ceiling Fans",
+        "feature6": "Roof Access",
+        "feature7": "Furnished",
+        "feature8": "Annexes",
+        "feature9": "Social Area",
+        "feature10": "Sports Areas",
+        "feature11": "Elevator",
+        "feature12": "Balcony",
+        "feature13": "Common Bathroom",
+        "feature14": "Water Heater",
+        "feature15": "Cistern",
+        "feature16": "Hot Kitchen",
+        "feature17": "Dining Room",
+        "feature18": "Concierge",
+        "feature19": "Cornices",
+        "feature20": "Breakfast Nook",
+        "feature21": "Trash Chute",
+        "feature22": "In Plans",
+        "feature23": "Emergency Stairs",
+        "feature24": "Stairs",
+        "feature25": "Sitting Area",
+        "feature26": "Study",
+        "feature27": "Family Room",
+        "feature28": "Gym",
+        "feature29": "Gazebo",
+        "feature30": "Service Room",
+        "feature31": "Power Inverter",
+        "feature32": "Jacuzzi",
+        "feature33": "Laundry",
+        "feature34": "Storage Locker",
+        "feature35": "Lobby",
+        "feature36": "Mezzanine",
+        "feature37": "Parking",
+        "feature38": "Covered Parking",
+        "feature39": "Patio",
+        "feature40": "Pet Friendly",
+        "feature41": "Pool",
+        "feature42": "Backup Generator (Common)",
+        "feature43": "Full Backup Generator",
+        "feature44": "Well",
+        "feature45": "Electric Gate",
+        "feature46": "Foyer",
+        "feature47": "Security Bars",
+        "feature48": "Living Room",
+        "feature49": "Living/Dining Room",
+        "feature50": "Function Room",
+        "feature51": "Security",
+        "feature52": "Cable TV",
+        "feature53": "Terrace",
+        "feature54": "Covered Terrace",
+        "feature55": "Water Tank",
+        "feature56": "Transfer/A",
+        "feature57": "Fences"
+      }
     }
   },
-  "property_details": {
-    "title": "Property Details",
-    "category": "Category",
-    "price": "Starting from USD",
-    "location": "Location",
-    "description": {
-      "title": "Description"
-    },
-    "apartment_features": {
-      "title": "Apartment Features",
-      "items": "Features List"
-    },
-    "apartment_details": {
-      "title": "Apartment Details",
-      "property_type": "Property Type",
-      "property_type_value": "Apartment",
-      "bedrooms": "Bedrooms",
-      "bathrooms": "Bathrooms",
-      "size": "Size",
-      "floors": "Floors",
-      "year_built": "Year Built"
-    }
-  },
-  "register_property": {
-    "title": "Sell or Rent Your Property: Start Here!",
-    "intro": "As part of our effort to optimize and streamline this process, we have developed a form to help you gather crucial information more efficiently.",
-    "instructions": "Within each classification are our services that we offer. When filling out the form, be sure to choose the right one depending on whether it's for sale or short-term rental.",
-    "cta": "Each button leads you to the right form to complete, depending on the type of property and what you want to do with it.",
-    "buttons": {
-      "sell_property": "Sell My Property",
-      "sell_land": "Sell My Land",
-      "rent_property": "Rent My Property",
+  
+    "register": {
+      "title": "Sell or Rent Your Property: Start Here!",
+      "description1": "As part of our effort to optimize and streamline this process, we have developed a form that will help us efficiently collect crucial information about your needs.",
+      "description2": "Within each classification are our offered services. When filling it out, don't forget to choose whether it is for sale or short-term rental.",
+      "description3": "Each button takes you to the link where you will complete the form based on the type of property and what you want to do with it.",
+      "sellProperty": "Sell My Property",
+      "sellSlot": "Sell My Land",
+      "rent": "Rent My Property",
       "invest": "Invest",
-      "find_home": "Find a Home",
-      "advertise": "Advertise with Us"
-    },
-    "additional_info": {
-      "text": "If you have any questions, need assistance, or don’t have some information on hand, don’t hesitate to leave the form. We’ll get in touch with you and help you complete it along the way.",
-      "closing": "We are here to help you every step of the way.",
-      "thank_you": "Thank you for trusting us!"
+      "searchHome": "Looking for a Home",
+      "promoteWithUs": "Advertise with Us",
+      "additionalInfo1": "If you have any questions, need help, or don’t have all the information at hand, don’t hesitate to fill out the form. We will contact you and complete everything along the way.",
+      "additionalInfo2": "We are here to assist you every step of the way.",
+      "additionalInfo3": "Thank you for trusting us!"
     }
-  },
-  "invest_page": {
-    "banner": {
-      "title": "Invest with ",
-      "title2": "Vision:",
-      "subtitle": "Your Freedom Begins Now"
-    },
-    "consultation_section": {
-      "title": "Let Us Advise You",
-      "options": {
-        "projects": "Projects in Planning",
-        "completed": "Completed Properties",
-        "land": "Land"
-      }
-    },
-    "upcoming_fairs": {
-      "title": "Upcoming Real Estate Fairs",
-      "description": "We invite you to join us for an enjoyable moment while we showcase the great investment opportunities in this country. Choose your destination and register:",
-      "event": {
-        "location": "New York | Lawrence",
-        "date": "Date: December 7th and 8th ",
-        "hour": "Hour: 10 AM to 8 PM",
-        "note": "Location to be announced. If you’re interested, please register and we’ll keep you informed once we have all the details."
+  ,  
+  
+    "invest": {
+      "landing": {
+        "titlePart1": "Invest with",
+        "titlePart2": "Us",
+        "titleContinuation": "and Grow Your Wealth"
       },
-      "contact": {
-        "phone": "Phone: +1 809-893-6553",
-        "email": "info@rentarica.com",
-        "register_button": "Register here"
-      }
-    },
-    "contact_form": {
-      "title": "We’d Like to Know How We Can Help You",
-      "fields": {
-        "name": "Name",
-        "country_city": "Country | City",
-        "email": "Email",
-        "phone": "Phone Number",
-        "referral": "How did you hear about us?",
-        "promote_options": "Choose the day(s) you'd like to promote:",
-        "message": "Write your message"
+      "investments": {
+        "title": "Let Us Advise You",
+        "description": "Explore unique investment opportunities in the Dominican Republic. Whether you are interested in strategically located land, pre-construction projects, industrial warehouses for rent, or fully completed properties, we are here to guide you towards secure and profitable investments. With our team of experts, your investment is backed by knowledge, experience, and trust.",
+        "callToAction": "Invest in:",
+        "goToPropertiesButton": "View Properties",
+        "callToActionButton": "Consult Here",
+        "slots": {
+          "title": "Land",
+          "description": "Purchase strategically located land in high-growth areas. Ideal for commercial, residential, or tourism developments."
+        },
+        "projects": {
+          "title": "Pre-Construction Projects",
+          "description": "Invest in projects at early stages with competitive prices and high appreciation potential."
+        },
+        "warehouses": {
+          "title": "Industrial Warehouses",
+          "description": "Rent or buy industrial warehouses in key locations, perfect for logistics, manufacturing, or storage businesses."
+        },
+        "finishedProperties": {
+          "title": "Completed Properties",
+          "description": "Acquire fully finished properties ready to generate income, from apartments to commercial spaces."
+        }
       },
-      "days": {
-        "mon": "Mon",
-        "tue": "Tue",
-        "wed": "Wed",
-        "thu": "Thu",
-        "fri": "Fri",
-        "sat": "Sat",
-        "sun": "Sun"
-      },
-      "button": "Submit"
+      "fairTitle": "Real Estate Summit",
+      "fairDescription1": "At Rentarica, we connect dreams with opportunities through our international real estate fairs. We take pride in being a bridge between developers and expatriates interested in investing in the Dominican Republic, creating a space where innovation, entertainment, and opportunities meet.",
+      "fairDescription2": "With over 10 successful real estate fairs, we have proven our ability to produce events that not only generate profitable results for developers but also offer a unique, enriching, and entertaining experience for attendees.",
+      "fairTitle2": "Make Your Goals a Reality with Rentarica",
+      "fairDescription3": "Would you like to organize an international fair with us or find your dream property? We are here to guide you every step of the way. With Rentarica, every event and investment comes with the experience and commitment of a team dedicated to your success. Ready to get started?",
+      "fairButton1": "Organize Your Fair with Us",
+      "fairButton2": "Find My Next Property"
     }
-  }
+
 }

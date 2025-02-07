@@ -26,18 +26,18 @@ export const getServerSideProps = (async ({ query }) => {
 const PropertyDetail = ({
   property,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation();
   const router = useRouter();
 
   return (
-    <div className="pt-36 xl:w-[85%] container mx-auto px-4 xl:px-10">
+    <div className="pt-32 xl:w-[85%] container mx-auto px-4 xl:px-10">
       <div>
+        <div className="mb-4 text-4xl " onClick={() => router.back()}>
+          <TiArrowLeftThick />
+        </div>
         <div className="flex items-center justify-between">
-          <h1
-            className="text-4xl font-semibold flex items-center cursor-pointer"
-            onClick={() => router.back()}
-          >
-            <TiArrowLeftThick /> {property?.title}
+          <h1 className="text-4xl font-semibold flex items-center cursor-pointer">
+            {property?.title}
           </h1>
           <div className="text-right">
             <p className={`text-lg ${noto_300.className}`}>
@@ -54,17 +54,17 @@ const PropertyDetail = ({
         </div>
       </div>
 
-      <div className="grid gap-12 my-14">
+      <div className="grid  my-14">
         <Galeria images={property?.images} />
         <div>
           <div
-            className="text-lg py-6 text-justify text-slate-600"
+            className="text-xs lg:text-lg py-6 text-justify text-slate-600 !max-w-[90dvw]"
             dangerouslySetInnerHTML={{ __html: property.description }}
           />
 
           {property?.items?.length ? (
             <>
-              <ul className="text-lg flex items-center gap-4 flex-wrap max-w-[700px] my-6 text-justify py-4 text-slate-600">
+              <ul className="text-lg flex items-center gap-4 flex-wrap lg:max-w-[700px] my-6 text-justify py-4 text-slate-600">
                 {property?.items?.map((i) => {
                   const feature = propertyFeatures.find((e) => e.value == i);
                   return (
@@ -74,8 +74,10 @@ const PropertyDetail = ({
                     >
                       <i className={feature?.icon} />
                       <span className="text-base font-semibold">
-                        {" "}
-                        {propertyFeatures.find((e) => e.value == i)?.label}
+                        {t(
+                          propertyFeatures.find((e) => e.value === i)?.label ||
+                            "default.label" // Cambia "default.label" por un texto clave genérico.
+                        )}
                       </span>
                     </button>
                   );
@@ -85,7 +87,7 @@ const PropertyDetail = ({
           ) : (
             ""
           )}
-          <div className="grid grid-cols-3 w-1/2 gap-3">
+          <div className="grid grid-cols-2 lg:grid-cols-3 w-1/2 gap-3">
             <div>
               <p className="text-slate-600 mb-2">Rooms:</p>
               <p>{property?.rooms}</p>
@@ -107,8 +109,8 @@ const PropertyDetail = ({
               <p>2025</p>
             </div>
           </div>
-          <div className="mt-14">
-            <p className="text-lg font-semibold mb-10">
+          <div className="my-20">
+            <p className="text-lg font-semibold ">
               {" "}
               Escribenos por esta propiedad:{" "}
             </p>
@@ -116,10 +118,12 @@ const PropertyDetail = ({
           </div>
           <div className="mt-10">
             {property.googleMapsLink ? (
-              <div
-                className="text-lg py-6 text-justify text-slate-600"
-                dangerouslySetInnerHTML={{ __html: property.googleMapsLink }}
-              />
+              <div className="map-container">
+                <div
+                  className="iframe-wrapper"
+                  dangerouslySetInnerHTML={{ __html: property.googleMapsLink }}
+                />
+              </div>
             ) : (
               <p>No hay ubicación disponible para esta propiedad.</p>
             )}

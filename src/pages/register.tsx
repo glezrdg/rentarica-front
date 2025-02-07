@@ -7,6 +7,7 @@ import { FaHouseChimney, FaMoneyBillTrendUp } from "react-icons/fa6";
 import { BiSearchAlt } from "react-icons/bi";
 import { Gi3dStairs } from "react-icons/gi";
 import { useTranslation } from "react-i18next";
+import { noto_300, noto_600 } from "@/utils/fonts";
 
 const RegisterProperty = () => {
   const { t } = useTranslation();
@@ -16,16 +17,18 @@ const RegisterProperty = () => {
       {/* ABOUT */}
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-10 px-5 lg:mt-0 lg:px-0 pb-10 xl:pb-0">
         <div className="text-justify place-content-center">
-          <div className="text-3xl md:text-4xl xl:text-5xl text-start font-bold mb-6">
-            <h1>{t("register_property.title")}</h1>
+          <div
+            className={`text-3xl md:text-4xl xl:text-5xl text-start font-bold mb-6 ${noto_300.className}`}
+          >
+            <h1>{t("register.title")}</h1>
           </div>
           <p className="text-sm  xl:text-base mb-3 ">
-            {t("register_property.intro")}
+            {t("register.description1")}
           </p>
           <p className="text-sm  xl:text-base mb-3 ">
-            {t("register_property.instructions")}
+            {t("register.description2")}
           </p>
-          <p className="text-sm  xl:text-base ">{t("register_property.cta")}</p>
+          <p className="text-sm  xl:text-base ">{t("register.description3")}</p>
         </div>
         <div>
           <img src="/Apartment.png" alt="Apartment" />
@@ -41,7 +44,7 @@ const RegisterProperty = () => {
           <div className="text-center">
             <FaHouseChimney className=" text-3xl lg:text-4xl xl:text-5xl mb-3 m-auto" />
             <p className=" text-sm md:text-base lg:text-lg font-semibold xl:text-xl">
-              {t("register_property.buttons.sell_property")}
+              {t("register.sellProperty")}
             </p>
           </div>
         </a>
@@ -53,7 +56,7 @@ const RegisterProperty = () => {
           <div className="text-center">
             <GiIsland className=" text-3xl lg:text-4xl xl:text-5xl mb-3 m-auto" />
             <p className=" text-sm md:text-base lg:text-lg font-semibold xl:text-xl">
-              {t("register_property.buttons.sell_land")}
+              {t("register.sellSlot")}
             </p>
           </div>
         </a>
@@ -65,7 +68,7 @@ const RegisterProperty = () => {
           <div className="text-center">
             <i className="pi pi-dollar  text-3xl lg:text-4xl xl:text-5xl mb-3" />
             <p className=" text-sm md:text-base lg:text-lg font-semibold xl:text-xl">
-              {t("register_property.buttons.rent_property")}
+              {t("register.rent")}
             </p>
           </div>
         </a>
@@ -77,7 +80,7 @@ const RegisterProperty = () => {
           <div className="text-center">
             <FaMoneyBillTrendUp className=" text-3xl lg:text-4xl xl:text-5xl mb-3 mx-auto" />
             <p className=" text-sm md:text-base lg:text-lg font-semibold xl:text-xl">
-              {t("register_property.buttons.invest")}
+              {t("register.invest")}
             </p>
           </div>
         </a>
@@ -89,7 +92,7 @@ const RegisterProperty = () => {
           <div className="text-center">
             <BiSearchAlt className=" text-3xl lg:text-4xl xl:text-5xl mb-3 m-auto" />
             <p className=" text-sm md:text-base lg:text-lg font-semibold xl:text-xl">
-              {t("register_property.buttons.find_home")}
+              {t("register.searchHome")}
             </p>
           </div>
         </a>
@@ -103,20 +106,16 @@ const RegisterProperty = () => {
           <div className="text-center">
             <Gi3dStairs className="text-3xl lg:text-4xl xl:text-5xl mb-3 m-auto" />
             <p className=" text-sm md:text-base lg:text-lg font-semibold xl:text-xl">
-              {t("register_property.buttons.advertise")}
+              {t("register.promoteWithUs")}
             </p>
           </div>
         </Link>
       </div>
 
       <div className=" w-full flex flex-col items-center justify-center  text-center lg:px-0  px-10 text-lg space-y-4">
-        <p className="w-full lg:w-2/3 my-5">
-          {t("register_property.additional_info.text")}
-        </p>
-        <p>{t("register_property.additional_info.closing")}</p>
-        <p className="font-semibold">
-          {t("register_property.additional_info.thank_you")}
-        </p>
+        <p className="w-full lg:w-2/3 my-5">{t("register.additionalInfo1")}</p>
+        <p>{t("register.additionalInfo2")}</p>
+        <p className="font-semibold">{t("register.additionalInfo3")}</p>
       </div>
     </div>
   );

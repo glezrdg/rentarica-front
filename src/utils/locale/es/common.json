@@ -1,30 +1,206 @@
 {
+  "header": {
+    "buy_rent": "Compra | Alquila",
+    "register_property": "Registra Tu Propiedad",
+    "invest_now": "Invierte Ahora",
+    "fair": "Feria"
+  },
   "home": {
-    "header": {
-      "buy_rent": "Compra | Alquila",
-      "register_property": "Registra Tu Propiedad",
-      "invest_now": "Invierte Ahora",
-      "fair": "Feria"
-    },
-
     "hero": {
-      "unforgettable": "PROPIEDADES ",
-      "properties": "INOLVIDABLES",
-      "view_properties": "Ver propiedades"
+      "title1": "PROPIEDADES",
+      "title2": "INOLVIDABLES",
+      "button": "Ver propiedades"
     },
-    "services": {
-      "welcome_message": "Nos dedicamos a,",
-
-      "manage_property": "ADMINISTRAR",
-      "rent_property": "ALQUILAR",
-      "sell_property": "VENDER"
+    "featuredProperties": {
+      "title": "Propiedades Destacadas",
+      "button": "Ver más propiedades"
     },
-
-    "about": {
+    "aboutUs": {
       "title": "QUIENES SOMOS?",
       "description": "En Rentarica, estamos dedicados a ayudarte a explorar los mejores destinos vacacionales en la República Dominicana. Ya sea que estés buscando comprar una propiedad, alquilar una propiedad o invertir en bienes raíces, nuestro equipo de expertos está aquí para guiarte en cada paso del camino. Nos enorgullece proporcionar un servicio personalizado para asegurarnos de que todos nuestros clientes tengan una experiencia memorable y placentera. Puedes confiar en que tus propiedades están en buenas manos con Rentarica, lo que te permite relajarte y disfrutar de los beneficios de tu inversión en bienes raíces. Contáctanos hoy mismo para obtener más información sobre cómo podemos ayudarte a alcanzar tus objetivos en bienes raíces en la República Dominicana.",
-      "button_text": "Más Info"
+      "buttonTrue": "Ver más",
+      "buttonFalse": "Ver menos"
+    },
+    "services": {
+      "title": "Nuestros Servicios",
+      "serviceCards": {
+        "internationalFairs": "Ferias Internacionales",
+        "internationalFairsDescription": "Realizamos Feria Internacionales para desarrolladores interesados en expandir su exposición y lograr mayor venta y rentabilidad en sus proyectos.",
+        "internationalFairsAction": "Más Info",
+
+        "salesAndRentals": "Venta & Alquiler",
+        "salesAndRentalsDescription": "Facilitamos la venta y alquiler de propiedades de manera rápida y efectiva, conectándote con los mejores compradores e interesados en alquilar tu propiedad.",
+        "salesAndRentalsAction": "Contáctanos",
+
+        "administrationAndReservations": "Administración & Gestión de Reservas",
+        "administrationAndReservationsDescription": "Gestionamos y cuidamos de tu propiedad, así como de generar reservas a corto plazo y brindar un servicio al cliente de excelencia, maximizando su rentabilidad y ocupándonos de todos los detalles para garantizar una experiencia sin preocupaciones.",
+        "administrationAndReservationsAction": "Nuestros Paquetes",
+
+        "concierge": "Concierge",
+        "conciergeDescription": "Servicio personalizado para cubrir todas tus necesidades y asegurar una experiencia única en cada detalle de tus vacaciones.",
+        "conciergeAction": "Cotiza con Nosotros",
+
+        "eventAccommodationManagement": "Gestión de Alojamientos para Eventos",
+        "eventAccommodationManagementDescription": "Gestionamos alojamientos para tus invitados de tus eventos, asegurando un excelente servicio al cliente, comodidad y conveniencia.",
+        "eventAccommodationManagementAction": "Cotiza con Nosotros",
+
+        "turnkey": "Mano en Llave",
+        "turnkeyDescription": "Ofrecemos un servicio integral que se ocupa de todo, desde la compra de todo lo que necesita tu inmueble, hasta la administración, para que solo te preocupes de disfrutar.",
+        "turnkeyAction": "Cotiza con Nosotros",
+
+        "rentaricaOwnersClub": "Rentarica Owner's Club",
+        "rentaricaOwnersClubDescription": "Descubre todo los beneficios que Rentarica tiene para ti al unirte a nuestra familia de propietarios y socios.",
+        "rentaricaOwnersClubAction": "Descárgalo aquí",
+
+        "advertiseWithUs": "Anúnciate con Nosotros",
+        "advertiseWithUsDescription": "Promociona tu proyecto, propiedad o negocio con nosotros y alcanza una audiencia amplia y cualificada.",
+        "advertiseWithUsAction": "Nuestros Paquetes"
+      },
+      "button": "Ver más"
     }
+  },
+  "properties": {
+    "propertiesTitle": "Tu Próxima Inversión Inmobiliaria",
+    "propertiesFilter1": "Todas",
+    "propertiesFilter2": "Venta",
+    "propertiesFilter3": "Alquiler",
+    "propertiesFilter4": "Renta Corta",
+    "propertiesMoreFilters": "Más Filtros",
+    "propertiesCleanFilters": "Limpiar Filtros",
+    "propertiesViewFilteredProperties": "Ver Propiedades Filtradas",
+    "filters": {
+      "propertyType": {
+        "type1": "Apartamentos",
+        "type2": "Casas",
+        "type3": "Villas",
+        "type4": "Solares",
+        "type5": "Fincas",
+        "type6": "Naves",
+        "type7": "Oficinas",
+        "type8": "Penthouses",
+        "type9": "Negocios"
+      },
+      "typePropertyLabel": "Tipo de propiedad:",
+      "zoneSearch": "Selecciona una zona",
+      "codeSearch": "Buscar por código de propiedad",
+      "priceSearch": "Precio",
+      "bathroomsRange": "Baños",
+      "roomsRange": "Habitaciones",
+      "sizeRange": "Tamaño",
+      "propertyFeature": {
+        "feature1": "A/C",
+        "feature2": "A/C Central",
+        "feature3": "A/C Preinstalado",
+        "feature4": "A/C Split",
+        "feature5": "Abanicos",
+        "feature6": "Acceso A Techo",
+        "feature7": "Amueblado",
+        "feature8": "Anexos",
+        "feature9": "Area Social",
+        "feature10": "Areas Deportivas",
+        "feature11": "Ascensor",
+        "feature12": "Balcón",
+        "feature13": "Baño Común",
+        "feature14": "Calentador",
+        "feature15": "Cisterna",
+        "feature16": "Cocina Caliente",
+        "feature17": "Comedor",
+        "feature18": "Conserje",
+        "feature19": "Cornisas",
+        "feature20": "Desayunador",
+        "feature21": "Ducto Basura",
+        "feature22": "En Planos",
+        "feature23": "Esc. Emergencia",
+        "feature24": "Escaleras",
+        "feature25": "Estar",
+        "feature26": "Estudio",
+        "feature27": "Family Room",
+        "feature28": "Gym",
+        "feature29": "Gazebo",
+        "feature30": "Habitación Servicio",
+        "feature31": "Inversor",
+        "feature32": "Jacuzzi",
+        "feature33": "Lavado",
+        "feature34": "Locker",
+        "feature35": "Lobby",
+        "feature36": "Mezzanine",
+        "feature37": "Parqueo",
+        "feature38": "Parq. Techado",
+        "feature39": "Patio",
+        "feature40": "Pet Friendly",
+        "feature41": "Piscina",
+        "feature42": "Planta Eléctrica (Común)",
+        "feature43": "Planta Eléctrica Full",
+        "feature44": "Pozo",
+        "feature45": "Portón Eléctrico",
+        "feature46": "Recibidor",
+        "feature47": "Rejas",
+        "feature48": "Sala",
+        "feature49": "Sala/Comedor",
+        "feature50": "Salón De Actividades",
+        "feature51": "Seguridad",
+        "feature52": "Telecable",
+        "feature53": "Terraza",
+        "feature54": "Terraza Techada",
+        "feature55": "Tinaco",
+        "feature56": "Transfer/A",
+        "feature57": "Verjas"
+      }
+    }
+  },
+
+  "register": {
+    "title": "Vende o Alquila tu propiedad: ¡Empieza Aquí!",
+    "description1": "Como parte de nuestro esfuerzo por optimizar y agilizar este proceso, hemos desarrollado un formulario que nos ayudará a recopilar información crucial de manera eficiente de lo que buscas.",
+    "description2": "Dentro de cada clasificación están nuestros servicios que ofrecemos, al llenar, no olvides escoger cuál es el tipo en el caso si es venta o corto plazo.",
+    "description3": "Cada botón te lleva al enlace donde completarás el formulario según el tipo de propiedad y lo que deseas hacer con él.",
+    "sellProperty": "Vender Mi Propiedad",
+    "sellSlot": "Vender Mi Terreno",
+    "rent": "Alquilar Mi Propiedad",
+    "invest": "Invertir",
+    "searchHome": "Busco Un Hogar",
+    "promoteWithUs": "Anúnciate con nosotros",
+    "additionalInfo1": "Si tienes alguna pregunta, necesitas ayuda o no tienes una información a mano no dejes de para completar el formulario, nos comunicaremos contigo y en el camino vamos completando todo.",
+    "additionalInfo2": "Estamos aquí para ayudarte en cada paso.",
+    "additionalInfo3": "¡Gracias por confiar en nosotros!"
+  },
+
+  "invest": {
+    "landing": {
+      "titlePart1": "Invierte con",
+      "titlePart2": "Nosotros",
+      "titleContinuation": "y Haz Crecer tu Patrimonio"
+    },
+    "investments": {
+      "title": "Permítenos asesorarte",
+      "description": "Explora oportunidades únicas de inversión en la República Dominicana. Ya sea que estés interesado en terrenos estratégicamente ubicados, proyectos en planos, alquiler de naves industriales o la adquisición de propiedades terminadas, estamos aquí para guiarte hacia inversiones seguras y rentables. Con nuestro equipo de expertos, tu inversión estará respaldada por conocimiento, experiencia y confianza.",
+      "callToAction": "Invierte en:",
+      "goToPropertiesButton": "Ver Propiedades",
+      "callToActionButton": "Consulta Aquí",
+      "slots": {
+        "title": "Terrenos",
+        "description": "Compra terrenos estratégicamente ubicados en zonas de alto crecimiento. Ideales para desarrollos comerciales, residenciales o turísticos."
+      },
+      "projects": {
+        "title": "Proyectos en Planos",
+        "description": "Invierte en proyectos en etapas iniciales con precios competitivos y un alto potencial de revalorización."
+      },
+      "warehouses": {
+        "title": "Naves Industriales",
+        "description": "Alquiler y compra de naves industriales en ubicaciones clave, perfectas para negocios logísticos, manufactura o almacenamiento."
+      },
+      "finishedProperties": {
+        "title": "Propiedades Terminadas",
+        "description": "Adquiere propiedades completamente listas para generar ingresos, desde apartamentos hasta locales comerciales."
+      }
+    },
+    "fairTitle": "Real Estate Summit",
+    "fairDescription1": "En Rentarica, conectamos sueños con oportunidades a través de nuestras ferias inmobiliarias internacionales. Nos enorgullece ser un puente entre desarrolladores y expatriados interesados en invertir en República Dominicana, creando un espacio donde la innovación, el entretenimiento y las oportunidades se encuentran.",
+    "fairDescription2": "Con más de 10 ferias inmobiliarias exitosas, hemos demostrado nuestra capacidad para producir eventos que no solo generan resultados rentables para nuestros desarrolladores, sino que también ofrecen una experiencia única, enriquecedora y entretenida para nuestros asistentes.",
+    "fairTitle2": "Haz realidad tus metas con Rentarica",
+    "fairDescription3": "¿Deseas organizar una feria internacional con nosotros o encontrar la propiedad de tus sueños? Estamos aquí para asesorarte en cada paso del camino. Con Rentarica, cada evento y cada inversión cuentan con la experiencia y compromiso de un equipo dedicado a tu éxito. ¿Listo para comenzar?",
+    "fairButton1": "Organiza tu feria con nosotros",
+    "fairButton2": "Quiero Mi Próxima Propiedad"
   },
   "footer": {
     "menu": {
@@ -51,118 +227,6 @@
       "event_info": "¿Deseas info de alguna feria o evento?",
       "message": "Escribe tu mensaje",
       "submit": "Enviar"
-    }
-  },
-  "properties": {
-    "filters": {
-      "bathrooms": "Baños",
-      "price": "Precio",
-      "floors": "Pisos",
-      "size": "Tamaño"
-    },
-
-    "search_placeholder": "Buscar por código...",
-    "no_results": "No hay resultados",
-    "categories": {
-      "all": "Todas",
-      "sale": "Venta",
-      "rent": "Alquiler",
-      "land": "Terrenos"
-    }
-  },
-  "property_details": {
-    "title": "Detalle de la Propiedad",
-    "category": "Categoría",
-    "price": "Desde USD",
-    "location": "Ubicación",
-    "description": {
-      "title": "Descripción"
-    },
-    "apartment_features": {
-      "title": "Características de los Apartamentos",
-      "items": "Lista de características"
-    },
-    "apartment_details": {
-      "title": "Detalle de Apartamento",
-      "property_type": "Tipo de propiedad",
-      "property_type_value": "Apartamento",
-      "bedrooms": "Habitaciones",
-      "bathrooms": "Baños",
-      "size": "Tamaño",
-      "floors": "Pisos",
-      "year_built": "Año de construcción"
-    }
-  },
-  "register_property": {
-    "title": "Vende o Alquila tu propiedad: ¡Empieza Aquí!",
-    "intro": "Como parte de nuestro esfuerzo por optimizar y agilizar este proceso, hemos desarrollado un formulario que nos ayudará a recopilar información crucial de manera eficiente de lo que buscas.",
-    "instructions": "Dentro de cada clasificación están nuestros servicios que ofrecemos, al llenar, no olvides escoger cuál es el tipo en el caso si es venta o corto plazo.",
-    "cta": "Cada botón te lleva al enlace donde completarás el formulario según el tipo de propiedad y lo que deseas hacer con él.",
-    "buttons": {
-      "sell_property": "Vender Mi Propiedad",
-      "sell_land": "Vender Mi Terreno",
-      "rent_property": "Alquilar Mi Propiedad",
-      "invest": "Invertir",
-      "find_home": "Busco Un Hogar",
-      "advertise": "Anunciate con nosotros"
-    },
-    "additional_info": {
-      "text": "Si tienes alguna pregunta, necesitas ayuda o no tienes una información a mano no dejes de para completar el formulario, nos comunicaremos contigo y en el camino vamos completando todo.",
-      "closing": "Estamos aquí para ayudarte en cada paso.",
-      "thank_you": "¡Gracias por confiar en nosotros!"
-    }
-  },
-  "invest_page": {
-    "banner": {
-      "title": "Invierte con ",
-      "title2": "Visión:",
-      "subtitle": "Tu libertad comienza ahora"
-    },
-    "consultation_section": {
-      "title": "Permítenos asesorarte",
-      "options": {
-        "projects": "Proyectos en planificación",
-        "completed": "Propiedades terminadas",
-        "land": "Terrenos"
-      }
-    },
-    "upcoming_fairs": {
-      "title": "Próximas Ferias Inmobiliarias",
-      "description": "Te invitamos a unirte a nosotros para un momento agradable mientras presentamos las grandes oportunidades de inversión en este país. Elige tu destino y regístrate:",
-      "event": {
-        "location": "Nueva York | Lawrence",
-        "date": "Fecha: 7 y 8 de diciembre",
-        "hour": "Horario: de 10 AM a 8 PM",
-        "note": "Ubicación por anunciar. Si estás interesado, por favor regístrate y te mantendremos informado una vez que tengamos todos los detalles."
-      },
-      "contact": {
-        "phone": "Teléfono: +1 809-893-6553",
-        "email": "info@rentarica.com",
-        "register_button": "Regístrate aquí"
-      }
-    },
-
-    "contact_form": {
-      "title": "Queremos saber cómo podemos ayudarte",
-      "fields": {
-        "name": "Nombre",
-        "country_city": "País | Ciudad",
-        "email": "Correo",
-        "phone": "Número de Teléfono",
-        "referral": "¿Cómo sabes de nosotros?",
-        "promote_options": "Escoge día(s) de quieres promover:",
-        "message": "Escribe tu mensaje"
-      },
-      "days": {
-        "mon": "Lun",
-        "tue": "Mar",
-        "wed": "Mié",
-        "thu": "Jue",
-        "fri": "Vie",
-        "sat": "Sáb",
-        "sun": "Dom"
-      },
-      "button": "Solicitar"
     }
   }
 }

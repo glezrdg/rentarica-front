@@ -19,7 +19,7 @@ const Header = () => {
   const { t } = useTranslation();
 
   useEffect(() => {
-    setActiveLink(pathname.split("home.header./")[1]);
+    setActiveLink(pathname.split("header./")[1]);
   }, [pathname]);
 
   useEffect(() => {
@@ -67,7 +67,7 @@ const Header = () => {
           >
             <div className="bg-[#8b0000] rounded-full w-3 h-3 mr-2"></div>
 
-            {t("home.header.buy_rent")}
+            {t("header.buy_rent")}
           </Link>
           <Link
             href={"/register"}
@@ -78,7 +78,7 @@ const Header = () => {
             }`}
           >
             <div className=" bg-[#ffc200] rounded-full w-3 h-3 mr-2"></div>
-            {t("home.header.register_property")}
+            {t("header.register_property")}
           </Link>
           <Link
             href={"/invertir"}
@@ -90,7 +90,7 @@ const Header = () => {
           >
             <div className="bg-[#25318d] rounded-full w-3 h-3 mr-2"></div>
 
-            {t("home.header.invest_now")}
+            {t("header.invest_now")}
           </Link>
           <Link
             href={"https://rentarica.trafico.do/"}
@@ -99,13 +99,13 @@ const Header = () => {
           >
             <div className=" bg-[#7c4810] rounded-full w-3 h-3 mr-2"></div>
 
-            {t("home.header.fair")}
+            {t("header.fair")}
           </Link>
         </ul>
         <div className="flex items-center mt-4 ">
           <Dropdown
             className="h-9 mr-3 font-semibold flex items-center"
-            options={["ES", "EN", "FR", "ZH"]}
+            options={["ES", "EN", "FR", "ZH", "RU"]}
             value={language}
             onChange={handleLanguageChange}
           />
@@ -154,7 +154,7 @@ const Header = () => {
           >
             <div className="bg-[#8b0000] rounded-full w-3 h-3 mr-2"></div>
 
-            {t("home.header.buy_rent")}
+            {t("header.buy_rent")}
           </Link>
           <Link
             onClick={() => {
@@ -168,7 +168,7 @@ const Header = () => {
             }`}
           >
             <div className=" bg-[#9b4b4f] rounded-full w-3 h-3 mr-2"></div>
-            {t("home.header.register_property")}
+            {t("header.register_property")}
           </Link>
           <Link
             onClick={() => {
@@ -183,7 +183,7 @@ const Header = () => {
           >
             <div className="bg-[#25318d] rounded-full w-3 h-3 mr-2"></div>
 
-            {t("home.header.invest_now")}
+            {t("header.invest_now")}
           </Link>
           <Link
             onClick={() => {
@@ -195,7 +195,7 @@ const Header = () => {
           >
             <div className=" bg-[#7c4810] rounded-full w-3 h-3 mr-2"></div>
 
-            {t("home.header.fair")}
+            {t("header.fair")}
           </Link>
           {/* AIRBNB */}
           <Link

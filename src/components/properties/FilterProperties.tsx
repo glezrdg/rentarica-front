@@ -130,7 +130,9 @@ const FilterProperties = ({ filters, updateFilters }: any) => {
         => updateFilters("code", e.value)}
       /> */}
       <div>
-        <h4 className="font-semibold text-lg mb-4">Tipo de propiedad:</h4>
+        <h4 className="font-semibold text-lg mb-4">
+          {t("properties.filters.typePropertyLabel")}
+        </h4>
         <PropertyTypeSelector
           selectedType={selectedPropertyType}
           onSelectType={handleSelectPropertyType}
@@ -145,7 +147,7 @@ const FilterProperties = ({ filters, updateFilters }: any) => {
           optionLabel="label"
           optionGroupLabel="label"
           optionGroupChildren="items"
-          placeholder="Selecciona una zona"
+          placeholder={t("properties.filters.zoneSearch")}
           className="w-full lg:w-[50%] border-black rounded-lg border-b-2  p-2 lg:mr-4 mb-4 lg:mb-0  "
           filter
         />
@@ -154,7 +156,7 @@ const FilterProperties = ({ filters, updateFilters }: any) => {
             <input
               type="number"
               className=" w-[90%] focus:outline-none border-none p-2"
-              placeholder="Buscar por código de propiedad"
+              placeholder={t("properties.filters.codeSearch")}
               value={filters.code}
               onChange={(e: any) => {
                 updateFilters("code", e.target.value);
@@ -167,8 +169,8 @@ const FilterProperties = ({ filters, updateFilters }: any) => {
       {/* PRICE */}
       <div className="pb-5">
         <h4 className="text-lg font-semibold mb-5">
-          {t("properties.filters.price")} &nbsp; (${price[0].toLocaleString()} -
-          ${price[1].toLocaleString()})
+          {t("properties.filters.priceSearch")} &nbsp; ($
+          {price[0].toLocaleString()} - ${price[1].toLocaleString()})
         </h4>
         <div className="px-4">
           <Slider
@@ -185,7 +187,7 @@ const FilterProperties = ({ filters, updateFilters }: any) => {
       {/* BATHROOMS */}
       <div className="flex items-center justify-between border-b pb-6 rounded-lg">
         <h4 className="text-lg font-semibold ">
-          {t("properties.filters.bathrooms")}:
+          {t("properties.filters.bathroomsRange")}
         </h4>
         <div className="flex items-center gap-8">
           <div className="flex items-center space-x-4 relative">
@@ -240,7 +242,9 @@ const FilterProperties = ({ filters, updateFilters }: any) => {
       </div>
       {/* HABITACIONE */}
       <div className="flex items-center justify-between border-b pb-6 rounded-lg">
-        <h4 className="text-lg font-semibold ">Habitaciones:</h4>
+        <h4 className="text-lg font-semibold ">
+          {t("properties.filters.roomsRange")}
+        </h4>
         <div className="flex items-center gap-8">
           {/* MIN */}
           <div className="flex items-center space-x-4 relative">
@@ -305,8 +309,8 @@ const FilterProperties = ({ filters, updateFilters }: any) => {
       {/* SIZE */}
       <div>
         <h4 className="text-lg font-semibold mb-4">
-          {t("properties.filters.size")} (Desde {size[0]} m² - Hasta {size[1]}{" "}
-          m²)
+          {t("properties.filters.sizeRange")} (Desde {size[0]} m² - Hasta{" "}
+          {size[1]} m²)
         </h4>
         <div className="flex gap-4">
           {/* Input para el tamaño mínimo */}

@@ -13,6 +13,7 @@ import { CiCircleRemove } from "react-icons/ci";
 import { Dialog } from "primereact/dialog";
 import { InputText } from "primereact/inputtext";
 import { IoMdSearch } from "react-icons/io";
+import { noto_300, noto_600 } from "@/utils/fonts";
 
 export type Property = {
   _id: string;
@@ -115,8 +116,10 @@ const index = () => {
       <div className="pt-36"></div>
 
       <div className="container px-4 xl:px-0 m-auto mb-10 min-h-[80vh] flex flex-col">
-        <h1 className="text-5xl place-self-center font-semibold my-20 ">
-          Tu Próxima Inversión Inmobiliaria:
+        <h1
+          className={`text-5xl place-self-center font-semibold my-20 ${noto_300.className}`}
+        >
+          {t("properties.propertiesTitle")}
         </h1>
         <Dialog
           visible={visible}
@@ -136,7 +139,7 @@ const index = () => {
               >
                 <CiCircleRemove className="text-xl mr-2" />
                 <span className="font-semibold transition-all">
-                  Limpiar Filtros
+                  {t("properties.propertiesCleanFilters")}
                 </span>
               </div>
               <button
@@ -146,7 +149,7 @@ const index = () => {
                   setVisible(false);
                 }}
               >
-                Ver Propiedades Filtradas
+                {t("properties.propertiesViewFilteredProperties")}
               </button>
             </div>
           </div>
@@ -179,7 +182,7 @@ const index = () => {
             >
               <img src="/assets/svgs/house.svg" alt="" className="h-10 w-10" />
               <p className="text-base font-semibold mt-1">
-                {t("properties.categories.all")}
+                {t("properties.propertiesFilter1")}
               </p>
             </div>
             <div
@@ -195,7 +198,7 @@ const index = () => {
             >
               <img src="/assets/svgs/onsale.svg" alt="" className="h-10 w-10" />
               <p className="text-base font-semibold mt-1">
-                {t("properties.categories.sale")}
+                {t("properties.propertiesFilter2")}
               </p>
             </div>
             <div
@@ -211,7 +214,7 @@ const index = () => {
             >
               <img src="/assets/svgs/rent.svg" alt="" className="h-10 w-10" />
               <p className="text-base font-semibold mt-1">
-                {t("properties.categories.rent")}
+                {t("properties.propertiesFilter3")}
               </p>
             </div>
             {/* <div
@@ -244,7 +247,9 @@ const index = () => {
               }`}
             >
               <img src="/assets/svgs/house.svg" alt="" className="h-10 w-10" />
-              <p className="text-base font-semibold mt-1">Renta Corta</p>
+              <p className="text-base font-semibold mt-1">
+                {t("properties.propertiesFilter4")}
+              </p>
             </div>
           </div>
 
@@ -254,7 +259,9 @@ const index = () => {
               onClick={() => setVisible(true)}
             >
               <VscSettings className="text-xl mr-2" />
-              <span className="font-semibold transition-all">Más Filtros:</span>
+              <span className="font-semibold transition-all">
+                {t("properties.propertiesMoreFilters")}
+              </span>
             </div>
             <div
               className="flex items-center ml-4 justify-center self-start mt-10 lg:my-0 lg:self-auto lg:ml-10 cursor-pointer rounded-xl border border-zinc-200 py-4 px-6 lg:px-3 hover:border-zinc-500 hover:bg-zinc-100 transition-button "
@@ -265,7 +272,7 @@ const index = () => {
             >
               <CiCircleRemove className="text-xl mr-2" />
               <span className="font-semibold transition-all">
-                Limpiar Filtros
+                {t("properties.propertiesCleanFilters")}
               </span>
             </div>
           </div>
