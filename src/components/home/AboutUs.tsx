@@ -70,10 +70,12 @@ const AboutUs = () => {
       <img
         src={item.itemImageSrc}
         alt={item.alt}
+        className="shadow-lg"
         style={{
           maxHeight: "600px",
           objectFit: "contain",
           display: "block",
+          borderRadius: "10px",
         }}
       />
     );
@@ -129,7 +131,7 @@ const AboutUs = () => {
           />
         </div>
 
-        <div className="text-center flex flex-col justify-center  items-center lg:text-left xl:w-1/2 px-10 lg:pr-10 lg:pt-20">
+        <div className="text-center flex flex-col justify-center  items-center xl:justify-start xl:items-start lg:text-left xl:w-1/2 px-10 lg:pr-10 lg:pt-20">
           <h1
             className={`text-5xl mb-8 t-blue-dark font-bold uppercase ${noto_300.className}`}
           >

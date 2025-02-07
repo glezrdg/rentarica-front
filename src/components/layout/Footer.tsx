@@ -150,7 +150,7 @@ const Footer = () => {
                 className="!bg-transparent border-b-2 border-white rounded-none focus:outline-none mt-2"
               />
             </div>
-            <button className="bg-yellow-500 p-2 text-xl w-32 text-black self-end place-self-end col-span-2">
+            <button className="bg-yellow-500 rounded-md border-accent-yellow-base border-2 hover:bg-transparent hover:text-accent-yellow-base transition-all  p-2 text-xl w-32 text-black self-end place-self-end col-span-2">
               {t("footer.message_form.submit")}
             </button>
           </form>

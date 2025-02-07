@@ -56,7 +56,7 @@ const Header = () => {
         </ScrollWithOffsetLink>
 
         {/* NAVIGATION ScrollWithOffsetLinkS */}
-        <ul className="items-center gap-5 lg:gap-8  hidden lg:flex ml-14 text-sm xl:text-base">
+        <ul className="items-center gap-5 lg:gap-8  hidden lg:flex ml-14 text-sm xl:text-base mt-4">
           <Link
             href={"/propiedades"}
             className={`cursor-pointer transition-all flex items-center${
@@ -102,9 +102,9 @@ const Header = () => {
             {t("home.header.fair")}
           </Link>
         </ul>
-        <div className="flex items-center ">
+        <div className="flex items-center mt-4 ">
           <Dropdown
-            className="h-9 mr-3 font-semibold"
+            className="h-9 mr-3 font-semibold flex items-center"
             options={["ES", "EN", "FR", "ZH"]}
             value={language}
             onChange={handleLanguageChange}

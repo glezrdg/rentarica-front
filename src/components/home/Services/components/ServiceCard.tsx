@@ -56,24 +56,25 @@ const ServiceCard: React.FC<IServiceCardProps> = ({
         backgroundImage: `url(${backgroundImage})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
+        borderRadius: "8px",
       }}
       onMouseEnter={() => setVisible(true)}
       onMouseLeave={() => setVisible(false)}
     >
       <div className="relative h-[35dvh] lg:h-[20dvh] xl:h-[30dvh] w-full">
         {/* Overlay with yellow tint */}
-        <div className="absolute inset-0 bg-yellow-500 bg-opacity-40 saturate-200 backdrop-contrast-200"></div>
+        <div className="absolute inset-0 bg-yellow-500 bg-opacity-40 rounded-md saturate-200 backdrop-contrast-200"></div>
 
         {/* Title */}
         <div
-          className={`absolute inset-0 bg-black bg-opacity-50 text-center flex items-center justify-center text-white text-2xl lg:text-2xl xl:text-2xl 2xl:text-4xl uppercase ${noto.className} text-black lg:px-10`}
+          className={`absolute inset-0 bg-black bg-opacity-50 rounded-md text-center flex items-center justify-center text-white text-2xl lg:text-2xl xl:text-2xl 2xl:text-4xl uppercase ${noto.className} text-black lg:px-10`}
         >
           <h3>{title}</h3>
         </div>
 
         {/* Description on hover */}
         <div
-          className={`absolute inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center text-white p-4 text-center transition-opacity duration-500 text-lg ${
+          className={`absolute inset-0 bg-black rounded-md bg-opacity-80 flex flex-col items-center justify-center text-white p-4 text-center transition-opacity duration-500 text-lg ${
             visible ? "opacity-100" : "opacity-0"
           }`}
         >
