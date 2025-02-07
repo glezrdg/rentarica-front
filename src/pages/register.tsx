@@ -95,7 +95,9 @@ const RegisterProperty = () => {
         </a>
 
         <Link
-          href="/services/anunciate"
+          href={"/assets/documents/Catálogo-Rentarica.pdf"}
+          target="_blank"
+          download
           className="grid place-items-center bg-white super-shadow rounded-t-3xl transition-all duration-300 hover:shadow-orange-200 hover:text-orange-500"
         >
           <div className="text-center">

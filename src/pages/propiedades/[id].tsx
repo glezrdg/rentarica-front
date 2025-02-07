@@ -13,6 +13,7 @@ import { TiArrowLeftThick } from "react-icons/ti";
 import { useRouter } from "next/router";
 import { propertyFeatures } from "@/utils/data";
 import { useEffect } from "react";
+import WhatsAppLink from "@/shared/components/WhatsappLink";
 
 export const getServerSideProps = (async ({ query }) => {
   // Fetch data from external API
@@ -105,6 +106,13 @@ const PropertyDetail = ({
               <p className="text-slate-600 mb-2">Year:</p>
               <p>2025</p>
             </div>
+          </div>
+          <div className="mt-14">
+            <p className="text-lg font-semibold mb-10">
+              {" "}
+              Escribenos por esta propiedad:{" "}
+            </p>
+            <WhatsAppLink propertyName={property.title} />
           </div>
           <div className="mt-10">
             {property.googleMapsLink ? (

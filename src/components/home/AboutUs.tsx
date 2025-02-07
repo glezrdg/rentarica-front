@@ -71,8 +71,8 @@ const AboutUs = () => {
         src={item.itemImageSrc}
         alt={item.alt}
         style={{
-          height: "600px",
-          objectFit: "cover",
+          maxHeight: "600px",
+          objectFit: "contain",
           display: "block",
         }}
       />
@@ -105,7 +105,7 @@ const AboutUs = () => {
     <>
       <section
         id="perfil"
-        className="flex flex-col xl:flex-row items-center gap-16 m-auto  mt-10 xl:mb-0 border-b pb-40"
+        className="flex flex-col xl:flex-row justify-center items-center gap-16 m-auto   mt-10 xl:mb-0 border-b pb-40"
       >
         {/* <Image
           className="lg:w-[50vw] flex self-start"
@@ -114,10 +114,9 @@ const AboutUs = () => {
           height={1173}
           alt="Picture of the author"
         /> */}
-        <div className=" xl:w-1/2 flex justify-end">
+        <div className=" xl:w-1/2 flex justify-center xl:justify-end w-full px-4">
           <Galleria
             value={images}
-            responsiveOptions={responsiveOptions}
             numVisible={3}
             style={{ maxWidth: "600px", maxHeight: " 600px" }}
             item={itemTemplate}
@@ -130,7 +129,7 @@ const AboutUs = () => {
           />
         </div>
 
-        <div className="text-center md:text-left xl:w-1/2 px-10 lg:pr-10 pt-20">
+        <div className="text-center flex flex-col justify-center  items-center lg:text-left xl:w-1/2 px-10 lg:pr-10 lg:pt-20">
           <h1
             className={`text-5xl mb-8 t-blue-dark font-bold uppercase ${noto_300.className}`}
           >
@@ -138,7 +137,7 @@ const AboutUs = () => {
           </h1>
 
           <div
-            className={`relative text-sm md:w-2/3 lg:text-lg text-center md:text-start px-5 md:px-0 2xl:w-[50%] ${
+            className={`relative text-sm md:w-2/3 lg:text-lg text-center xl:text-start px-5 md:px-0 2xl:w-[50%] ${
               expanded ? "" : "line-clamp-6"
             }`}
           >

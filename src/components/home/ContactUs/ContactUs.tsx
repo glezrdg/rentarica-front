@@ -3,6 +3,7 @@ import { Button } from "primereact/button";
 import { useTranslation } from "react-i18next";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
+import WhatsAppLink from "@/shared/components/WhatsappLink";
 
 interface IContactUsProps {
   children?: React.ReactNode;
@@ -45,36 +46,6 @@ const ContactUs: React.FC<IContactUsProps> = ({ bg }) => {
       alert("Hubo un problema al enviar los datos.");
     }
   };
-  // const [formData, setFormData] = useState({
-  //   name: "",
-  //   email: "",
-  //   message: "",
-  //   number: "",
-  // });
-  // const [status, setStatus] = useState(false);
-
-  // const handleChange = (e: any) => {
-  //   setFormData({ ...formData, [e.target.name]: e.target.value });
-  // };
-
-  // const handleSubmit = async (e: any) => {
-  //   e.preventDefault();
-  //   setStatus(true);
-  //   const res = await fetch("/api/sendEmail", {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify(formData),
-  //   });
-
-  //   if (res.ok) {
-  //     setStatus(false);
-  //     setFormData({ name: "", email: "", message: "", number: "" });
-  //   } else {
-  //     setStatus(false);
-  //   }
-  // };
 
   return (
     <section
@@ -133,58 +104,12 @@ const ContactUs: React.FC<IContactUsProps> = ({ bg }) => {
           />
         </div>
 
-        <button className="bg-accent-yellow-base rounded-sm shadow-md border-2 border-accent-yellow-base hover:border-accent-yellow-base font-semibold hover:bg-black hover:text-accent-yellow-base transition-all hover:scale-105 p-2 text-lg w-32 text-black self-end place-self-end col-span-2">
-          {t("footer.message_form.submit")}
-        </button>
+        <div className="flex items-center w-full justify-end col-span-2">
+          <button className="ml-4 bg-accent-yellow-base rounded-sm shadow-md border-2 border-accent-yellow-base hover:border-accent-yellow-base font-semibold hover:bg-black hover:text-accent-yellow-base transition-all hover:scale-105 p-2 text-lg w-32 text-black self-end place-self-end col-span-2">
+            {t("footer.message_form.submit")}
+          </button>
+        </div>
       </form>
-      {/* 
-      <form
-        onSubmit={handleSubmit}
-        className="grid md:grid-cols-2 rounded-2xl shadow-xl w-[90vw] md:w-[75vw] lg:w-[60vw] xl:w-[900px] m-auto p-8 gap-4 bg-white border"
-      >
-
-        <div>
-          <div className="flex flex-col mb-3">
-            <label className="mb-2">Nombre Completo</label>
-            <input value={formData.name} onChange={handleChange} name="name" />
-          </div>
-          <div className="flex flex-col mb-3">
-            <label className="mb-2">Email</label>
-            <input
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="flex flex-col">
-            <label className="mb-2">Número de Teléfono</label>
-            <input
-              name="number"
-              value={formData.number}
-              onChange={handleChange}
-            />
-          </div>
-        </div>
-
-        
-        <div className="flex flex-col">
-          <label className="mb-2">Enviar un Mensaje</label>
-          <textarea
-            className="h-full"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-          />
-        </div>
-
-        <div></div>
-        <Button
-          loading={status}
-          className="bg-blue-700 text-white w-fit p-2 rounded-xl px-4 ml-auto"
-        >
-          Enviar Mensaje
-        </Button>
-      </form> */}
     </section>
   );
 };

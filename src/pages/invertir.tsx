@@ -9,7 +9,7 @@ const invertir = () => {
   return (
     <div className="pt-28 ">
       {/* Hero */}
-      <div className="w-full h-[50dvh] lg:h-[70vh] grid place-items-center  relative overflow-hidden ">
+      <div className="w-full h-[40dvh]  md:h-[50dvh] lg:h-[70vh] grid place-items-center  relative overflow-hidden ">
         <img
           src="assets/home_images/bg-invertir.webp"
           alt=""
@@ -18,7 +18,7 @@ const invertir = () => {
         <div className="absolute inset-0 bg-black bg-opacity-50 grid place-content-center text-white">
           <div className="border-l-2 border-white pl-4">
             <h2
-              className={` w-fit  text-3xl lg:text-7xl uppercase p-2 ${noto_600.className}`}
+              className={` w-full text-4xl md:text-5xl lg:text-7xl uppercase p-2 ${noto_600.className}`}
             >
               {/* {t("invest_page.banner.title")} */}
               Invierte con <br /> Nosotros
@@ -32,7 +32,7 @@ const invertir = () => {
           </div> */}
             <div className="">
               <p
-                className={`text-white text-4xl lg:text-[52px] pt-7 pb-4 uppercase ${noto_300.className}`}
+                className={`text-white text-4xl md:text-5xl lg:text-[52px] pt-7 pb-4 uppercase ${noto_300.className}`}
               >
                 {/* {t("invest_page.banner.subtitle")} */}y Haz Crecer tu
                 Patrimonio
@@ -44,12 +44,12 @@ const invertir = () => {
 
       {/*  */}
       <div className="text-center pt-20 px-6 bg-orange-100">
-        <h2 className={`text-4xl lg:text-6xl uppercase ${noto_200.className}`}>
+        <h2 className={`text-4xl lg:text-6xl uppercase ${noto_300.className}`}>
           {t("invest_page.consultation_section.title")}
         </h2>
 
-        <div className="w-1/2 justify-self-center my-10 mt-20">
-          <p className=" text-lg font-semibold text-balance bg-accent-yellow-base p-4 rounded-lg shadow-md text-black">
+        <div className="xl:w-[70%] 2xl:w-1/2 justify-self-center my-7 lg:my-10 lg:mt-20">
+          <p className=" text-xs lg:text-lg  text-balance bg-accent-yellow-base p-2 lg:p-4 rounded-lg shadow-md text-black">
             Explora oportunidades únicas de inversión en la República
             Dominicana. Ya sea que estés interesado en terrenos estratégicamente
             ubicados, proyectos en planos, alquiler de naves industriales o la
@@ -59,7 +59,7 @@ const invertir = () => {
             experiencia y confianza.
           </p>
         </div>
-        <h3 className="text-4xl font-semibold py-10 ">
+        <h3 className="text-2xl lg:text-4xl font-semibold my-10 lg:py-10 ">
           Opciones de Inversión:
         </h3>
 
@@ -79,12 +79,12 @@ const invertir = () => {
             </div>
           </div>
         </div> */}
-        <div className=" grid grid-cols-2 xl:grid-cols-4  2xl:w-[80%] gap-10 mx-auto place-items-center w-full mt-20 pb-20">
+        <div className=" grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4  2xl:w-[80%] gap-10 mx-auto place-items-center w-full mt-20 pb-20">
           <div className="relative group flex items-center justify-center text-center card1">
-            <span className="text-xl font-semibold absolute bg-black p-2 text-white self-start mt-4 rounded-sm z-10">
+            <span className="text-xl font-semibold absolute bg-black py-2 px-4 text-white self-start mt-4 rounded-lg z-10">
               Terrenos
             </span>
-            <span className="absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100 px-4 text-white  p-2 text-lg  text-balance">
+            <span className="absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100 px-4 text-white  p-2 text-base  text-balance">
               Compra terrenos estratégicamente ubicados en zonas de alto
               crecimiento. Ideales para desarrollos comerciales, residenciales o
               turísticos.
@@ -94,18 +94,18 @@ const invertir = () => {
               src="assets/invertir_images/terrenos.avif"
               alt=""
             />
-            <a
-              href=""
-              className="bg-accent-yellow-base px-2 py-1  rounded-sm absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100  p-2   bottom-10"
+            <Link
+              href="/propiedades"
+              className="bg-accent-yellow-base px-4 py-2  rounded-md font-semibold absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100  p-2   bottom-10"
             >
               Ver Propiedades
-            </a>
+            </Link>
           </div>
           <div className="relative group flex items-center justify-center text-center card1">
-            <span className="text-xl font-semibold absolute bg-black p-2 text-white self-start mt-4 rounded-sm z-10">
+            <span className="text-xl font-semibold absolute bg-black py-2 px-4 text-white self-start mt-4 rounded-lg z-10">
               Proyectos en Planos
             </span>
-            <span className="absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100 px-4 text-white  p-2 text-lg  text-balance">
+            <span className="absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100 px-4 text-white  p-2 text-base  text-balance">
               Invierte en proyectos en etapas iniciales con precios competitivos
               y un alto potencial de revalorización.
             </span>
@@ -114,18 +114,18 @@ const invertir = () => {
               src="assets/invertir_images/planos.jpg"
               alt=""
             />
-            <a
-              href=""
-              className="bg-accent-yellow-base px-2 py-1  rounded-sm absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100  p-2   bottom-10"
+            <Link
+              href="/propiedades"
+              className="bg-accent-yellow-base px-4 py-2  rounded-md font-semibold absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100  p-2   bottom-10"
             >
               Ver Propiedades
-            </a>
+            </Link>
           </div>
           <div className="relative group flex items-center justify-center text-center card1">
-            <span className="text-xl font-semibold absolute bg-black p-2 text-white self-start mt-4 rounded-sm z-10">
+            <span className="text-xl font-semibold absolute bg-black py-2 px-4 text-white self-start mt-4 rounded-lg z-10">
               Naves Industriales
             </span>
-            <span className="absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100 px-4 text-white  p-2 text-lg text-balance ">
+            <span className="absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100 px-4 text-white  p-2 text-base text-balance ">
               Alquiler y compra de naves industriales en ubicaciones clave,
               perfectas para negocios logísticos, manufactura o almacenamiento.
             </span>
@@ -134,18 +134,18 @@ const invertir = () => {
               src="assets/invertir_images/naves.jpg"
               alt=""
             />
-            <a
-              href=""
-              className="bg-accent-yellow-base px-2 py-1  rounded-sm absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100  p-2   bottom-10"
+            <Link
+              href="/propiedades"
+              className="bg-accent-yellow-base px-4 py-2  rounded-md font-semibold absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100  p-2   bottom-10"
             >
               Ver Propiedades
-            </a>
+            </Link>
           </div>
           <div className="relative group flex items-center justify-center text-center card1">
-            <span className="text-xl font-semibold absolute bg-black p-2 text-white self-start mt-4 rounded-sm z-10">
+            <span className="text-xl font-semibold absolute bg-black py-2 px-4 text-white self-start mt-4 rounded-lg z-10">
               Propiedades Terminadas
             </span>
-            <span className="absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100 px-4 text-white  p-2 text-lg  text-balance">
+            <span className="absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100 px-4 text-white  p-2 text-base  text-balance">
               Adquiere propiedades completamente listas para generar ingresos,
               desde apartamentos hasta locales comerciales.
             </span>
@@ -154,12 +154,12 @@ const invertir = () => {
               src="assets/invertir_images/finished.png"
               alt=""
             />
-            <a
-              href=""
-              className="bg-accent-yellow-base px-2 py-1  rounded-sm absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100  p-2   bottom-10"
+            <Link
+              href="/propiedades"
+              className="bg-accent-yellow-base px-4 py-2  rounded-md font-semibold absolute group-hover:z-[100] transition-all z-10 opacity-0 group-hover:opacity-100  p-2   bottom-10"
             >
               Ver Propiedades
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -179,10 +179,10 @@ const invertir = () => {
         </div> */}
       </div>
 
-      <div className="  bg-white text-center flex items-center pt-10  ">
+      <div className="  bg-white text-center flex flex-col-reverse xl:flex-row  items-center px-4 lg:px-0 pt-10  ">
         <img
           src="assets/invertir_images/feria-invertir.jpg"
-          className="xl:w-1/2 rounded-lg shadow-lg"
+          className="lg:h-[50dvh] xl:w-1/2 rounded-lg shadow-lg xl:mt-0 mt-10"
           alt=""
         />
         <div className="xl:w-1/2  lg:w-2/3  2xl:w-1/2 pt-10">
@@ -221,14 +221,14 @@ const invertir = () => {
               href="assets/documents/Dossier Rentarica General- Propietarios .pdf"
               target="_blank"
               download
-              className="mx-6 text-sm xl:text-base 2xl:text-lg  bg-accent-yellow-base rounded-md shadow-md xl:my-2 px-3 py-2 xl:px-6 xl:py-4  border-2 hover:border-accent-yellow-base font-semibold hover:bg-black hover:text-accent-yellow-base transition-all hover:scale-105  "
+              className="my-4 lg:my-0 mx-6  xl:text-base 2xl:text-lg border-accent-yellow-base  bg-accent-yellow-base rounded-md shadow-md xl:my-2 px-3 py-2 xl:px-6 xl:py-4  border-2 hover:border-accent-yellow-base font-semibold hover:bg-black hover:text-accent-yellow-base transition-all hover:scale-105  "
             >
               Organiza tu feria con nosotros
             </Link>
             <Link
               href="https://rentarica.trafico.do/"
               target="_blank"
-              className="mx-6 text-smxl:text-base 2xl:text-lg  bg-accent-yellow-base rounded-md shadow-md xl:my-2 px-3 py-2 xl:px-6 xl:py-4  border-2 hover:border-accent-yellow-base font-semibold hover:bg-black hover:text-accent-yellow-base transition-all hover:scale-105  "
+              className="my-4 lg:my-0 mx-6  xl:text-base 2xl:text-lg border-accent-yellow-base  bg-accent-yellow-base rounded-md shadow-md xl:my-2 px-3 py-2 xl:px-6 xl:py-4  border-2 hover:border-accent-yellow-base font-semibold hover:bg-black hover:text-accent-yellow-base transition-all hover:scale-105  "
             >
               Quiero Mi Próxima Propiedad
             </Link>

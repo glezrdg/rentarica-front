@@ -119,8 +119,9 @@ const Header = () => {
             <span className="transition-all xl:flex hidden">Airbnb</span>
           </Link>
           {/* WHATSAPP */}
+
           <Link
-            href={"https://wa.me/18099028318"}
+            href={"https://wa.me/18098936553"}
             className="items-center font-bold text-[#25d366] mx-2 md:flex hidden  "
             target="_blank"
           >
