@@ -182,7 +182,7 @@ const invertir = () => {
       <div className="  bg-white text-center flex flex-col-reverse xl:flex-row  items-center px-4 lg:px-0 pt-10  ">
         <img
           src="assets/invertir_images/feria-invertir.jpg"
-          className="lg:h-[50dvh] xl:w-1/2 rounded-lg shadow-lg xl:mt-0 mt-10"
+          className="lg:h-[50dvh] xl:h-auto xl:w-1/2 rounded-lg shadow-lg xl:mt-0 mt-10"
           alt=""
         />
         <div className="xl:w-1/2  lg:w-2/3  2xl:w-1/2 pt-10">
