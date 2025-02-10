@@ -42,23 +42,19 @@ const invertir = () => {
       </div>
 
       {/*  */}
-      <div className="text-center pt-20 px-6 ">
-        <h2 className={`text-4xl lg:text-6xl uppercase ${noto_300.className}`}>
+      <div
+        className="text-center pt-20 px-6 bg-white
+      
+      
+      "
+      >
+        <h2
+          className={`text-4xl lg:text-6xl uppercase underline decoration-accent-yellow-base decoration-4 underline-offset-8 ${noto_300.className}`}
+        >
           {t("invest.investments.title")}
         </h2>
 
-        <div className="xl:w-[70%] 2xl:w-1/2 justify-self-center my-7 lg:my-10 lg:mt-20">
-          <p className=" text-xs lg:text-lg  text-balance bg-accent-yellow-base p-2 lg:p-4 rounded-lg shadow-md text-black">
-            {t("invest.investments.description")}
-          </p>
-        </div>
-        <h3
-          className={`text-2xl lg:text-4xl font-semibold mt-28  ${noto_300.className}`}
-        >
-          {t("invest.investments.callToAction")}
-        </h3>
-
-        <div className=" grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4  2xl:w-[80%] gap-10 mx-auto place-items-center w-full mt-5 lg:mt-10 pb-20">
+        <div className=" grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4  2xl:w-[80%] gap-10  mx-auto place-items-center w-full  mt-10 lg:mt-20 ">
           <div className="relative group flex items-center justify-center text-center card1">
             <span className="text-xl font-semibold absolute bg-black py-2 px-4 text-white self-start mt-4 rounded-lg z-10">
               {t("invest.investments.slots.title")}
@@ -136,6 +132,17 @@ const invertir = () => {
             </Link>
           </div>
         </div>
+
+        <div className="xl:w-[70%] 2xl:w-[60%] justify-self-center my-7 lg:my-10 ">
+          <p className=" text-base md:text-lg lg:text-xl  text-balance  p-2 lg:p-4 rounded-lg  text-black">
+            {t("invest.investments.description")}
+          </p>
+        </div>
+        {/* <h3
+          className={`text-2xl lg:text-4xl font-semibold mt-10  ${noto_300.className}`}
+        >
+          {t("invest.investments.callToAction")}
+        </h3> */}
         <Link
           href="a"
           target="_blank"
@@ -145,7 +152,7 @@ const invertir = () => {
         </Link>
       </div>
 
-      <div className="  bg-white text-center flex flex-col-reverse xl:flex-row  items-center px-4 lg:px-0 pt-10  ">
+      <div className="  bg-white text-center flex flex-col xl:flex-row  items-center px-4 lg:px-0 pt-10  ">
         <img
           src="assets/invertir_images/feria-invertir.jpg"
           className="lg:h-[50dvh] xl:h-auto xl:w-1/2 rounded-lg shadow-lg xl:mt-0 mt-10"
@@ -153,7 +160,7 @@ const invertir = () => {
         />
         <div className="xl:w-1/2  lg:w-2/3  2xl:w-1/2 pt-10">
           <h2
-            className={`xl:text-4xl 2xl:text-5xl font-semibold ${noto_300.className}`}
+            className={`text-2xl xl:text-4xl 2xl:text-5xl font-semibold ${noto_300.className}`}
           >
             {" "}
             Rentarica {t("invest.fairTitle")}
@@ -165,7 +172,7 @@ const invertir = () => {
             {t("invest.fairDescription2")}
           </p>
           <h2
-            className={` xl:text-4xl 2xl:text-4xl font-semibold my-5 xl:my-10 ${noto_300.className} `}
+            className={`text-2xl xl:text-4xl 2xl:text-4xl font-semibold my-5 xl:my-10 ${noto_300.className} `}
           >
             {t("invest.fairTitle2")}
           </h2>

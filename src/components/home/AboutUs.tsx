@@ -125,9 +125,7 @@ const AboutUs = () => {
             thumbnail={thumbnailTemplate}
             showItemNavigators
             showThumbnails={false}
-            autoPlay
             circular
-            transitionInterval={2000}
           />
         </div>
 

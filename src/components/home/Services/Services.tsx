@@ -92,7 +92,7 @@ const Services: React.FC<IServicesProps> = (props) => {
         </div>
 
         <div
-          className={`relative grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20 m-auto place-items-center h-full w-[80vw] lg:w-[80dvw] xl:px-20 transition-all duration-300 ${
+          className={`relative grid md:grid-cols-2 xl:grid-cols-3 gap-8 mt-20 m-auto place-items-center h-full w-[80dvw]  xl:px-20 transition-all duration-300 ${
             showAll ? "max-h-full" : "max-h-[70vh] overflow-hidden"
           }`}
         >

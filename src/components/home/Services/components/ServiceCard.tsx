@@ -51,7 +51,7 @@ const ServiceCard: React.FC<IServiceCardProps> = ({
 
   return (
     <div
-      className={`w-full lg:w-[20dvw] rounded-md shadow-md cursor-pointer snap-center ${className}`}
+      className={`w-full xl:w-[20dvw] rounded-md shadow-md cursor-pointer snap-center ${className}`}
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundPosition: "center",
@@ -61,7 +61,7 @@ const ServiceCard: React.FC<IServiceCardProps> = ({
       onMouseEnter={() => setVisible(true)}
       onMouseLeave={() => setVisible(false)}
     >
-      <div className="relative h-[35dvh] lg:h-[20dvh] xl:h-[30dvh] w-full">
+      <div className="relative h-[35dvh]  xl:h-[30dvh] w-full">
         {/* Overlay with yellow tint */}
         <div className="absolute inset-0 bg-yellow-500 bg-opacity-40 rounded-md saturate-200 backdrop-contrast-200"></div>
 
@@ -74,11 +74,11 @@ const ServiceCard: React.FC<IServiceCardProps> = ({
 
         {/* Description on hover */}
         <div
-          className={`absolute inset-0 bg-black rounded-md bg-opacity-80 flex flex-col items-center justify-center text-white p-4 text-center transition-opacity duration-500 text-lg ${
+          className={`absolute inset-0 bg-black rounded-md bg-opacity-80 flex flex-col items-center justify-center text-white p-4 text-center transition-opacity duration-500 text-base xl:text-lg  ${
             visible ? "opacity-100" : "opacity-0"
           }`}
         >
-          <p className="text-base text-white">{description}</p>
+          <p className="text-sm 2xl:text-base text-white">{description}</p>
           <button
             className="mt-6 bg-accent-yellow-base font-semibold  px-4 py-2 hover:bg-transparent border border-accent-yellow-base hover:text-accent-yellow-base transition-all  rounded-sm shadow-lg text-black"
             onClick={handleAction}
