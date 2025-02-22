@@ -11,11 +11,13 @@ import Layout from "@/components/layout/Layout";
 import AnuncioPaneles from "@/shared/components/AnuncioPaneles";
 import FeaturedProperties from "@/components/home/FeaturedProperties";
 import AirbnbTestimonials from "@/components/home/AirbnbTestimonial";
+import AnuncioFeria from "@/shared/components/AnuncioFeria";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <AnuncioFeria />
       <FeaturedProperties />
       <Services />
 

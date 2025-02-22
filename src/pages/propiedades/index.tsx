@@ -14,6 +14,7 @@ import { Dialog } from "primereact/dialog";
 import { InputText } from "primereact/inputtext";
 import { IoMdSearch } from "react-icons/io";
 import { noto_300, noto_600 } from "@/utils/fonts";
+import AnuncioFeria from "@/shared/components/AnuncioFeria";
 
 export type Property = {
   _id: string;
@@ -113,8 +114,8 @@ const index = () => {
 
   return (
     <>
-      <div className="pt-36"></div>
-
+      <div className="pt-24"></div>
+      <AnuncioFeria />
       <div className="container px-4 xl:px-0 m-auto mb-10 min-h-[80vh] flex flex-col">
         <h1
           className={`text-5xl place-self-center font-semibold my-20 ${noto_300.className}`}

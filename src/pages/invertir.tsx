@@ -1,5 +1,6 @@
 "use client";
 
+import AnuncioFeria from "@/shared/components/AnuncioFeria";
 import { noto_200, noto_300, noto_600 } from "@/utils/fonts";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
@@ -40,7 +41,7 @@ const invertir = () => {
           </div>
         </div>
       </div>
-
+      <AnuncioFeria />
       {/*  */}
       <div
         className="text-center pt-20 px-6 bg-white
