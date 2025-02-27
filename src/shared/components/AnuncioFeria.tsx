@@ -1,21 +1,28 @@
 import Image from "next/image";
-import React from "react";
 
 const AnuncioFeria = () => {
   return (
-    <a
-      href="https://rentarica.trafico.do/"
-      target="_blank"
-      className="w-full flex items-center justify-center  my-10"
-    >
-      <Image
-        src="/assets/home_images/Banner.png"
-        className="max-w-[830] max-h-[195]"
-        width={616}
-        height={154}
-        alt="panelesr"
-      />
-    </a>
+    <div className="w-full flex justify-center my-8">
+      <a
+        href="https://rentarica.trafico.do/"
+        target="_blank"
+        className="relative overflow-hidden rounded-lg  transition-shadow duration-300 block"
+        style={{ maxWidth: "1000px", width: "100%" }}
+        rel="noreferrer"
+      >
+        <div className="relative" style={{ height: "350px", width: "100%" }}>
+          <Image
+            className="rounded-lg shadow-md"
+            src="/assets/home_images/Banner.png"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 800px, 800px"
+            style={{ objectFit: "contain", objectPosition: "center" }}
+            alt="Rentarica Real Estate Summit - New York & New Jersey"
+            priority
+          />
+        </div>
+      </a>
+    </div>
   );
 };
 

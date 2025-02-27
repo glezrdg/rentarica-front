@@ -10,7 +10,7 @@ import Projects from "@/components/home/Proyects/Projects";
 import Layout from "@/components/layout/Layout";
 import AnuncioPaneles from "@/shared/components/AnuncioPaneles";
 import FeaturedProperties from "@/components/home/FeaturedProperties";
-import AirbnbTestimonials from "@/components/home/AirbnbTestimonial";
+// import AirbnbTestimonials from "@/components/home/AirbnbTestimonial";
 import AnuncioFeria from "@/shared/components/AnuncioFeria";
 
 export default function Home() {

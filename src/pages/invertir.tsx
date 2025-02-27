@@ -182,7 +182,7 @@ const invertir = () => {
           </p>
           <div className="flex flex-col md:flex-row  items-center w-full mt-12 xl:mt-20 justify-center text-base xl:text-xl">
             <Link
-              href="assets/documents/Dossier Rentarica General- Propietarios .pdf"
+              href="assets/documents/Rentarica Presentación Feria.pdf"
               target="_blank"
               download
               className="my-4 lg:my-0 mx-6  xl:text-base 2xl:text-lg border-accent-yellow-base  bg-accent-yellow-base rounded-md shadow-md xl:my-2 px-3 py-2 xl:px-6 xl:py-4  border-2 hover:border-accent-yellow-base font-semibold hover:bg-black hover:text-accent-yellow-base transition-all hover:scale-105  "

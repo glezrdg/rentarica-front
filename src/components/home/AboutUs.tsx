@@ -16,18 +16,18 @@ const AboutUs = () => {
       alt: "Persona 0",
     },
     {
-      itemImageSrc: "/assets/fotos_personal/Jorge Perrotta.jpg",
-      thumbnailImageSrc: "/assets/fotos_personal/Jorge Perrotta.jpg",
+      itemImageSrc: "/assets/fotos_personal/Jorge Perrotta.png",
+      thumbnailImageSrc: "/assets/fotos_personal/Jorge Perrotta.png",
       alt: "Persona 0",
     },
     {
-      itemImageSrc: "/assets/fotos_personal/Madrileydi Martinez.jpg",
-      thumbnailImageSrc: "/assets/fotos_personal/Madrileydi Martinez.jpg",
+      itemImageSrc: "/assets/fotos_personal/Madrileydi Martinez.png",
+      thumbnailImageSrc: "/assets/fotos_personal/Madrileydi Martinez.png",
       alt: "Persona 0",
     },
     {
-      itemImageSrc: "/assets/fotos_personal/Sergio Carlo.jpg",
-      thumbnailImageSrc: "/assets/fotos_personal/Sergio Carlo.jpg",
+      itemImageSrc: "/assets/fotos_personal/Sergio Carlo.png",
+      thumbnailImageSrc: "/assets/fotos_personal/Sergio Carlo.png",
       alt: "Persona 0",
     },
     {
